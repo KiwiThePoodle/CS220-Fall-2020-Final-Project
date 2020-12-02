@@ -1,0 +1,29 @@
+//
+//
+
+#include <iostream>
+
+int main(int argc, char *argv[]) {
+  bool shuffle;
+  int numPlayers;
+  int stockPileSize;
+  std::string deckStartFile;
+
+
+  if(argc <= 2 || argc == 4) {
+    std::cout << "invalid program usage: invalid number of arguments" << std::endl;
+    return 0;
+  }
+
+  if(argv[1].compare("false") == 0) {
+    shuffle = false;
+  }
+  else if(argv[1].compare("true") == 0) {
+    shuffle = true;
+  }
+  else {
+    std::cout << "invalid program usage: invalid first argument" << std::endl;
+    return 1;
+  }
+
+  
