@@ -7,7 +7,6 @@ int main(int argc, char *argv[]) {
   bool shuffle;
   int numPlayers;
   int stockPileSize;
-  std::ifstream deckStartFile;
 
 
   if(argc <= 2 || argc == 4) {
@@ -27,13 +26,13 @@ int main(int argc, char *argv[]) {
   }
 
   if(argc == 3) {
-    std::ifstream ifile(argv[2]);
+    std::ifstream savedGame(argv[2]);
     if(!ifile.is_open()) {
       std::cout << "invalid program usage: can't open input game file" << std::endl;
       return 1;
     }
     else {
-      deckStartFile = argv[2];
+      //continue the game, not sure how to do this
     }
   }
 
@@ -47,14 +46,24 @@ int main(int argc, char *argv[]) {
       std::cout << "num players is " << numPlayers << std::endl;
     }
 
-    if(int(argv[4]) >  5 ) {//stock size confused how to implement
-      stockPileSize = argv[4];
-      std::cout << "stock size is " << stockPileSize << std::endl;
+    if(int(argv[4]) * numPlayers > 162 || int(argv[4]) < 0) {
+      std::cout << "invalid program usage: bad stock size" << std::endl;
+      return 1;
     }
     else {
+      stockSize = int(argv[4]);
+      std::cout << "stock size is " << stockSize << std::endl;
     }
 
-    //open file to check it
+    std::ifstream deckStartFile(argv[5]);
+    if(!deckStartFile.is_open()) {
+      std::cout << "invalid program usage: can't open deck file" << std::endl;
+      return 1;
+    }
+    else {
+      //create a skipbogame object
+    }
+    return 0;
     
   }
 
