@@ -16,7 +16,10 @@ private:
   int turn;
   int playerCount;
   int stock;
+  Pile builds[4];
 
+  
+  std::string saveFile;
   std::vector<Player*> players;
   
   bool isShuffle;

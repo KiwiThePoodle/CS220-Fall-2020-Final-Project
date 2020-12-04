@@ -57,12 +57,43 @@ std::string SkipBoGame::toString() const {
 }
 
 SkipBoGame::SkipBoGame(bool isS, int pCount, int stk, string file){
+  turn = 0;
+  playerCount = pCount;
+  stock = stk;
+  isShuffle = isS;
+  end = false;
+
+  //need to make 4 piles for the build pile
+
+  //need to generate deck, and draw cards for everyone, taking those cards out of the deck
+  for (int i = 0; i < pCount; i ++){
+    //generate players
+    String n = "player";
+    name = n + std::to_string(i);//gives us player0, player1, and so on
+
+
+    /* need to create piles here
+       stock pile
+       4 discard piles as an array
+       hand pile
+    */
+    Player* p = new Player(name, sPile, dPile, hPile);
+
+    players.push_back(p);
+  }
+  string saveFile = file;
 }
 
 SkipBoGame::SkipBoGame(bool isS, string file){
+  isShuffle = isS;
+
+  //open a stream with file, and assign private variables there
 }
 
 SkipBoGame::~SkipBoGame(){
+  for (int i = 0; i < players.size(); i ++){
+    delete players.at(i);
+  }
 }
 
 void SkipBoGame::playTurn(){
@@ -71,6 +102,7 @@ void SkipBoGame::playTurn(){
 void SkipBoGame::checkWin(Player* p){
 }
 
-void SkipBoGame::play();
+void SkipBoGame::play(){
+}
 
 
