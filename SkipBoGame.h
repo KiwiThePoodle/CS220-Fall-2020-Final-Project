@@ -40,8 +40,11 @@ public:
 
   void play();//will need to take command line arguments, might alter this later to fit better with playTurn
 
-  
-  
+  string toString() const;
+
+  void display() const;
+
+  //above two were provided from starter code so I added them here
 }
 
 
