@@ -16,6 +16,9 @@ private:
   int turn;
   int playerCount;
   int stock;
+
+  std::vector<Player*> players;
+  
   bool isShuffle;
   bool end;//not sure if this is needed yet, currently im thinking it can be used to decide whether or not the game should end at the time
 
@@ -34,7 +37,7 @@ public:
 
   void playTurn();//will play an entire turn out
 
-  void checkWin(Player p);//check if a player has won, probably could alter this later, just want to see if stock is empty for now though
+  void checkWin(Player* p);//check if a player has won, probably could alter this later, just want to see if stock is empty for now though
 
   void save(string file);//saves the game to the file
 

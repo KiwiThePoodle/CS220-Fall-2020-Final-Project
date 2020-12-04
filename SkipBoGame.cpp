@@ -2,6 +2,12 @@
 #include <sstream>
 #include "SkipBoGame.h"
 
+#include <string>
+#include <vector>
+#include "DrawPile.h"
+#include "Pile.h"
+#include "Card.h"
+#include "Player.h"
 
 /* for live game play - must not change format!
 
@@ -49,3 +55,22 @@ std::string SkipBoGame::toString() const {
   }
   return result.str();
 }
+
+SkipBoGame::SkipBoGame(bool isS, int pCount, int stk, string file){
+}
+
+SkipBoGame::SkipBoGame(bool isS, string file){
+}
+
+SkipBoGame::~SkipBoGame(){
+}
+
+void SkipBoGame::playTurn(){
+}
+
+void SkipBoGame::checkWin(Player* p){
+}
+
+void SkipBoGame::play();
+
+
