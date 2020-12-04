@@ -1,0 +1,23 @@
+#ifndef _PLAYER_H
+#define _PLAYER_H
+
+#include <vector>
+#include <iostream>
+#include "Card.h"
+#include "Pile.h"
+
+class Player {
+ protected:
+  String name;
+  Pile stock;
+  Pile discard[4];
+  Pile hand;
+ public:
+  Player() {}
+  void display() const;
+  std::string toString() const;
+  void readIn(istream &);
+};
+
+
+#endif

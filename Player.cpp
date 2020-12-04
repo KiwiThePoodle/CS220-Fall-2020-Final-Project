@@ -48,3 +48,4 @@ std::string Player::toString() const {
   return result.str();
 }
 
+//add actions and readIn
