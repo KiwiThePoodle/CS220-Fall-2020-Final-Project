@@ -46,7 +46,7 @@ int main(int argc, char *argv[]) {
       std::cout << "num players is " << numPlayers << std::endl;
     }
 
-    if(int(argv[4]) * numPlayers > 162 || int(argv[4]) < 0) {
+    if(int(argv[4]) * numPlayers > 162 || int(argv[4]) < 0) { //not exactly sure its supposed to be 162
       std::cout << "invalid program usage: bad stock size" << std::endl;
       return 1;
     }
@@ -64,8 +64,4 @@ int main(int argc, char *argv[]) {
       //create a skipbogame object
     }
     return 0;
-    
   }
-
-  
-      
