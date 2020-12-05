@@ -48,4 +48,73 @@ std::string Player::toString() const {
   return result.str();
 }
 
-//add actions and readIn
+void Player::readIn(std::istream & is) {
+  string playerName;
+  is >> playerName;
+  name = playerName;
+  int size;
+  int cardNumber;
+  is >> size;
+  for(int i = 0; i < size; i++) {
+    is >> cardNumber;
+    stock.addCard(Card(cardNumber));
+  }
+  is >> size;
+  for(int i = 0; i < size; i++) {
+    is >> cardNumber;
+    hand.addCard(Card(cardNumber));
+  }
+  is >> size;
+  for(int i = 0; i < size; i++) {
+    is >> cardNumber;
+    discard[0].addCard(Card(cardNumber));
+  }
+  is >> size;
+  for(int i = 0; i < size; i++) {
+    is >> cardNumber;
+    discard[1].addCard(Card(cardNumber));
+  }
+  is >> size;
+  for(int i = 0; i < size; i++) {
+    is >> cardNumber;
+    discard[2].addCard(Card(cardNumber));
+  }
+  is >> size;
+  for(int i = 0; i < size; i++) {
+    is >> cardNumber;
+    discard[3].addCard(Card(cardNumber));
+  }
+}
+
+Player::~Player() {
+  delete stock;
+  delete hand;
+  delete discard[0];
+  delete discard[1];
+  delete discard[2];
+  delete discard[3];
+}
+
+void Player::drawToHand() {                    //called at the start of player's turn, draws cards until hand is full
+  int cardsToDraw = 5 - hand.size();
+  for(int i = 0; i < cardsToDraw; i++) {
+    hand.addCard(/*insert card from drawpile*/);
+    /*remove that card from drawpile*/
+  }
+}
+
+void Player::handToDiscard(Card cd, char c) {
+  
+}
+
+void Player::stockpileToBuild(Card cd) {
+  
+}
+
+void Player::discardToBuild(Card cd, char c) {
+  
+}
+
+void Player::handToBUild(Card cd) {
+  
+}
