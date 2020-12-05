@@ -17,7 +17,7 @@ private:
   int playerCount;
   int stock;
   Pile builds[4];
-
+  DrawPile deck;
   
   std::string saveFile;
   std::vector<Player*> players;
