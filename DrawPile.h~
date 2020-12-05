@@ -1,0 +1,19 @@
+#ifndef _DrawPile_H
+#define _DrawPile_H
+
+#include <iostream>
+#include "Card.h"
+#include "Pile.h"
+
+class DrawPile {
+ protected:
+  Pile drawPile;
+ public:
+  drawPile() { }
+
+  drawPile(Pile d) { drawPile = d; }
+
+  virtual void display() const;
+};
+
+#endif
