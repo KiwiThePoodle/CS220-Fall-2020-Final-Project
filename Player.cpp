@@ -50,43 +50,43 @@ std::string Player::toString() const {
 
 void Player::readIn(std::istream & is) {
   string playerName;
-  is >> playerName;
+  is >> playerName;   //reads first string as player name
   name = playerName;
-  int size;
+  int size;   //size of each pile
   int cardNumber;
-  is >> size;
-  for(int i = 0; i < size; i++) {
-    is >> cardNumber;
-    stock.addCard(Card(cardNumber));
+  is >> size;   //first int found is stock pile size
+  for(int i = 0; i < size; i++) {   //loop through stock size number of times
+    is >> cardNumber;   //each int is a number representing a card
+    stock.addCard(Card(cardNumber));   //add new cards to stock pile for each number
   }
-  is >> size;
-  for(int i = 0; i < size; i++) {
+  is >> size;   //next int is hand pile size
+  for(int i = 0; i < size; i++) {   //adds hand size number of cards to hand pile
     is >> cardNumber;
     hand.addCard(Card(cardNumber));
   }
-  is >> size;
+  is >> size;   //next int is discard[0] pile size
   for(int i = 0; i < size; i++) {
     is >> cardNumber;
     discard[0].addCard(Card(cardNumber));
   }
-  is >> size;
+  is >> size;   //next int is discard[1] pile size
   for(int i = 0; i < size; i++) {
     is >> cardNumber;
     discard[1].addCard(Card(cardNumber));
   }
-  is >> size;
+  is >> size;   //discard[2] pile size
   for(int i = 0; i < size; i++) {
     is >> cardNumber;
     discard[2].addCard(Card(cardNumber));
   }
-  is >> size;
+  is >> size;   //discard[3] pile size
   for(int i = 0; i < size; i++) {
     is >> cardNumber;
     discard[3].addCard(Card(cardNumber));
   }
 }
 
-Player::~Player() {
+Player::~Player() {   //deletes each pile for a player
   delete stock;
   delete hand;
   delete discard[0];
@@ -103,6 +103,7 @@ void Player::drawToHand() {                    //called at the start of player's
   }
 }
 
+/*each method below should move a card from one pile to another pile*/   //not sure of the best way to implement yet
 void Player::handToDiscard(Card cd, char c) {
   
 }

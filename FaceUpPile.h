@@ -14,6 +14,8 @@ class FaceUpPile {
   FaceUpPile(Pile f) { faceUpPile = f }
 
   virtual void display() const;
+
+  ~FaceUpPile();
 };
 
 #endif

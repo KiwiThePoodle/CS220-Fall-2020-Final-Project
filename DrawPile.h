@@ -9,11 +9,15 @@ class DrawPile {
  protected:
   Pile drawPile;
  public:
-  drawPile() { }
+  DrawPile() { }
 
-  drawPile(Pile d) { drawPile = d; }
+  DrawPile(Pile d) { drawPile = d; }
 
   virtual void display() const;
+
+  ~DrawPile();
+
+  Card topCard();
 };
 
 #endif

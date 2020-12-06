@@ -9,11 +9,13 @@ class Hand {
  protected:
   Pile hand;
  public:
-  hand() { }
+  Hand() { }
 
-  hand(Pile h) { hand = h; }
+  Hand(Pile h) { hand = h; }
 
   virtual void display() const;
+
+  ~Hand();
 };
 
 #endif
