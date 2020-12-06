@@ -10,6 +10,7 @@ void DrawPile::display() const {
   delete drawPile;
 }
 
-Card topCard() {
-  //gets top card from drawPile
+Card DrawPile::topCard() {
+  Card temp = drawPile.topCard();
+  return temp;
 }

@@ -30,6 +30,8 @@ class Pile {
   }// students to write this, companion to toString()
 
   virtual void display() const = 0;  // for live game play, must override
+
+  Card topCard();
 };
 
 

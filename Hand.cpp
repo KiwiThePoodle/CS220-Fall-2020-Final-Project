@@ -11,3 +11,7 @@ void Hand::display() const {
   for ( ; i < 5; i++)
     std::cout << "--  ";
 }
+
+Hand::~Hand() {
+  delete hand;
+}

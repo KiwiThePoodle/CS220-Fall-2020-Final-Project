@@ -82,12 +82,11 @@ SkipBoGame::SkipBoGame(bool isS, int pCount, int stk, string file){
     String n = "player";
     name = n + std::to_string(i);//gives us player0, player1, and so on
 
-
-    /* need to create piles here
-       stock pile
-       4 discard piles as an array
-       hand pile
-    */
+    /* need to create piles here                note from James: I think first create a deck with all the cards in the game
+       stock pile                               (this should be a drawPile). Then, since drawPile has a method called topCard(),
+       4 discard piles as an array              you can call this to get a card from the drawPile and then put it in the sPile
+       hand pile                                or hPile. (the discard piles start out empty I believe)
+    */                                      //Also, I think the build piles and discard piles should be FaceUpPiles.
     Pile sPile = new Pile();
     Pile dPile[4];
     Hand hPile = new Hand();

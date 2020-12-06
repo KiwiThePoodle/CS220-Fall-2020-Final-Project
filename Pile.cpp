@@ -26,3 +26,9 @@ void Pile::readIn(std::istream & is) {
     pile.push_back(c);
   }
 }
+
+Card Pile::topCard() {
+  Card temp = pile.front();
+  pile.erase(pile.begin());
+  return temp;
+}
