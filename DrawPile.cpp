@@ -6,7 +6,7 @@ void DrawPile::display() const {
   std::cout << "[XX]/" << size();
 }
 
-~DrawPile() {
+DrawPile::~DrawPile() {
   delete drawPile;
 }
 

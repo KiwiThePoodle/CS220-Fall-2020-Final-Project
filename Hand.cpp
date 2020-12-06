@@ -13,5 +13,5 @@ void Hand::display() const {
 }
 
 Hand::~Hand() {
-  delete hand;
+  delete pile;
 }

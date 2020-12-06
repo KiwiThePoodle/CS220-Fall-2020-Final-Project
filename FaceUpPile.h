@@ -7,11 +7,11 @@
 
 class FaceUpPile {
  protected:
-  Pile faceUpPile;
+  Pile pile;
  public:
-  FaceUpPile() { }
+  FaceUpPile() { pile = new Pile(); }
 
-  FaceUpPile(Pile f) { faceUpPile = f }
+  FaceUpPile(Pile f) { pile = f; }
 
   virtual void display() const;
 

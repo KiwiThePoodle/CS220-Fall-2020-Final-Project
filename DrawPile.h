@@ -9,7 +9,7 @@ class DrawPile {
  protected:
   Pile drawPile;
  public:
-  DrawPile() { }
+  DrawPile() { drawPile = new Pile(); }
 
   DrawPile(Pile d) { drawPile = d; }
 

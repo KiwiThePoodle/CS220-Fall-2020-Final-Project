@@ -1,5 +1,5 @@
-#ifndef SKIPBOGAME_H
-#define SKIPBOGAME_H
+#ifndef _SKIPBOGAME_H
+#define _SKIPBOGAME_H
 
 #include <vector>
 #include <string>
@@ -51,7 +51,7 @@ public:
   void display() const;
 
   //above two were provided from starter code so I added them here
-}
+};
 
 
 #endif

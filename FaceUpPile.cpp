@@ -10,3 +10,6 @@ void FaceUpPile::display() const {
   std::cout << "/" << size();
 }
 
+FaceUpPile::~FaceUpPile() {
+  delete pile;
+}

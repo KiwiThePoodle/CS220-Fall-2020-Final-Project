@@ -4,19 +4,22 @@
 #include <iostream>
 #include "Card.h"
 #include "Pile.h"
-#include "FaceUpPile.h"
 
 class Hand {
  protected:
-  FaceUpPile hand;
+  Pile pile;
  public:
-  Hand() { }
+  Hand() { pile = new Pile(); }
 
-  Hand(FaceUpPile h) { hand = h; }
+  Hand(Pile h) { pile = h; }
 
   virtual void display() const;
 
   ~Hand();
+
+  int size() { return pile.size(); }
+
+  void add(Card c) { pile.addCard(c); }
 };
 
 #endif

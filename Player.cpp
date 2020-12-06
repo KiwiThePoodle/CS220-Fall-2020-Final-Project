@@ -93,13 +93,13 @@ Player::~Player() {   //deletes each pile for a player
   delete discard[1];
   delete discard[2];
   delete discard[3];
+  delete updatedDrawPile;
 }
 
 void Player::drawToHand() {                    //called at the start of player's turn, draws cards until hand is full
   int cardsToDraw = 5 - hand.size();
   for(int i = 0; i < cardsToDraw; i++) {
-    hand.addCard(/*insert card from drawpile*/);
-    /*remove that card from drawpile*/
+    hand.add(updatedDrawPile.topCard());   ///adds top card from draw pile to hand, *removes card from draw pile*
   }
 }
 
