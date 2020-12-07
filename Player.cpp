@@ -104,8 +104,12 @@ void Player::drawToHand() {                    //called at the start of player's
 }
 
 /*each method below should move a card from one pile to another pile*/   //not sure of the best way to implement yet
-void Player::handToDiscard(Card cd, char c) {
-  
+void Player::handToDiscard(int cardnum, int discardnum) {
+  cardnum = cardnum - 5;
+  Card temp = hand.pile[cardnum];
+  card.erase(card.begin() + cardnum);
+  discardnum -= 1;
+  discard[discardnum].addCard(temp);
 }
 
 void Player::stockpileToBuild(Card cd) {

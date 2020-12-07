@@ -49,7 +49,7 @@ class Player {
   //actions that a player can perform
   void drawToHand();
 
-  void handToDiscard(Card cd, char c);
+  void handToDiscard(int cardnum, int discardnum);
 
   void stockpileToBuild(Card cd);
 
