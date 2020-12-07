@@ -2,6 +2,7 @@
 //
 
 #include <iostream>
+#include "SkipBoGame.h"
 
 int main(int argc, char *argv[]) {
   bool shuffle;
