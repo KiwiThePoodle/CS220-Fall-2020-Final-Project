@@ -57,23 +57,23 @@ std::string SkipBoGame::toString() const {
 }
 
 SkipBoGame::SkipBoGame(bool isS, int pCount, int stk, string file){
-  turn = 0;
-  playerCount = pCount;
+  curp = 0;
+  nump = pCount;
   stock = stk;
   isShuffle = isS;
   end = false;
-  deck = new Pile();
+  draw = new Pile();
 
   
   ifstream deck0("deck0.txt");
   Pile tempDeck = new Pile();
   tempDeck.readIn(deck0);
-  deck = new drawPile(tempDeck);
+  draw = new drawPile(tempDeck);
   
   //need to make 4 piles for the build pile
   for (int i = 0; i < 4; i ++){
     Pile* p = new Pile();
-    builds[i] = p;
+    build[i] = p;
   }
   
   //need to generate deck, and draw cards for everyone, taking those cards out of the deck
@@ -82,11 +82,11 @@ SkipBoGame::SkipBoGame(bool isS, int pCount, int stk, string file){
     String n = "player";
     name = n + std::to_string(i);//gives us player0, player1, and so on
 
-    /* need to create piles here                note from James: I think first create a deck with all the cards in the game
-       stock pile                               (this should be a drawPile). Then, since drawPile has a method called topCard(),
-       4 discard piles as an array              you can call this to get a card from the drawPile and then put it in the sPile
-       hand pile                                or hPile. (the discard piles start out empty I believe)
-    */                                      //Also, I think the build piles and discard piles should be FaceUpPiles.
+    /* need to create piles here
+       stock pile
+       4 discard piles as an array
+       hand pile
+    */
     Pile sPile = new Pile();
     Pile dPile[4];
     Hand hPile = new Hand();
@@ -99,7 +99,7 @@ SkipBoGame::SkipBoGame(bool isS, int pCount, int stk, string file){
     
     Player* p = new Player(name, sPile, dPile, hPile);
 
-    players.push_back(p);
+    peep.push_back(p);
   }
   string saveFile = file;
 }
@@ -114,13 +114,13 @@ SkipBoGame::SkipBoGame(bool isS, string file){
   string trash;
   save >> trash;//dont care about this boolean, we want the one from the command line argument
 
-  save >> playerCount;
-  save >> turn;
+  save >> nump;
+  save >> curp;
 
   string tempString = "a";
   save >> tempString;
 
-  for (int i = 0; i < playerCount; i ++){
+  for (int i = 0; i < nump; i ++){
     string playerName;
     save >> playerName;
     
@@ -166,7 +166,7 @@ SkipBoGame::SkipBoGame(bool isS, string file){
     }
 
     Player* p = new Player(playerName, sp, disPiles, h);
-    players.push_back(p);
+    peep.push_back(p);
   }
   
   save >> tempString;
@@ -179,7 +179,7 @@ SkipBoGame::SkipBoGame(bool isS, string file){
     Card c = new Card(cardNum);
     deckPile.push_back(c);
   }
-  deck = new DrawPile(deckPile);
+  draw = new DrawPile(deckPile);
 
   for (int i6 = 0; i6 < 4; i6 ++){
     save >> tempString;
@@ -193,15 +193,15 @@ SkipBoGame::SkipBoGame(bool isS, string file){
       b.push_back(c);
       
     }
-    builds[i] = b;
+    build[i] = b;
   }
   
   
 }
 
 SkipBoGame::~SkipBoGame(){
-  for (int i = 0; i < players.size(); i ++){
-    delete players.at(i);
+  for (int i = 0; i < peep.size(); i ++){
+    delete peep.at(i);
   }
 }
 
@@ -213,5 +213,3 @@ void SkipBoGame::checkWin(Player* p){
 
 void SkipBoGame::play(){
 }
-
-

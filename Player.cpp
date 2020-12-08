@@ -50,35 +50,42 @@ std::string Player::toString() const {
 
 void Player::readIn(std::istream & is) {
   string playerName;
+  string temp;
   is >> playerName;   //reads first string as player name
   name = playerName;
   int size;   //size of each pile
   int cardNumber;
+  is >> temp;
   is >> size;   //first int found is stock pile size
   for(int i = 0; i < size; i++) {   //loop through stock size number of times
     is >> cardNumber;   //each int is a number representing a card
     stock.addCard(Card(cardNumber));   //add new cards to stock pile for each number
   }
+  is >> temp;
   is >> size;   //next int is hand pile size
   for(int i = 0; i < size; i++) {   //adds hand size number of cards to hand pile
     is >> cardNumber;
     hand.addCard(Card(cardNumber));
   }
+  is >> temp;
   is >> size;   //next int is discard[0] pile size
   for(int i = 0; i < size; i++) {
     is >> cardNumber;
     discard[0].addCard(Card(cardNumber));
   }
+  is temp;
   is >> size;   //next int is discard[1] pile size
   for(int i = 0; i < size; i++) {
     is >> cardNumber;
     discard[1].addCard(Card(cardNumber));
   }
+  is temp;
   is >> size;   //discard[2] pile size
   for(int i = 0; i < size; i++) {
     is >> cardNumber;
     discard[2].addCard(Card(cardNumber));
   }
+  is temp;
   is >> size;   //discard[3] pile size
   for(int i = 0; i < size; i++) {
     is >> cardNumber;

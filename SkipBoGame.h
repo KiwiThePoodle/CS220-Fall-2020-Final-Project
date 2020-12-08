@@ -13,14 +13,14 @@
 class SkipBoGame{
 
 private:
-  int turn;
-  int playerCount;
+  int curp;
+  int nump;
   int stock;
-  Pile builds[4];
-  DrawPile deck;
+  Pile build[4];
+  DrawPile draw;
   
   std::string saveFile;
-  std::vector<Player*> players;
+  std::vector<Player*> peep;
   
   bool isShuffle;
   bool end;//not sure if this is needed yet, currently im thinking it can be used to decide whether or not the game should end at the time
@@ -46,6 +46,8 @@ public:
 
   void play();//will need to take command line arguments, might alter this later to fit better with playTurn
 
+  string getCurrentPlayer() { return ("Player" + curp); }   //returns the current player's name
+  
   string toString() const;
 
   void display() const;
