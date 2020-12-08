@@ -18,6 +18,8 @@ class FaceUpPile {
   ~FaceUpPile();
 
   virtual void addCard(const Card& c) { pile.push_back(c); }
+
+  Card topCard();
 };
 
 #endif

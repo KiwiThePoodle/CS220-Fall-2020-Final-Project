@@ -13,3 +13,8 @@ void FaceUpPile::display() const {
 FaceUpPile::~FaceUpPile() {
   delete pile;
 }
+
+Card FaceUpPile::topCard() {
+  Card temp = drawPile.topCard();
+  return temp;
+}

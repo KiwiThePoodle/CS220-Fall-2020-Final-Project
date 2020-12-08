@@ -99,27 +99,30 @@ Player::~Player() {   //deletes each pile for a player
 void Player::drawToHand() {                    //called at the start of player's turn, draws cards until hand is full
   int cardsToDraw = 5 - hand.size();
   for(int i = 0; i < cardsToDraw; i++) {
-    hand.add(updatedDrawPile.topCard());   ///adds top card from draw pile to hand, *removes card from draw pile*
+    hand.add(updatedDrawPile.topCard());   //adds top card from draw pile to hand, *removes card from draw pile*
   }
 }
 
-/*each method below should move a card from one pile to another pile*/   //not sure of the best way to implement yet
-void Player::handToDiscard(int cardnum, int discardnum) {
-  cardnum = cardnum - 5;
-  Card temp = hand.pile[cardnum];
-  card.erase(card.begin() + cardnum);
-  discardnum -= 1;
-  discard[discardnum].addCard(temp);
+void Player::handToDiscard(int handNum, int discardNum) {   //moves card from hand to a discard pile
+  handNum -= 5;
+  Card temp = hand.pile[handNum];
+  hand.pile.erase(hand.pile.begin() + handNum);
+  discardNum -= 1;
+  discard[discardNum].addCard(temp);
 }
 
-void Player::stockpileToBuild(Card cd) {
-  
+Card Player::getStockPileCard() {   //returns top card of stock
+  return stock.topCard();
 }
 
-void Player::discardToBuild(Card cd, char c) {
-  
+Card Player::getDiscardPileCard(int discardNum) {   //returns top card of a discard pile
+  discardNum -= 1;
+  return discard{discardNum].topCard();
 }
 
-void Player::handToBUild(Card cd) {
-  
+Card Player::getHandPileCard(int handNum) {   //returns a card from hand
+  handNum -= 5;
+  Card temp = hand.pile[handNum};
+  hand.pile.erase(hand.pile.begin() + handNum);
+  return temp;
 }
