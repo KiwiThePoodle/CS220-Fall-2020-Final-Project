@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include "SkipBoGame.h"
+#include <string>
 
 int main(int argc, char *argv[]) {
   bool shuffle;
@@ -34,7 +35,34 @@ int main(int argc, char *argv[]) {
     }
     else {
       //continue the game, not sure how to do this
+      SkipBoGame game = new SkipBoGame(shuffle, argv[2]);
+
+      while(!game.checkWin()) {
+        std::cout << " >> " >> game.getCurrentPlayer << " turn next" << std::endl;
+        std::cout << "(p)lay, (s)ave, or (q)uit ? ";
+        std::string psq;
+        std::cin >> psq;
+        if(psq == "q") {
+          delete game;
+          std::cout << "thanks for playing" << endl;
+          return 0;
+        }
+        else if(psq == "s") {
+          std::string saveFile;
+          std::cout << "save filename: ";
+          std::cin >> saveFile;
+          game.save(saveFile);
+          delete game;
+          return 0;
+        }
+        else if(psq == "p") {
+          game.playTurn();
+        }
+      }
+      std::cout << "GAME OVER - " << game.getCurrentPlayer() << " wins!" << std::endl;
+      delete game;
     }
+    return 0;
   }
 
   if(argc == 5) {
@@ -63,6 +91,33 @@ int main(int argc, char *argv[]) {
     }
     else {
       //create a skipbogame object
+      SkipBoGame game = new SkipBoGame(shuffle, numPlayers, stockPileSize, argv[5]);
+      
+      while(!game.checkWin()) {
+	std::cout << " >> " >> game.getCurrentPlayer << " turn next" << std::endl;
+	std::cout << "(p)lay, (s)ave, or (q)uit ? ";
+	std::string psq;
+	std::cin >> psq;
+	if(psq == "q") {
+	  delete game;
+	  std::cout << "thanks for playing" << endl;
+	  return 0;
+	}
+	else if(psq == "s") {
+	  std::string saveFile;
+	  std::cout << "save filename: ";
+	  std::cin >> saveFile;
+	  game.save(saveFile);
+	  delete game;
+	  return 0;
+	}
+	else if(psq == "p") {
+	  game.playTurn();
+	}
+      }
+      std::cout << "GAME OVER - " << game.getCurrentPlayer() << " wins!" << std::endl;
+      delete game;
     }
     return 0;
   }
+}
