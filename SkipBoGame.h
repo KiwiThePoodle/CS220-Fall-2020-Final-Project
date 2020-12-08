@@ -1,5 +1,5 @@
 #ifndef _SKIPBOGAME_H
-#define _SKIPBOGAME_H
+0;136;0c#define _SKIPBOGAME_H
 
 #include <vector>
 #include <string>
@@ -38,6 +38,7 @@ public:
   ~SkipBoGame();
   //destructor, self explanatory
 
+  void displayBuild();//displays the build 
   void playTurn();//will play an entire turn out
   //UPDATE: This will use the current player and communicate with the command line for moves until move has indicated that the player's turn
   //is over then update current player. In the while loop for the function, prompt user for a move (checking if valid move), pass move to play
@@ -51,7 +52,7 @@ public:
   void save(std::string file);//saves the game to the file
   //UPDATE: save(string file) needs to be implemented
   
-  void play(std::string move);//will need to take command line arguments, might alter this later to fit better with playTurn
+  bool play(int p);//will need to take command line arguments, might alter this later to fit better with playTurn
   //UPDATE: Accepts a string that is a move, interprets move, and performs it, this is where it checks if a stock pile is empty
   //(after the move), if a stock pile is empty then change boolean used by checkWin() to true
 

@@ -11,6 +11,7 @@
 #include "Card.h"
 #include "Player.h"
 
+using std::endl;
 /* for live game play - must not change format!
 
 drawPile  build_a  build_b  build_c  build_d
@@ -45,7 +46,11 @@ Build_d [display]
 std::string SkipBoGame::toString() const {
   std::stringstream result;
   int idx;
-  result << draw.getRand() << " " << nump << " " << curp << "\n";
+  
+  //result << draw.getRand() << " " << nump << " " << curp << "\n";
+
+  result << isShuffle << " " << nump << " " << curp << "\n";//not sure what getRand was so I changed it, lmk if this is bad
+  
   for (int i = 0; i < nump; ++i) {
     idx = (curp+i) % nump;
     result << peep[idx].toString();
@@ -215,13 +220,104 @@ SkipBoGame::~SkipBoGame(){
 }
 
 void SkipBoGame::playTurn(){
+
+  int playerToGo = curp%players.size();
+  bool discard = false;
+  players[playerToGo]->display();
+
+  
+  //if cards in hand is less than 5, draw 5
+  while(players[playerToGo]->handSize() < 5){
+    players[playerToGo]->drawToHand();
+  }
+  
+  while(!discard){
+    display();
+    discard = play(playerToGo);  
+    
+  }
+  curp ++;
 }
 
 bool SkipBoGame::checkWin(){
 }
 
-void SkipBoGame::play(){
+bool SkipBoGame::play(int p){
+  cout << "(m)ove [start] [end] or (d)raw ? ";
+  std::string action;
+  std::string from;
+  std::string to;
+
+  cin >> action >> from >> to;
+  cout << endl;
+
+  int f;
+  int t;
+  bool built = false;
+  int b;
+  
+  if (action != "d"){
+    f = std::stoi(from);
+    if (to == "a" || to == "b" || to == "c" || to == "d"){
+      built = true;
+      if (to == "a"){b = 0;}
+      if (to == "b"){b = 1;}
+      if (to == "c"){b = 2;}
+      if (to == "d"){b = 3;}
+    }else{
+      t = std::stoi(to);
+    }
+  }
+  
+  
+  if (action == "d"){
+    //draw
+    if (players[p]->handSize() == 0){
+      for (int i = 0; i < 5; i ++){
+	players[p]->drawToHand();
+      }
+    }
+  }
+  else if (action == "m"){
+    Card c = getHandPileCard(f-4);
+    
+    //move
+   
+    
+    if (t <= 4 && t >= 1){
+      //move to discard
+      handToDiscard(f, t);
+      return true;
+    }
+    
+    build[b].addCard(c);
+    
+  }
+  return false;
 }
 
 void SkipBoGame::save(std::string file){
+  
+  //int turn = curp;
+  std::ofstream saveFile(file);
+  /*saveFile << isShuffle << " " << players.size() << " " << curp << endl;
+  for (int i = curp; i < nump + curp; i ++){
+    int playerN = i;
+    if (i > nump-1){
+      playerN -= nump;
+    }
+    std::string p = players[playerN]->toString();
+    saveFile << p << endl;//might need hand tostring unless it inherits from pile?
+    
+  }
+
+  saveFile << draw.toString() << endl;
+
+  for (int i = 0; i < 4; i ++){
+    saveFile << build[i]->toString() << endl;
+  }
+  */
+  saveFile << toString();
+
+
 }
