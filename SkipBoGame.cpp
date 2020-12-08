@@ -240,6 +240,11 @@ void SkipBoGame::playTurn(){
 }
 
 bool SkipBoGame::checkWin(){
+  for (int i = 0; i < players.size(); i ++){
+    if (players[i]->getStockSize == 0){//need this function
+      //this player wins
+    }
+  }
 }
 
 bool SkipBoGame::play(int p){
@@ -279,8 +284,14 @@ bool SkipBoGame::play(int p){
     }
   }
   else if (action == "m"){
-    Card c = getHandPileCard(f-4);
-    
+    Card c;
+    if (f == 0){
+      c = getStockPileCard();
+    }else if (f >= 1 && f <= 4){
+      c = getDiscardPileCard(f);
+    }else if (f >= 5 && f <= 9){
+      c = getHandPileCard(f);
+    }
     //move
    
     
