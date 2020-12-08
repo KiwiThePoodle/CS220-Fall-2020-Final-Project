@@ -49,8 +49,8 @@ std::string Player::toString() const {
 }
 
 void Player::readIn(std::istream & is) {
-  string playerName;
-  string temp;
+  std::string playerName;
+  std::string temp;
   is >> playerName;   //reads first string as player name
   name = playerName;
   int size;   //size of each pile
@@ -104,9 +104,9 @@ Player::~Player() {   //deletes each pile for a player
 }
 
 void Player::drawToHand() {                    //called at the start of player's turn, draws cards until hand is full
-  int cardsToDraw = 5 - hand.size();
+  int cardsToDraw = 5 - hand.pile.size();
   for(int i = 0; i < cardsToDraw; i++) {
-    hand.add(updatedDrawPile.topCard());   //adds top card from draw pile to hand, *removes card from draw pile*
+    hand.pile.add(updatedDrawPile.topCard());   //adds top card from draw pile to hand, *removes card from draw pile*
   }
 }
 

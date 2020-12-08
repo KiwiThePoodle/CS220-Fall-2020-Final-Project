@@ -1,5 +1,7 @@
 #include <iostream>
 #include <sstream>
+#include <fstream>
+#include <cstdlib>
 #include "SkipBoGame.h"
 
 #include <string>
@@ -57,10 +59,10 @@ std::string SkipBoGame::toString() const {
 }
 
 SkipBoGame::SkipBoGame(bool isS, int pCount, int stk, string file) {
-  if(isS) {
+  if(isS) {    //if shuffle is on, random first player
     curp = rand() % pCount;
   }
-  else {
+  else {   //else first player is 0
     curp = 0;
   }
   nump = pCount;
@@ -70,11 +72,11 @@ SkipBoGame::SkipBoGame(bool isS, int pCount, int stk, string file) {
   draw = new Pile();
 
   
-  ifstream deck0("deck0.txt");
+  std::ifstream deck0("deck0.txt");
   Pile tempDeck = new Pile();
   tempDeck.readIn(deck0);
   draw = new drawPile(tempDeck);
-  if(isS) {
+  if(isS) {   //if shuffle is on, shuffle the draw pile
     std::random_shuffle(draw.pile.begin(), draw.pile.end());
   }
   
@@ -87,49 +89,48 @@ SkipBoGame::SkipBoGame(bool isS, int pCount, int stk, string file) {
   //need to generate deck, and draw cards for everyone, taking those cards out of the deck
   for (int i = 0; i < pCount; i ++){
     //generate players
-    String n = "player";
-    name = n + std::to_string(i);//gives us player0, player1, and so on
-
-    /* need to create piles here
-       stock pile
-       4 discard piles as an array
-       hand pile
-    */
-    Pile sPile = new Pile();
-    Pile dPile[4];
-    Hand hPile = new Hand();
-    //not properly constructed yet, Hand needs to be written
+    std::string n = "Player";
+    std::string name = n + std::to_string(i);//gives us player0, player1, and so on
     
-    for (int i2 = 0; i2 < 4; i2 ++){
-      Pile p = new Pile();
-      dPile[i] = p;
-    }
-    
-    Player* p = new Player(name, sPile, dPile, hPile);
+    Player* p = new Player(name);
 
     peep.push_back(p);
   }
-  string saveFile = file;
+
+  FaceUpPile[] stocks = new FaceUpPile[nump];
+  for(int i = 0; i < stock; i++) {
+    for(int j = 0; j < nump; j++) {
+      stocks[j].addCard(draw.topCard());
+    }
+  }
+
+  int index = curp;
+  for(int i = 0; i < nump; i++) {
+    peep[index].setStockPile(stocks[i]);
+    index = (index + 1) % nump;
+  }
+  
+  std::string saveFile = file;
 }
 
-SkipBoGame::SkipBoGame(bool isS, string file){
+SkipBoGame::SkipBoGame(bool isS, std::string file){
   isShuffle = isS;
 
   end = false;
   
-  ifstream save(file);
+  std::ifstream save(file);
 
-  string trash;
+  std::string trash;
   save >> trash;//dont care about this boolean, we want the one from the command line argument
 
   save >> nump;
   save >> curp;
 
-  string tempString = "a";
+  std::string tempString = "a";
   save >> tempString;
 
   for (int i = 0; i < nump; i ++){
-    string playerName;
+    std::string playerName;
     save >> playerName;
     
     save >> tempString; //should get rid of word "stock"
@@ -216,8 +217,11 @@ SkipBoGame::~SkipBoGame(){
 void SkipBoGame::playTurn(){
 }
 
-void SkipBoGame::checkWin(Player* p){
+bool SkipBoGame::checkWin(){
 }
 
 void SkipBoGame::play(){
+}
+
+void SkipBoGame::save(std::string file){
 }

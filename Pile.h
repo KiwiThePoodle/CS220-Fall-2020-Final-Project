@@ -1,8 +1,10 @@
 #ifndef _PILE_H
 #define _PILE_H
 
+#include <string>
 #include <vector>
 #include <iostream>
+#include <fstream>
 #include "Card.h"
 
 class Pile {
