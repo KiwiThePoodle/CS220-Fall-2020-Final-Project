@@ -56,8 +56,13 @@ std::string SkipBoGame::toString() const {
   return result.str();
 }
 
-SkipBoGame::SkipBoGame(bool isS, int pCount, int stk, string file){
-  curp = 0;
+SkipBoGame::SkipBoGame(bool isS, int pCount, int stk, string file) {
+  if(isS) {
+    curp = rand() % pCount;
+  }
+  else {
+    curp = 0;
+  }
   nump = pCount;
   stock = stk;
   isShuffle = isS;
@@ -69,6 +74,9 @@ SkipBoGame::SkipBoGame(bool isS, int pCount, int stk, string file){
   Pile tempDeck = new Pile();
   tempDeck.readIn(deck0);
   draw = new drawPile(tempDeck);
+  if(isS) {
+    std::random_shuffle(draw.pile.begin(), draw.pile.end());
+  }
   
   //need to make 4 piles for the build pile
   for (int i = 0; i < 4; i ++){

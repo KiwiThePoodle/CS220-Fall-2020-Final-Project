@@ -21,7 +21,7 @@ private:
   
   std::string saveFile;
   std::vector<Player*> peep;
-  
+
   bool isShuffle;
   bool end;//not sure if this is needed yet, currently im thinking it can be used to decide whether or not the game should end at the time
 
