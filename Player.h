@@ -48,7 +48,7 @@ class Player {
 
   void setStockPile(FaceUpPile stock_pile) { stock = stock_pile; }
 
-  void updateDrawPile(Drawpile d) { updatedDrawPile = d; }   //called at the start of each players turn to update the drawPile for the player to access
+  void updateDrawPile(DrawPile d) { updatedDrawPile = d; }   //called at the start of each players turn to update the drawPile for the player to access
 
   DrawPile getUpdatedDrawPile() { return updatedDrawPile; };   //called at the end of each players turn to update the drawPile in the game
 
