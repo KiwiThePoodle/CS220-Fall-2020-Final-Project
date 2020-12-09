@@ -13,9 +13,9 @@ class DrawPile : public Pile {
 
   DrawPile(std::vector<Card> d) { Pile(d); }
 
-  virtual void display() const;
+  void display() const;
 
-  ~DrawPile();
+  //~DrawPile();
 
   //Card topCard();
 };
