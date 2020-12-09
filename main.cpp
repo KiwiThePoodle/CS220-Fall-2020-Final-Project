@@ -32,7 +32,7 @@ int main(int argc, char *argv[]) {
 
   if(argc == 3) {
     std::ifstream savedGame(argv[2]);
-    if(!ifile.is_open()) {
+    if(!savedGame.is_open()) {
       cout << "invalid program usage: can't open input game file" << endl;
       return 1;
     }
