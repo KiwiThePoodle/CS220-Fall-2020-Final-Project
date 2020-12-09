@@ -19,10 +19,10 @@ int main(int argc, char *argv[]) {
     return 0;
   }
 
-  if(string(argv[1]) == "false") {
+  if(std::string(argv[1]) == "false") {
     shuffle = false;
   }
-  else if(string(argv[1]) == "true") {
+  else if(std::string(argv[1]) == "true") {
     shuffle = true;
   }
   else {
