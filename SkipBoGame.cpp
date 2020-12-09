@@ -289,22 +289,22 @@ bool SkipBoGame::play(int p){
   else if (action == "m"){
     Card c;
     if (f == 0){
-      c = getStockPileCard();
+      c = peep[p].getStockPileCard();
     }else if (f >= 1 && f <= 4){
-      c = getDiscardPileCard(f);
+      c = peep[p].getDiscardPileCard(f);
     }else if (f >= 5 && f <= 9){
-      c = getHandPileCard(f);
+      c = peep[p].getHandPileCard(f);
     }
     //move
    
     
     if (t <= 4 && t >= 1){
       //move to discard
-      handToDiscard(f, t);
+      peep[p].handToDiscard(f, t);
       return true;
     }
     
-    build[b].addCard(c);
+    build[b]->addCard(c);
     
   }
   return false;
