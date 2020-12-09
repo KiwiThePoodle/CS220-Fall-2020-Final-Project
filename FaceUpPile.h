@@ -12,7 +12,7 @@ class FaceUpPile : public Pile{
   FaceUpPile() { //Pile();
   }
 
-  FaceUpPile(std::vector<Card> f) { Pile(f); }
+  FaceUpPile(std::vector<Card> f) { pile = f;}
 
   void display() const;
 
