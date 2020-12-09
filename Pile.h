@@ -37,8 +37,9 @@ class Pile {
 
   Card removeCard(int cardIndex){
      Card c = pile.at(cardIndex);
-     delete pile.at(cardIndex);
-     return c;
+     //delete pile.at(cardIndex);
+    pile.erase(pile.begin() + cardIndex);  
+   return c;
   }
  
   void readIn(std::istream & is){
