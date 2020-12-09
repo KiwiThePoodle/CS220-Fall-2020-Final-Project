@@ -20,7 +20,7 @@ class Pile {
  
   ~Pile(){
      for(int i = 0; i < pile.size(); i ++){
-        delete vector.at(i);
+        delete pile.at(i);
      }
   }
 
@@ -30,6 +30,10 @@ class Pile {
 
   std::string toString() const;  // for saving state
 
+  void removeCard(int cardIndex){
+     delete(pile.at(cardIndex));
+  }
+ 
   void readIn(std::istream & is){
 
     while(!is.eof()){
