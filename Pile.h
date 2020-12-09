@@ -20,9 +20,10 @@ class Pile {
   Pile(vector<Card> p) { pile = p; }
  
   ~Pile(){
-     for(int i = 0; i < pile.size(); i ++){
+     /*for(int i = 0; i < pile.size(); i ++){
         delete pile.at(i);
-     }
+     }*/
+   delete (pile);
   }
 
   void shuffle(){
