@@ -149,7 +149,7 @@ SkipBoGame::SkipBoGame(bool isS, std::string file){
       int cardNum;
       save >> cardNum;
       Card* c = new Card(cardNum);
-      sp.push_back(c);
+      sp->push_back(c);
     }
 
     save >> tempString; //gets rid of "Hand"
@@ -159,11 +159,11 @@ SkipBoGame::SkipBoGame(bool isS, std::string file){
 
     int handSize;
     save >> handSize;
-    Hand h = new Hand();
+    Hand* h = new Hand();
     for (int i3 = 0; i3 < handSize; i3++){
       int cardNum;
       save >> cardNum;
-      Card c = new Card(cardNum);
+      Card* c = new Card(cardNum);
       h.push_back(c);//not sure how hand works yet, just using this as filler
     }
 
