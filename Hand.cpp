@@ -12,6 +12,6 @@ void Hand::display() const {
     std::cout << "--  ";
 }
 
-Hand::~Hand() {
+/*Hand::~Hand() {
   delete pile;
-}
+}*/
