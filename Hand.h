@@ -5,13 +5,13 @@
 #include "Card.h"
 #include "Pile.h"
 
-class Hand {
+class Hand : public Pile {
  protected:
   Pile pile;
  public:
   Hand() { pile = new Pile(); }
 
-  Hand(Pile h) { pile = h; }
+  Hand(vector<Card>h) { pile = h; }
 
   virtual void display() const;
 
