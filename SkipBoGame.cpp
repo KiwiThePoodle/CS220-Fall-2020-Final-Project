@@ -136,7 +136,7 @@ SkipBoGame::SkipBoGame(bool isS, std::string file){
     save >> tempString; //should get rid of word "stock"
     int stockSize;
     save >> stockSize;
-    Pile sp = new Pile;
+    FaceUpPile sp = new FaceUpPile;
     for (int i2 = 0; i2 < stockSize; i2 ++){
       int cardNum;
       save >> cardNum;
@@ -159,9 +159,9 @@ SkipBoGame::SkipBoGame(bool isS, std::string file){
       h.push_back(c);//not sure how hand works yet, just using this as filler
     }
 
-    Pile disPiles[4];
+    FaceUpPile disPiles[4];
     for (int d = 0; d < 4; d++){
-      Pile dp;
+      FaceUpPile dp;
       save >> tempString;//should be discard Pile 0 1 2 3
       int dSize;
       save >> dSize;
