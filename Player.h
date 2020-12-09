@@ -24,11 +24,13 @@ class Player {
     name = player_name;          //in a new game, everything should start out empty except for player name, stock pile for each player will be filled
     stock = new FaceUpPile();    //soon after
     
-   discard[0] = new FaceUpPile();
-   discard[1] = new FaceUpPile();
-    discard[2] = new FaceUpPile();
-    discard[3] = new FaceUpPile();
+   FaceUpPile discardP[4];
+   discardP[0] = new FaceUpPile();
+   discardP[1] = new FaceUpPile();
+    discardP[2] = new FaceUpPile();
+    discardP[3] = new FaceUpPile();
     
+   discard = discardP;
     
     
     handPile = new Hand();
