@@ -15,6 +15,6 @@ FaceUpPile::~FaceUpPile() {
 }
 
 Card FaceUpPile::topCard() {
-  Card temp = drawPile.topCard();
+  Card temp = pile.topCard();
   return temp;
 }

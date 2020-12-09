@@ -51,11 +51,11 @@ class Player {
   DrawPile getUpdatedDrawPile() { return updatedDrawPile; };   //called at the end of each players turn to update the drawPile in the game
 
   int handSize() {   //can be used to check when player has zero cards
-    return hand.size();
+    return hand.pile.size();
   }
 
   int stockSize() {   //can be used to check if a player has won
-    return stock.size();
+int size() const { return pile.size(); }    return stock.size();
   }
   
   //methods used to get the value of the card, should help with checking if cards can be moved to build pilea
