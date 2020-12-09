@@ -54,15 +54,15 @@ int main(int argc, char *argv[]) {
           std::string saveFile;
           cout << "save filename: ";
           std::cin >> saveFile;
-          game.save(saveFile);
+          game->save(saveFile);
           delete game;
           return 0;
         }
         else if(psq == "p") {
-          game.playTurn();
+          game->playTurn();
         }
       }
-      cout << "GAME OVER - " << game.getCurrentPlayer() << " wins!" << endl;
+      cout << "GAME OVER - " << game->getCurrentPlayer() << " wins!" << endl;
       delete game;
     }
     return 0;
