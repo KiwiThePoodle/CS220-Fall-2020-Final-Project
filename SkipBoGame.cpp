@@ -58,7 +58,7 @@ std::string SkipBoGame::toString() const {
   return result.str();
 }
 
-SkipBoGame::SkipBoGame(bool isS, int pCount, int stk, string file) {
+SkipBoGame::SkipBoGame(bool isS, int pCount, int stk, std::string file) {
   if(isS) {    //if shuffle is on, random first player
     curp = rand() % pCount;
   }
