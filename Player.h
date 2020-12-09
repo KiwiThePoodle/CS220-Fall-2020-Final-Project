@@ -74,7 +74,7 @@ class Player {
   int getHandCardValue(int handNum) {   //value of a specific hand card
     handNum -= 5;
     std::vector<Card> temp = hand.getPile();
-   return temp.at(handNum);
+   return temp.at(handNum).getValue();
   }
 
   //methods that help a player perform a move
