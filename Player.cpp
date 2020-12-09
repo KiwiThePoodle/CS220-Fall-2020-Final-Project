@@ -7,7 +7,7 @@
 void Player::display() const {
   std::cout << "Current ";
   std::cout << name << ":  Stock{0}: " ;
-  stock.display();
+  stock->display();
   std::cout << std::endl;
   std::cout << "   Discards{1-4}: ";
   for (int i = 0; i < 4; ++i) {
