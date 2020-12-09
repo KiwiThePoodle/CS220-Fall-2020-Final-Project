@@ -14,7 +14,7 @@
 class Player {
  protected:
   std::string name;
-  FaceUpPile stock;
+  FaceUpPile* stock;
   FaceUpPile* discard/*[4]*/;
   
  Hand handPile;
