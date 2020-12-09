@@ -16,7 +16,8 @@ class Player {
   std::string name;
   FaceUpPile stock;
   FaceUpPile* discard/*[4]*/;
-  Hand handPile;
+  class Hand{};//??? maybe? 
+ Hand handPile;
   DrawPile updatedDrawPile;   //used so a player can access the drawPile and update it as well
  public:
   Player(std::string player_name) {   //blank player
@@ -26,6 +27,7 @@ class Player {
     discard[1] = new FaceUpPile();
     discard[2] = new FaceUpPile();
     discard[3] = new FaceUpPile();
+   
     handPile = new Hand();
     updatedDrawPile = new DrawPile();
   }
