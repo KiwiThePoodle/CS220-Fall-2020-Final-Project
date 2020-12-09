@@ -12,7 +12,7 @@ class DrawPile : public Pile {
   DrawPile() { //Pile();
   }
 
-  DrawPile(std::vector<Card> d) { Pile(d); }
+  DrawPile(std::vector<Card> d) { pile = d; }
 
   void display() const;
 
