@@ -77,7 +77,7 @@ SkipBoGame::SkipBoGame(bool isS, int pCount, int stk, string file) {
   tempDeck.readIn(deck0);
   draw = new DrawPile(tempDeck);
   if(isS) {   //if shuffle is on, shuffle the draw pile
-    std::random_shuffle(draw.pile.begin(), draw.pile.end());
+    draw.shuffle();
   }
   
   //need to make 4 piles for the build pile
