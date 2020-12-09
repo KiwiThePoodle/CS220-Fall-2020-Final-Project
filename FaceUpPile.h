@@ -10,6 +10,7 @@ class FaceUpPile : public Pile{
   //Pile pile;
  public:
   FaceUpPile() { //Pile();
+   pile = std::vector<Card>;
   }
 
   FaceUpPile(std::vector<Card> f) { pile = f;}
