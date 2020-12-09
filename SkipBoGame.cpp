@@ -211,14 +211,14 @@ SkipBoGame::SkipBoGame(bool isS, std::string file){
       b.push_back(*c); 
     }
     FaceUpPile* bd = new FaceUpPile(b);
-    build[i] = bd;
+    build[i6] = bd;
   }
   
   
 }
 
 SkipBoGame::~SkipBoGame(){
-  for (int i = 0; i < peep.size(); i ++){
+  for (int i = 0; i < (int)peep.size(); i ++){
     delete peep.at(i);
   }
 }
