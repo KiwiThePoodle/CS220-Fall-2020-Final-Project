@@ -86,6 +86,7 @@ SkipBoGame::SkipBoGame(bool isS, int pCount, int stk, string file) {
     build[i] = p;
   }
   
+	
   //need to generate deck, and draw cards for everyone, taking those cards out of the deck
   for (int i = 0; i < pCount; i ++){
     //generate players
@@ -96,6 +97,7 @@ SkipBoGame::SkipBoGame(bool isS, int pCount, int stk, string file) {
 
     peep.push_back(p);
   }
+  
   
 
   FaceUpPile[] stocks = new FaceUpPile[nump];
