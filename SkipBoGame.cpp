@@ -102,17 +102,16 @@ SkipBoGame::SkipBoGame(bool isS, int pCount, int stk, std::string file) {
   }
   
   
-  int x = nump;
-  FaceUpPile stocks[x];
+  std::vector<FaceUpPile> stocks;
   for(int i = 0; i < stock; i++) {
     for(int j = 0; j < nump; j++) {
-      stocks[j].addCard(draw.topCard());
+      stocks.push_back(draw.topCard());
     }
   }
 
   int index = curp;
   for(int i = 0; i < nump; i++) {
-    peep[index].setStockPile(stocks[i]);
+    peep[index]->setStockPile(stocks.at[i]);
     index = (index + 1) % nump;
   }
   
