@@ -5,6 +5,7 @@
 #include <vector>
 #include <iostream>
 #include <fstream>
+#include <algorithm>
 #include "Card.h"
 
 using std::vector;
@@ -24,6 +25,10 @@ class Pile {
      }
   }
 
+  void shuffle(){
+     std::random_shuffle(pile.begin(), pile.end());
+  }
+ 
   int size() const { return pile.size(); }
 
   virtual void addCard(const Card& c) { pile.push_back(c); }
