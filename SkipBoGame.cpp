@@ -207,8 +207,8 @@ SkipBoGame::SkipBoGame(bool isS, std::string file){
     for (int i7 = 0; i7 < buildSize; i7 ++){
       int cardNum;
       save >> cardNum;
-      Card c = new Card(cardNum);
-      b.push_back(c); 
+      Card* c = new Card(cardNum);
+      b.push_back(*c); 
     }
     FaceUpPile* bd = new FaceUpPile(b);
     build[i] = bd;
