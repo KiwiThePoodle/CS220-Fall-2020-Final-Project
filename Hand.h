@@ -10,6 +10,7 @@ class Hand : public Pile {
   //Pile pile;
  public:
   Hand() { //Pile();
+   pile = vector<Card>;
   }
 
   Hand(std::vector<Card> h) { pile = h; }
