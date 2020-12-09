@@ -58,7 +58,7 @@ public:
   //UPDATE: Accepts a string that is a move, interprets move, and performs it, this is where it checks if a stock pile is empty
   //(after the move), if a stock pile is empty then change boolean used by checkWin() to true
 
-  std::string getCurrentPlayer() { return ("Player" + curp); }   //returns the current player's name
+  std::string getCurrentPlayer() { return ("Player" + std::to_string(curp)); }   //returns the current player's name
   
   std::string toString() const;
 
