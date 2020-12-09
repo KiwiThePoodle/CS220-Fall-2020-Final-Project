@@ -6,22 +6,22 @@
 #include "Pile.h"
 
 class FaceUpPile {
- protected:
-  Pile pile;
+ //protected:
+  //Pile pile;
  public:
-  FaceUpPile() { pile = new Pile(); }
+  //FaceUpPile() { pile = new Pile(); }
 
-  FaceUpPile(Pile f) { pile = f; }
+  FaceUpPile(std::vector<Card> f) { Pile(f); }
 
-  virtual void display() const;
+  void display() const;
 
-  ~FaceUpPile();
+  //~FaceUpPile();
 
-  virtual void addCard(const Card& c) { pile.push_back(c); }
+  //virtual void addCard(const Card& c) { pile.push_back(c); }
 
-  Card topCard();
+  //Card topCard();
 
-  int size() { return pile.size(); }
+  //int size() { return pile.size(); }
 };
 
 #endif
