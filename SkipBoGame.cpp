@@ -23,11 +23,11 @@ void SkipBoGame::display() const {
   draw.display();
   std::cout << "  Build Piles: ";
   for (int j = 0; j < 4; j++) {
-    build[j].display();
+    build[j]->display();
     std::cout << " ";
   }
   std::cout << std::endl;
-  peep[curp].display();
+  peep[curp]->display();
 }
 
 /* for saving state - must not change format!
