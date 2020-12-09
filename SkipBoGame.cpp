@@ -164,7 +164,7 @@ SkipBoGame::SkipBoGame(bool isS, std::string file){
       int cardNum;
       save >> cardNum;
       Card* c = new Card(cardNum);
-      h.push_back(c);//not sure how hand works yet, just using this as filler
+      h->push_back(c);//not sure how hand works yet, just using this as filler
     }
 
     FaceUpPile disPiles[4];
@@ -176,7 +176,7 @@ SkipBoGame::SkipBoGame(bool isS, std::string file){
       for (int i4 = 0; i4 < dSize; i4++){
 	int cardNum;
 	save >> cardNum;
-	Card c = new Card(cardNum);
+	Card* c = new Card(cardNum);
 	dp.push_back(c);
       }
       disPiles[i] = dp;
