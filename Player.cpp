@@ -73,19 +73,19 @@ void Player::readIn(std::istream & is) {
     is >> cardNumber;
     discard[0].addCard(Card(cardNumber));
   }
-  is temp;
+  is >> temp;
   is >> size;   //next int is discard[1] pile size
   for(int i = 0; i < size; i++) {
     is >> cardNumber;
     discard[1].addCard(Card(cardNumber));
   }
-  is temp;
+  is >> temp;
   is >> size;   //discard[2] pile size
   for(int i = 0; i < size; i++) {
     is >> cardNumber;
     discard[2].addCard(Card(cardNumber));
   }
-  is temp;
+  is >> temp;
   is >> size;   //discard[3] pile size
   for(int i = 0; i < size; i++) {
     is >> cardNumber;
