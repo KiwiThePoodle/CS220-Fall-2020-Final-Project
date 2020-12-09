@@ -123,7 +123,7 @@ Card Player::getStockPileCard() {   //returns top card of stock
 
 Card Player::getDiscardPileCard(int discardNum) {   //returns top card of a discard pile
   discardNum -= 1;
-  return discard{discardNum].topCard();
+  return discard[discardNum].topCard();
 }
 
 Card Player::getHandPileCard(int handNum) {   //returns a card from hand
