@@ -35,8 +35,10 @@ class Pile {
 
   std::string toString() const;  // for saving state
 
-  void removeCard(int cardIndex){
+  Card removeCard(int cardIndex){
+     Card c = pile.at(cardIndex);
      delete pile.at(cardIndex);
+     return c;
   }
  
   void readIn(std::istream & is){
