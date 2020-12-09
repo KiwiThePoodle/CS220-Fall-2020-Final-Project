@@ -9,7 +9,7 @@ class FaceUpPile : public Pile{
  //protected:
   //Pile pile;
  public:
-  FaceUpPile() { Pile();}
+  FaceUpPile() { pile = vector<Card>{};}
   // pile = std::vector<Card>;
   
 
