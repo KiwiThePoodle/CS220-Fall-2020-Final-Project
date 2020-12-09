@@ -70,32 +70,32 @@ int main(int argc, char *argv[]) {
   }
 
   if(argc == 5) {
-    if(atoi(argv[3]) > 6 || atoi(argv[3]) < 2) {
+    if(atoi(argv[2]) > 6 || atoi(argv[2]) < 2) {
       cout << "invalid program usage: num players must be 2-6" << endl;
       return 1;
     }
     else {
-      numPlayers = atoi(argv[3]);
+      numPlayers = atoi(argv[2]);
       cout << "num players is " << numPlayers << endl;
     }
 
-    if((numPlayers == 6 && atoi(argv[4]) > 20) || (numPlayers <= 5 && atoi(argv[4]) > 30)) { //not exactly sure its supposed to be 162
+    if((numPlayers == 6 && atoi(argv[3]) > 20) || (numPlayers <= 5 && atoi(argv[3]) > 30)) { //not exactly sure its supposed to be 162
       cout << "invalid program usage: bad stock size" << endl;
       return 1;
     }
     else {
-      stockPileSize = atoi(argv[4]);
+      stockPileSize = atoi(argv[3]);
       cout << "stock size is " << stockPileSize << endl;
     }
 
-    std::ifstream deckStartFile(argv[5]);
+    std::ifstream deckStartFile(argv[4]);
     if(!deckStartFile.is_open()) {
       cout << "invalid program usage: can't open deck file" << endl;
       return 1;
     }
     else {
       //create a skipbogame object
-      SkipBoGame* game = new SkipBoGame(shuffle, numPlayers, stockPileSize, argv[5]);
+      SkipBoGame* game = new SkipBoGame(shuffle, numPlayers, stockPileSize, argv[4]);
       
       while(!game->checkWin()) {
 	cout << " >> " << game->getCurrentPlayer() << " turn next" << endl;
