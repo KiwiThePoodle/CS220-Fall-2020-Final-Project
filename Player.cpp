@@ -7,7 +7,7 @@
 void Player::display() const {
   std::cout << "Current ";
   std::cout << name << ":  Stock{0}: " ;
-  stock->display();
+  stock->display(); //using pointers now
   std::cout << std::endl;
   std::cout << "   Discards{1-4}: ";
   for (int i = 0; i < 4; ++i) {
@@ -16,7 +16,7 @@ void Player::display() const {
   }
   std::cout << std::endl;
   std::cout << "   Hand{5-9}: ";
-  hand.display();
+  handPile->display(); //using pointers now
   std::cout << std::endl;
 }
 
