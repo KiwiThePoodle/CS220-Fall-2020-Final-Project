@@ -7,7 +7,7 @@ DEBUGGING_FLAGS = -g -O0
 CFLAGS = $(CONSERVATIVE_FLAGS) $(DEBUGGING_FLAGS)
 
 skipbo: main.o SkipBoGame.o Card.o DrawPile.o FaceUpPile.o Hand.o Pile.o Player.o
-	$(CC) -o skipbo main.o SkipBoGame.o Card.o DrawPile.o FaceUpPile.o Hand.o Player.o
+	$(CC) -o skipbo main.o SkipBoGame.o Card.o DrawPile.o FaceUpPile.o Hand.o Player.o Pile.o
 
 main.o: main.cpp SkipBoGame.h
 	$(CC) $(CFLAGS) -c main.cpp
