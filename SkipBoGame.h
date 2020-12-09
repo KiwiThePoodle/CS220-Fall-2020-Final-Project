@@ -29,7 +29,7 @@ private:
 
 public:
   
-  SkipBoGame(bool isS /*shuffle*/, int pCount, int stk /*stock*/; std::string file);
+  SkipBoGame(bool isS /*shuffle*/, int pCount, int stk /*stock*/, std::string file);
   //constructor for game given shuffle bool, player count, stock, and file for fresh save
   //probably need to start creating player objects and stuff here
 
