@@ -49,7 +49,7 @@ class Player {
 
   ~Player();   //destructor
 
-  void setStockPile(FaceUpPile* stock_pile) { stock = stock_pile; }
+  void addToStockPile(Card c) { stock.addCard(c); }
 
   void updateDrawPile(DrawPile* d) { updatedDrawPile = d; }   //called at the start of each players turn to update the drawPile for the player to access
 
