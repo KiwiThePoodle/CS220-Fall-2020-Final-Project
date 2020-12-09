@@ -11,7 +11,6 @@
 #include "Card.h"
 #include "Player.h"
 
-using std::endl;
 /* for live game play - must not change format!
 
 drawPile  build_a  build_b  build_c  build_d
@@ -46,11 +45,7 @@ Build_d [display]
 std::string SkipBoGame::toString() const {
   std::stringstream result;
   int idx;
-  
-  //result << draw.getRand() << " " << nump << " " << curp << "\n";
-
-  result << isShuffle << " " << nump << " " << curp << "\n";//not sure what getRand was so I changed it, lmk if this is bad
-  
+  result << draw.getRand() << " " << nump << " " << curp << "\n";
   for (int i = 0; i < nump; ++i) {
     idx = (curp+i) % nump;
     result << peep[idx].toString();
@@ -221,14 +216,14 @@ SkipBoGame::~SkipBoGame(){
 
 void SkipBoGame::playTurn(){
 
-  int playerToGo = curp%players.size();
+  int playerToGo = (curp+1)%nump;
   bool discard = false;
-  players[playerToGo]->display();
+  peep[playerToGo]->display();
 
   
   //if cards in hand is less than 5, draw 5
-  while(players[playerToGo]->handSize() < 5){
-    players[playerToGo]->drawToHand();
+  while(peep[playerToGo]->handSize() < 5){
+    peep[playerToGo]->drawToHand();
   }
   
   while(!discard){
@@ -240,21 +235,22 @@ void SkipBoGame::playTurn(){
 }
 
 bool SkipBoGame::checkWin(){
-  for (int i = 0; i < players.size(); i ++){
-    if (players[i]->getStockSize == 0){//need this function
-      //this player wins
+  for (int i = 0; i < nump; i ++){
+    if (peep[i]->stockSize() == 0){
+      return true;
     }
   }
+  return false;
 }
 
 bool SkipBoGame::play(int p){
-  cout << "(m)ove [start] [end] or (d)raw ? ";
+  std::cout << "(m)ove [start] [end] or (d)raw ? ";
   std::string action;
   std::string from;
   std::string to;
 
-  cin >> action >> from >> to;
-  cout << endl;
+  std::cin >> action >> from >> to;
+  std::cout << std::endl;
 
   int f;
   int t;
@@ -277,9 +273,9 @@ bool SkipBoGame::play(int p){
   
   if (action == "d"){
     //draw
-    if (players[p]->handSize() == 0){
+    if (peep[p]->handSize() == 0){
       for (int i = 0; i < 5; i ++){
-	players[p]->drawToHand();
+	peep[p]->drawToHand();
       }
     }
   }
@@ -311,13 +307,13 @@ void SkipBoGame::save(std::string file){
   
   //int turn = curp;
   std::ofstream saveFile(file);
-  /*saveFile << isShuffle << " " << players.size() << " " << curp << endl;
+  /*saveFile << isShuffle << " " << nump << " " << curp << endl;
   for (int i = curp; i < nump + curp; i ++){
     int playerN = i;
     if (i > nump-1){
       playerN -= nump;
     }
-    std::string p = players[playerN]->toString();
+    std::string p = peep[playerN]->toString();
     saveFile << p << endl;//might need hand tostring unless it inherits from pile?
     
   }

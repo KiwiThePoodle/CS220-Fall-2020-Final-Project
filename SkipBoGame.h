@@ -1,5 +1,5 @@
 #ifndef _SKIPBOGAME_H
-0;136;0c#define _SKIPBOGAME_H
+#define _SKIPBOGAME_H
 
 #include <vector>
 #include <string>

@@ -5,13 +5,13 @@
 #include "Card.h"
 #include "Pile.h"
 
-class DrawPile {
+class DrawPile : public Pile {
  protected:
-  Pile drawPile;
+  std::vector<Card> drawPile;
  public:
   DrawPile() { drawPile = new Pile(); }
 
-  DrawPile(Pile d) { drawPile = d; }
+  DrawPile(std::vector<Card> d) { drawPile = d; }
 
   virtual void display() const;
 

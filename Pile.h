@@ -7,12 +7,14 @@
 #include <fstream>
 #include "Card.h"
 
+using std::vector;
+
 class Pile {
  protected:
-  std::vector<Card> pile;
+  vector<Card> pile;
 
  public:
-  Pile() { }
+  Pile() { pile = new vector<Card>(); }
 
   int size() const { return pile.size(); }
 
@@ -25,8 +27,8 @@ class Pile {
     while(!is.eof()){
       int n;
       is >> n;
-      Card c = new Card(n);
-      pile.push_back(c);
+      Card* c = new Card(n);
+      pile.push_back(*c);
     }
     
   }// students to write this, companion to toString()
