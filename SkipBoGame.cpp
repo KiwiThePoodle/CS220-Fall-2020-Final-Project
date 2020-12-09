@@ -237,7 +237,9 @@ void SkipBoGame::playTurn(){
     discard = play(playerToGo);  
     
   }
-  draw = peep[playerToGo]->getUpdatedDrawPile();
+  DrawPile temp;
+  &temp = peep[playerToGo]->getUpdatedDrawPile();
+  draw = temp;
   curp ++;
 }
 
