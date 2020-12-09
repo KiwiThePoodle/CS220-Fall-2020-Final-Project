@@ -16,7 +16,7 @@ class Player {
   std::string name;
   FaceUpPile stock;
   FaceUpPile* discard/*[4]*/;
-  Hand hand;
+  Hand handPile;
   DrawPile updatedDrawPile;   //used so a player can access the drawPile and update it as well
  public:
   Player(std::string player_name) {   //blank player
@@ -26,7 +26,7 @@ class Player {
     discard[1] = new FaceUpPile();
     discard[2] = new FaceUpPile();
     discard[3] = new FaceUpPile();
-    hand = new Hand();
+    handPile = new Hand();
     updatedDrawPile = new DrawPile();
   }
   
@@ -35,7 +35,7 @@ class Player {
     name = player_name;
     stock = stock_pile;
     discard = discard_piles;
-    hand = hand_pile;
+    handPile = hand_pile;
   }
 
   
@@ -54,7 +54,7 @@ class Player {
   DrawPile getUpdatedDrawPile() { return updatedDrawPile; };   //called at the end of each players turn to update the drawPile in the game
 
   int handSize() {   //can be used to check when player has zero cards
-    return hand.size();
+    return handPile.size();
   }
 
   int stockSize() {   //can be used to check if a player has won
@@ -73,7 +73,7 @@ class Player {
 
   int getHandCardValue(int handNum) {   //value of a specific hand card
     handNum -= 5;
-    std::vector<Card> temp = hand.getPile();
+    std::vector<Card> temp = handPile.getPile();
    return temp.at(handNum).getValue();
   }
 
