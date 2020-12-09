@@ -111,7 +111,8 @@ SkipBoGame::SkipBoGame(bool isS, int pCount, int stk, std::string file) {
 
   int index = curp;
   for(int i = 0; i < nump; i++) {
-    peep[index]->setStockPile(stocks[i]);
+    FaceUpPile temp = stocks.at(i);
+    peep[index]->setStockPile(temp);
     index = (index + 1) % nump;
   }
   
