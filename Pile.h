@@ -16,7 +16,7 @@ class Pile {
  public:
   Pile() { pile = new vector<Card>(); }
  
-  Pile(vector::<Card> p) { pile = p; }
+  Pile(vector<Card> p) { pile = p; }
  
   ~Pile(){
      for(int i = 0; i < pile.size(); i ++){
