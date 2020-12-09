@@ -235,7 +235,7 @@ void SkipBoGame::playTurn(){
   peep[playerToGo]->drawToHand();
 	
   while(!discard){
-    display();
+   // display();
     discard = play(playerToGo);  
     
   }
