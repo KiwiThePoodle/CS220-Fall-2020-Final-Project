@@ -65,7 +65,7 @@ void Player::readIn(std::istream & is) {
   is >> size;   //next int is hand pile size
   for(int i = 0; i < size; i++) {   //adds hand size number of cards to hand pile
     is >> cardNumber;
-    hand.addCard(Card(cardNumber));
+    handPile.addCard(Card(cardNumber));
   }
   is >> temp;
   is >> size;   //next int is discard[0] pile size
@@ -95,7 +95,7 @@ void Player::readIn(std::istream & is) {
 
 Player::~Player() {   //deletes each pile for a player
   delete stock;
-  delete hand;
+  delete handPile;
   delete discard[0];
   delete discard[1];
   delete discard[2];
@@ -103,16 +103,16 @@ Player::~Player() {   //deletes each pile for a player
   delete updatedDrawPile;
 }
 
-void Player::drawToHand() {                    //called at the start of player's turn, draws cards until hand is full
-  int cardsToDraw = 5 - hand.size();
+void Player::drawToHand() {                   //called at the start of player's turn, draws cards until hand is full
+  int cardsToDraw = 5 - handPile.size();
   for(int i = 0; i < cardsToDraw; i++) {
-    hand.addCard(updatedDrawPile.topCard());   //adds top card from draw pile to hand, *removes card from draw pile*
+    handPile.addCard(updatedDrawPile.topCard());   //adds top card from draw pile to hand, *removes card from draw pile*
   }
 }
 
 void Player::handToDiscard(int handNum, int discardNum) {   //moves card from hand to a discard pile
   handNum -= 5;
-  Card temp = hand.removeCard(handNum);
+  Card temp = handPile.removeCard(handNum);
   discardNum -= 1;
   discard[discardNum].addCard(temp);
 }
@@ -128,6 +128,6 @@ Card Player::getDiscardPileCard(int discardNum) {   //returns top card of a disc
 
 Card Player::getHandPileCard(int handNum) {   //returns a card from hand
   handNum -= 5;
-  Card temp = hand.removeCard(handNum);
+  Card temp = handPile.removeCard(handNum);
   return temp;
 }
