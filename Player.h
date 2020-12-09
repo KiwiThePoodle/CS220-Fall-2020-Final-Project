@@ -70,7 +70,7 @@ class Player {
 
   int getDiscardCardValue(int discardNum) {   //value of the top card of a specified discard pile
     discardNum -= 1;
-    return discard[discardNum]->topCard().getValue();
+    return discard[discardNum].topCard().getValue();
   }
 
   int getHandCardValue(int handNum) {   //value of a specific hand card
