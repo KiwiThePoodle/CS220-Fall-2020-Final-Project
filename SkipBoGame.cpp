@@ -220,17 +220,15 @@ void SkipBoGame::playTurn(){
   bool discard = false;
   peep[playerToGo]->display();
 
-  
-  //if cards in hand is less than 5, draw 5
-  while(peep[playerToGo]->handSize() < 5){
-    peep[playerToGo]->drawToHand();
-  }
-  
+  peep[playerToGo]->updateDrawPile(draw);
+  peep[playerToGo]->drawToHand();
+	
   while(!discard){
     display();
     discard = play(playerToGo);  
     
   }
+  draw = peep[playerToGo]->getUpdatedDrawPile();
   curp ++;
 }
 
