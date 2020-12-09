@@ -42,7 +42,7 @@ int main(int argc, char *argv[]) {
       SkipBoGame* game = new SkipBoGame(shuffle, argv[2]);
 
       while(!game->checkWin()) {
-        cout << " >> " << game->getCurrentPlayer() << " turn next" << endl;
+        cout << "\n >> " << game->getCurrentPlayer() << " turn next" << endl;
         cout << "(p)lay, (s)ave, or (q)uit ? ";
         std::string psq;
         std::cin >> psq;
@@ -63,7 +63,7 @@ int main(int argc, char *argv[]) {
           game->playTurn();
         }
       }
-      cout << "GAME OVER - " << game->getCurrentPlayer() << " wins!" << endl;
+      cout << "\nGAME OVER - " << game->getCurrentPlayer() << " wins!" << endl;
       delete game;
     }
     return 0;
@@ -98,18 +98,18 @@ int main(int argc, char *argv[]) {
       SkipBoGame* game = new SkipBoGame(shuffle, numPlayers, stockPileSize, argv[4]);
       
       while(!game->checkWin()) {
-	cout << " >> " << game->getCurrentPlayer() << " turn next" << endl;
+	cout << "\n >> " << game->getCurrentPlayer() << " turn next" << endl;
 	cout << "(p)lay, (s)ave, or (q)uit ? ";
 	std::string psq;
 	std::cin >> psq;
 	if(psq == "q") {
 	  delete game;
-	  cout << "\nthanks for playing" << endl;
+	  cout << "thanks for playing" << endl;
 	  return 0;
 	}
 	else if(psq == "s") {
 	  std::string saveFile;
-	  cout << "\nsave filename: ";
+	  cout << "save filename: ";
 	  std::cin >> saveFile;
 	  game->save(saveFile);
 	  delete game;
