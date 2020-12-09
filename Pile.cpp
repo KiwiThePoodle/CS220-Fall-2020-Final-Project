@@ -29,6 +29,6 @@ void Pile::readIn(std::istream & is) {
 */
 Card Pile::topCard() {
   Card temp = pile.at(0);
-  delete pile.at(0);
+  delete pile[0];
   return temp;
 }
