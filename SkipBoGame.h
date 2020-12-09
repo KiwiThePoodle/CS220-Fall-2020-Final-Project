@@ -8,6 +8,8 @@
 #include "Pile.h"
 #include "Card.h"
 #include "Player.h"
+#include "FaceUpPile.h"
+#include "Hand.h"
 //not sure what to include so i just included a bunch of stuff for now
 
 class SkipBoGame{
