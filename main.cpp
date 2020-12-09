@@ -104,12 +104,12 @@ int main(int argc, char *argv[]) {
 	std::cin >> psq;
 	if(psq == "q") {
 	  delete game;
-	  cout << "thanks for playing" << endl;
+	  cout << "\nthanks for playing" << endl;
 	  return 0;
 	}
 	else if(psq == "s") {
 	  std::string saveFile;
-	  cout << "save filename: ";
+	  cout << "\nsave filename: ";
 	  std::cin >> saveFile;
 	  game->save(saveFile);
 	  delete game;
@@ -119,7 +119,7 @@ int main(int argc, char *argv[]) {
 	  game->playTurn();
 	}
       }
-      cout << "GAME OVER - " << game->getCurrentPlayer() << " wins!" << endl;
+      cout << "\nGAME OVER - " << game->getCurrentPlayer() << " wins!" << endl;
       delete game;
     }
     return 0;
