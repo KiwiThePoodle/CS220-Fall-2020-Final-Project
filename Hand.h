@@ -9,7 +9,7 @@ class Hand : public Pile {
  //protected:
   //Pile pile;
  public:
-  Hand() { pile = std::vector<Card>{};//Pile();}
+  Hand() { pile = std::vector<Card>{};/*Pile();*/}
    //pile = vector<Card>;
   
 
