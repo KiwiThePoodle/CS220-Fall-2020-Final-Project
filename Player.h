@@ -18,7 +18,7 @@ class Player {
   FaceUpPile discard[4];
   Hand hand;
   DrawPile updatedDrawPile;   //used so a player can access the drawPile and update it as well
- public:
+ public:/*
   Player(std::string player_name) {   //blank player
     name = player_name;          //in a new game, everything should start out empty except for player name, stock pile for each player will be filled
     stock = new FaceUpPile();    //soon after
@@ -29,6 +29,7 @@ class Player {
     hand = new Hand();
     updatedDrawPile = new DrawPile();
   }
+  */
   
   Player(std::string player_name, FaceUpPile stock_pile, FaceUpPile discard_piles[4], Hand hand_pile) {   //player name and piles of a player
     name = player_name;
