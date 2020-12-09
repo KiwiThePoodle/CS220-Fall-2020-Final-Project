@@ -262,7 +262,7 @@ bool SkipBoGame::play(int p){
 
   int f;
   int t;
-  //bool built = false;
+  bool built = false;
   int b;
   
   if (action != "d"){
@@ -273,8 +273,10 @@ bool SkipBoGame::play(int p){
       if (to == "b"){b = 1;}
       if (to == "c"){b = 2;}
       if (to == "d"){b = 3;}
-    }else{
+    }
+    else{
       t = std::stoi(to);
+      built = false;    
     }
   }
   
