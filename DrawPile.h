@@ -17,6 +17,9 @@ class DrawPile : public Pile {
    return rand;
   }
 
+ void setRand(bool b){
+  rand = b;
+ }
   DrawPile(std::vector<Card> d) { pile = d; }
 
   void display() const;
