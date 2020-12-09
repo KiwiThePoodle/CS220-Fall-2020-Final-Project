@@ -9,9 +9,9 @@ class Hand : public Pile {
  //protected:
   //Pile pile;
  public:
-  Hand() { Pile();
+  Hand() { Pile();}
    //pile = vector<Card>;
-  }
+  
 
   Hand(std::vector<Card> h) { pile = h; }
 
