@@ -38,10 +38,10 @@ int main(int argc, char *argv[]) {
     }
     else {
       //continue the game, not sure how to do this
-      SkipBoGame game = new SkipBoGame(shuffle, argv[2]);
+      SkipBoGame* game = new SkipBoGame(shuffle, argv[2]);
 
       while(!game.checkWin()) {
-        cout << " >> " >> game.getCurrentPlayer << " turn next" << endl;
+        cout << " >> " << game.getCurrentPlayer() << " turn next" << endl;
         cout << "(p)lay, (s)ave, or (q)uit ? ";
         std::string psq;
         std::cin >> psq;
