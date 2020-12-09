@@ -6,12 +6,16 @@
 #include "Pile.h"
 
 class DrawPile : public Pile {
+ private:
+ bool rand;
  //protected:
   //std::vector<Card> drawPile;
  public:
-  DrawPile() { pile = std::vector<Card>{};}
+  DrawPile() { pile = std::vector<Card>{};rand=false;}
    //pile = std::vector<Card>;
-  
+  bool getRand(){
+   return rand;
+  }
 
   DrawPile(std::vector<Card> d) { pile = d; }
 
