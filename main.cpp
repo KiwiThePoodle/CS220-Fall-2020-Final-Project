@@ -69,21 +69,21 @@ int main(int argc, char *argv[]) {
   }
 
   if(argc == 5) {
-    if(int(argv[3]) > 6 || int(argv[3]) < 2) {
+    if(atoi(argv[3]) > 6 || atoi(argv[3]) < 2) {
       cout << "invalid program usage: num players must be 2-6" << endl;
       return 1;
     }
     else {
-      numPlayers = int(argv[3]);
+      numPlayers = atoi(argv[3]);
       cout << "num players is " << numPlayers << endl;
     }
 
-    if((numPlayers == 6 && int(argv[4]) > 20) || (numPlayers <= 5 && int(argv[4]) > 30)) { //not exactly sure its supposed to be 162
+    if((numPlayers == 6 && atoi(argv[4]) > 20) || (numPlayers <= 5 && atoi(argv[4]) > 30)) { //not exactly sure its supposed to be 162
       cout << "invalid program usage: bad stock size" << endl;
       return 1;
     }
     else {
-      stockSize = int(argv[4]);
+      stockPileSize = atoi(argv[4]);
       cout << "stock size is " << stockSize << endl;
     }
 
@@ -94,10 +94,10 @@ int main(int argc, char *argv[]) {
     }
     else {
       //create a skipbogame object
-      SkipBoGame game = new SkipBoGame(shuffle, numPlayers, stockPileSize, argv[5]);
+      SkipBoGame* game = new SkipBoGame(shuffle, numPlayers, stockPileSize, argv[5]);
       
       while(!game.checkWin()) {
-	cout << " >> " >> game.getCurrentPlayer << " turn next" << endl;
+	cout << " >> " << game->getCurrentPlayer() << " turn next" << endl;
 	cout << "(p)lay, (s)ave, or (q)uit ? ";
 	std::string psq;
 	std::cin >> psq;
@@ -110,15 +110,15 @@ int main(int argc, char *argv[]) {
 	  std::string saveFile;
 	  cout << "save filename: ";
 	  std::cin >> saveFile;
-	  game.save(saveFile);
+	  game->save(saveFile);
 	  delete game;
 	  return 0;
 	}
 	else if(psq == "p") {
-	  game.playTurn();
+	  game->playTurn();
 	}
       }
-      cout << "GAME OVER - " << game.getCurrentPlayer() << " wins!" << endl;
+      cout << "GAME OVER - " << game->getCurrentPlayer() << " wins!" << endl;
       delete game;
     }
     return 0;
