@@ -16,7 +16,7 @@ private:
   int curp;
   int nump;
   int stock;
-  Pile build[4];
+  FaceUpPile build[4];
   DrawPile draw;
   
   std::string saveFile;
