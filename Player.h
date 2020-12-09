@@ -47,7 +47,7 @@ class Player {
 
   void readIn(std::istream & is);
 
-  ~Player();   //destructor
+  //~Player();   //destructor
 
   void addToStockPile(Card c) { stock->addCard(c); }
 
