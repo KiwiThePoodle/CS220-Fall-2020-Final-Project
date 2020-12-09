@@ -12,7 +12,7 @@ class Hand : public Pile {
   Hand() { //Pile();
   }
 
-  Hand(std::vector<Card> h) { Pile(h); }
+  Hand(std::vector<Card> h) { pile = h; }
 
   void display() const;
 
