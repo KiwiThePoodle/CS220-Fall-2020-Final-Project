@@ -36,7 +36,7 @@ class Pile {
   std::string toString() const;  // for saving state
 
   void removeCard(int cardIndex){
-     delete(pile.at(cardIndex));
+     delete pile.at(cardIndex);
   }
  
   void readIn(std::istream & is){
