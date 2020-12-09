@@ -6,18 +6,18 @@
 #include "Pile.h"
 
 class DrawPile : public Pile {
- protected:
-  std::vector<Card> drawPile;
+ //protected:
+  //std::vector<Card> drawPile;
  public:
-  DrawPile() { drawPile = new Pile(); }
+  //DrawPile() { drawPile = new Pile(); }
 
-  DrawPile(std::vector<Card> d) { drawPile = d; }
+  DrawPile(std::vector<Card> d) { Pile(d); }
 
   virtual void display() const;
 
   ~DrawPile();
 
-  Card topCard();
+  //Card topCard();
 };
 
 #endif
