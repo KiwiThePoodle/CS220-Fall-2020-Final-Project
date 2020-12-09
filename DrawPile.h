@@ -10,6 +10,7 @@ class DrawPile : public Pile {
   //std::vector<Card> drawPile;
  public:
   DrawPile() { //Pile();
+   pile = std::vector<card>;
   }
 
   DrawPile(std::vector<Card> d) { pile = d; }
