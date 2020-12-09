@@ -15,8 +15,7 @@ class Pile {
   vector<Card> pile;
 
  public:
-  Pile() { pile = vector<Card>{}; 
-  }
+  Pile() { }
  
   Pile(vector<Card> p) { pile = p; }
  

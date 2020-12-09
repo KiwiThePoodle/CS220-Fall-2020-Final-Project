@@ -101,22 +101,24 @@ SkipBoGame::SkipBoGame(bool isS, int pCount, int stk, std::string file) {
     peep.push_back(p);
   }
   
-  
-  std::vector<FaceUpPile> stocks;
+  int index = curp;
+  //std::vector<FaceUpPile> stocks(nump);
   for(int i = 0; i < stock; i++) {
     for(int j = 0; j < nump; j++) {
-      stocks[j].getPile().push_back(draw.topCard());
+      //stocks[j].getPile().push_back(draw.topCard());
+      peep[index]->addToStockPile(draw.topCard());                                
+      index = (index + 1) % nump; 
     }
   }
 
-  int index = curp;
+  /*  int index = curp;
   for(int i = 0; i < nump; i++) {
     peep[index]->addToStockPile(stocks[i].topCard());
     index = (index + 1) % nump;
   }
-  
+  */
   std::string saveFile = file;
-}
+  }
 
 SkipBoGame::SkipBoGame(bool isS, std::string file){
   isShuffle = isS;
