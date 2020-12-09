@@ -13,7 +13,7 @@ class DrawPile : public Pile {
  public:
   DrawPile() { pile = std::vector<Card>{};rand=false;}
    //pile = std::vector<Card>;
-  bool getRand(){
+  bool getRand() const {
    return rand;
   }
 
