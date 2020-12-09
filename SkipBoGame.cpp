@@ -164,7 +164,7 @@ SkipBoGame::SkipBoGame(bool isS, std::string file){
       int cardNum;
       save >> cardNum;
       Card* c = new Card(cardNum);
-      h->push_back(c);//not sure how hand works yet, just using this as filler
+      h->addCard(*c);//not sure how hand works yet, just using this as filler
     }
 
     FaceUpPile disPiles[4];
@@ -177,7 +177,7 @@ SkipBoGame::SkipBoGame(bool isS, std::string file){
 	int cardNum;
 	save >> cardNum;
 	Card* c = new Card(cardNum);
-	dp.push_back(c);
+	dp->addCard(*c);
       }
       disPiles[i] = dp;
     }
@@ -193,8 +193,8 @@ SkipBoGame::SkipBoGame(bool isS, std::string file){
   for (int i5 = 0; i5 < deckSize; i5++){
     int cardNum;
     save >> cardNum;
-    Card c = new Card(cardNum);
-    deckPile.push_back(c);
+    Card* c = new Card(cardNum);
+    deckPile->addCard(*c);
   }
   draw = new DrawPile(deckPile);
   draw.setRand(isShuffle);
