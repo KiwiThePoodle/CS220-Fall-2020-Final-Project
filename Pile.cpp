@@ -28,6 +28,6 @@ void Pile::readIn(std::istream & is) {
 }
 */
 Card Pile::topCard() {
-  Card temp = pile->removeCard(0);
+  Card temp = pile.removeCard(0);
   return temp;
 }
