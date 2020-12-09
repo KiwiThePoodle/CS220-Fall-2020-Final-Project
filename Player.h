@@ -25,11 +25,6 @@ class Player {
     stock = new FaceUpPile();    //soon after
     
    FaceUpPile discardP[4];
-   discardP[0] = new FaceUpPile();
-   discardP[1] = new FaceUpPile();
-   discardP[2] = new FaceUpPile();
-   discardP[3] = new FaceUpPile();
-    
    discard = discardP;
     
     
