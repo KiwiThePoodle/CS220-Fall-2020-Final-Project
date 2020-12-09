@@ -16,8 +16,8 @@ class Player {
   std::string name;
   FaceUpPile stock;
   FaceUpPile* discard/*[4]*/;
-  //Hand hand = new Hand();
-  DrawPile updatedDrawPile = new DrawPile();   //used so a player can access the drawPile and update it as well
+  Hand hand;
+  DrawPile updatedDrawPile;   //used so a player can access the drawPile and update it as well
  public:
   Player(std::string player_name) {   //blank player
     name = player_name;          //in a new game, everything should start out empty except for player name, stock pile for each player will be filled
@@ -26,8 +26,8 @@ class Player {
     discard[1] = new FaceUpPile();
     discard[2] = new FaceUpPile();
     discard[3] = new FaceUpPile();
-    //hand = new Hand();
-    //updatedDrawPile = new DrawPile();
+    hand = new Hand();
+    updatedDrawPile = new DrawPile();
   }
   
   
