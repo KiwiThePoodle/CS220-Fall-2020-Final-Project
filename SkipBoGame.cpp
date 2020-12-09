@@ -52,7 +52,7 @@ std::string SkipBoGame::toString() const {
   }
   result << "Draw " << draw.toString(); 
   for (int j = 0; j < 4; j++) {
-    result << "Build_" << char('a'+j) << " ";
+    result << "Build" << char('a'+j) << " ";
     result << build[j].toString();  
   }
   return result.str();
