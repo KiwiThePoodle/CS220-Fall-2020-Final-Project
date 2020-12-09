@@ -113,7 +113,7 @@ void Player::drawToHand() {                    //called at the start of player's
 void Player::handToDiscard(int handNum, int discardNum) {   //moves card from hand to a discard pile
   handNum -= 5;
   Card temp = hand.pile[handNum];
-  hand.pile.erase(hand.pile.begin() + handNum);
+  hand.removeCard(handNum);
   discardNum -= 1;
   discard[discardNum].addCard(temp);
 }
@@ -130,6 +130,6 @@ Card Player::getDiscardPileCard(int discardNum) {   //returns top card of a disc
 Card Player::getHandPileCard(int handNum) {   //returns a card from hand
   handNum -= 5;
   Card temp = hand.pile[handNum};
-  hand.pile.erase(hand.pile.begin() + handNum);
+  hand.removeCard(handNum);
   return temp;
 }
