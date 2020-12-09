@@ -24,15 +24,15 @@ class Player {
     discard[1] = new FaceUpPile();
     discard[2] = new FaceUpPile();
     discard[3] = new FaceUpPile();
-    hand = new Hand(new Pile());
+    hand = new Hand();
     updatedDrawPile = new DrawPile();
   }
   
-  Player(std::string player_name, FaceUpPile stock_pile, FaceUpPile discard_piles[4], Pile hand_pile) {   //player name and piles of a player
+  Player(std::string player_name, FaceUpPile stock_pile, FaceUpPile discard_piles[4], Hand hand_pile) {   //player name and piles of a player
     name = player_name;
     stock = stock_pile;
     discard = discard_piles;
-    hand = new Hand(hand_pile);
+    hand = hand_pile;
   }
 
   
