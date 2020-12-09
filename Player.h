@@ -8,6 +8,8 @@
 #include "Card.h"
 #include "Pile.h"
 #include "DrawPile.h"
+#include "FaceUpPile.h"
+#include "Hand.h"
 
 class Player {
  protected:
