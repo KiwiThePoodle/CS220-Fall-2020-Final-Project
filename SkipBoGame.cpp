@@ -262,7 +262,7 @@ bool SkipBoGame::play(int p){
 
   int f;
   int t;
-  bool built = false;
+  //bool built = false;
   int b;
   
   if (action != "d"){
