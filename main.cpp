@@ -5,6 +5,7 @@
 #include <fstream>
 #include "SkipBoGame.h"
 #include <string>
+#include <cstdlib>
 
 using std::cout;
 using std::endl;
@@ -84,7 +85,7 @@ int main(int argc, char *argv[]) {
     }
     else {
       stockPileSize = atoi(argv[4]);
-      cout << "stock size is " << stockSize << endl;
+      cout << "stock size is " << stockPileSize << endl;
     }
 
     std::ifstream deckStartFile(argv[5]);
@@ -96,7 +97,7 @@ int main(int argc, char *argv[]) {
       //create a skipbogame object
       SkipBoGame* game = new SkipBoGame(shuffle, numPlayers, stockPileSize, argv[5]);
       
-      while(!game.checkWin()) {
+      while(!game->checkWin()) {
 	cout << " >> " << game->getCurrentPlayer() << " turn next" << endl;
 	cout << "(p)lay, (s)ave, or (q)uit ? ";
 	std::string psq;
