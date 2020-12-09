@@ -24,7 +24,7 @@ class Player {
     name = player_name;          //in a new game, everything should start out empty except for player name, stock pile for each player will be filled
     stock = new FaceUpPile();    //soon after
     for (int i = 0; i < 4; i ++){ 
-   discard.push_back(new FaceUpPile());
+   discard->push_back(new FaceUpPile());
     
     }
    /*discard[1] = new FaceUpPile();
