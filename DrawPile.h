@@ -9,7 +9,7 @@ class DrawPile : public Pile {
  //protected:
   //std::vector<Card> drawPile;
  public:
-  DrawPile() { Pile();}
+  DrawPile() { pile = vector<Card>{};}
    //pile = std::vector<Card>;
   
 
