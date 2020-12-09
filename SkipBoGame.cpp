@@ -181,7 +181,7 @@ SkipBoGame::SkipBoGame(bool isS, std::string file){
   save >> tempString;
   int deckSize;
   save >> deckSize;
-  Pile deckPile;
+  vector<Card> deckPile;
   for (int i5 = 0; i5 < deckSizel i5++){
     int cardNum;
     save >> cardNum;
@@ -194,15 +194,15 @@ SkipBoGame::SkipBoGame(bool isS, std::string file){
     save >> tempString;
     int buildSize;
     save >> buildSize;
-    Pile b;
+    vector<Card> b;
     for (int i7 = 0; i7 < buildSize; i7 ++){
       int cardNum;
       save >> cardNum;
       Card c = new Card(cardNum);
-      b.push_back(c);
-      
+      b.push_back(c); 
     }
-    build[i] = b;
+    FaceUpPile* bd = new FaceUpPile(b);
+    build[i] = bd;
   }
   
   
