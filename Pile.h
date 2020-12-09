@@ -24,7 +24,7 @@ class Pile {
      /*for(int i = 0; i < pile.size(); i ++){
         delete pile.at(i);
      }*/
-   delete (pile);
+   //delete (pile);
   }
 
   void shuffle(){
