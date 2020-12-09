@@ -105,7 +105,7 @@ SkipBoGame::SkipBoGame(bool isS, int pCount, int stk, std::string file) {
   std::vector<FaceUpPile> stocks;
   for(int i = 0; i < stock; i++) {
     for(int j = 0; j < nump; j++) {
-      stocks.push_back(draw->topCard());
+      stocks.push_back(draw.topCard());
     }
   }
 
