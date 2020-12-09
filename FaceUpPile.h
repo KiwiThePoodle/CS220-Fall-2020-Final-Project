@@ -5,7 +5,7 @@
 #include "Card.h"
 #include "Pile.h"
 
-class FaceUpPile {
+class FaceUpPile : public Pile{
  //protected:
   //Pile pile;
  public:
