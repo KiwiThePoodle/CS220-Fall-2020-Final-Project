@@ -16,7 +16,7 @@ class Player {
   std::string name;
   FaceUpPile* stock;
   //FaceUpPile* discard/*[4]*/;
-  std::vector<Card> discard;
+  std::vector<Card>* discard;
  Hand handPile;
   DrawPile updatedDrawPile;   //used so a player can access the drawPile and update it as well
  public:
