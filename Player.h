@@ -24,6 +24,7 @@ class Player {
     name = player_name;          //in a new game, everything should start out empty except for player name, stock pile for each player will be filled
     stock = new FaceUpPile();    //soon after
     
+    
     //FaceUpPile discardP[4];
     //discard = discardP;
     
@@ -37,6 +38,9 @@ class Player {
     name = player_name;
     stock = stock_pile;
     //discard = discard_piles; have to implement discard pile properly
+    for (int i = 0; i < 4; i ++){
+     discard[i] = discard_piles[i];
+    }
     handPile = hand_pile;
   }
 
