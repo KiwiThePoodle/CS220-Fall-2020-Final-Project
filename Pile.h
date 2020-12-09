@@ -27,7 +27,14 @@ class Pile {
    //delete (pile);
   }
  
- vector<Card> getPile() { return pile; }
+ vector<Card> getPile() { 
+  vector<Card>r;
+  for (int i = 0; i < pile.size(); i ++){
+   r.push_back(pile.at(i));
+   
+  }
+  return r;
+  }
 
   void shuffle(){
      std::random_shuffle(pile.begin(), pile.end());
