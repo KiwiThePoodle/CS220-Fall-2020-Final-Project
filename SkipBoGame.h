@@ -15,7 +15,7 @@
 class SkipBoGame{
 
 private:
-  int curp = 0;
+  int curp;
   int nump;
   int stock;
   FaceUpPile * build[4];
