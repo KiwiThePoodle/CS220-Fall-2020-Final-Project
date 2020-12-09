@@ -40,7 +40,9 @@ class Player {
     //discard = discard_piles; have to implement discard pile properly
     for (int i = 0; i < 4; i ++){
      discard[i] = discard_piles[i];
+     
     }
+    delete discard_piles;
     handPile = hand_pile;
   }
 
