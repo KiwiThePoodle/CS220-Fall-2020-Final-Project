@@ -16,7 +16,7 @@ class Player {
   std::string name;
   FaceUpPile stock;
   FaceUpPile* discard/*[4]*/;
-  class Hand{};//??? maybe? 
+  
  Hand handPile;
   DrawPile updatedDrawPile;   //used so a player can access the drawPile and update it as well
  public:
