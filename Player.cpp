@@ -40,8 +40,8 @@ Discard4 size
 std::string Player::toString() const {
   std::stringstream result;
   result << name << "\n";
-  result << "Stock " << stock.toString();
-  result << "Hand " << hand.toString();
+  result << "Stock " << stock->toString();
+  result << "Hand " << handPile->toString();
   for (int i = 0; i < 4; ++i) {
     result << "Discard" << i << " " << discard[i].toString();
   }
