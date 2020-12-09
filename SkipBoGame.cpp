@@ -259,7 +259,11 @@ bool SkipBoGame::play(int p){
   std::string from;
   std::string to;
 
-  std::cin >> action >> from >> to;
+  std::cin >> action;
+  if (action != "d"){
+  	std::cin >> from;
+	  std::cin>>to;
+  }
   std::cout << std::endl;
 
   int f;
