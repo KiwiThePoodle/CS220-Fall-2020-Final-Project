@@ -70,7 +70,7 @@ SkipBoGame::SkipBoGame(bool isS, int pCount, int stk, std::string file) {
   stock = stk;
   isShuffle = isS;
   end = false;
-  draw = new DrawPile();
+  //draw = new DrawPile();
 
   
   std::ifstream deck0("deck0.txt");
