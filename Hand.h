@@ -13,7 +13,7 @@ class Hand : public Pile {
 
   Hand(vector<Card>h) { pile = h; }
 
-  virtual void display() const;
+  void display() const;
 
   ~Hand();
 
