@@ -17,6 +17,12 @@ class Pile {
   Pile() { pile = new vector<Card>(); }
  
   Pile(vector::<Card> p) { pile = p; }
+ 
+  ~Pile(){
+     for(int i = 0; i < pile.size(); i ++){
+        delete vector.at(i);
+     }
+  }
 
   int size() const { return pile.size(); }
 
