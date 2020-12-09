@@ -177,7 +177,7 @@ SkipBoGame::SkipBoGame(bool isS, std::string file){
 	int cardNum;
 	save >> cardNum;
 	Card* c = new Card(cardNum);
-	dp->addCard(*c);
+	dp.addCard(*c);
       }
       disPiles[i] = dp;
     }
@@ -194,7 +194,7 @@ SkipBoGame::SkipBoGame(bool isS, std::string file){
     int cardNum;
     save >> cardNum;
     Card* c = new Card(cardNum);
-    deckPile->addCard(*c);
+    deckPile.addCard(*c);
   }
   draw = new DrawPile(deckPile);
   draw.setRand(isShuffle);
