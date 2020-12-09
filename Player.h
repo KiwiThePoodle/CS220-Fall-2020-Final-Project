@@ -49,11 +49,11 @@ class Player {
 
   ~Player();   //destructor
 
-  void setStockPile(FaceUpPile stock_pile) { stock = stock_pile; }
+  void setStockPile(FaceUpPile* stock_pile) { stock = stock_pile; }
 
-  void updateDrawPile(DrawPile d) { updatedDrawPile = d; }   //called at the start of each players turn to update the drawPile for the player to access
+  void updateDrawPile(DrawPile* d) { updatedDrawPile = d; }   //called at the start of each players turn to update the drawPile for the player to access
 
-  DrawPile getUpdatedDrawPile() { return updatedDrawPile; };   //called at the end of each players turn to update the drawPile in the game
+  DrawPile* getUpdatedDrawPile() { return updatedDrawPile; };   //called at the end of each players turn to update the drawPile in the game
 
   int handSize() {   //can be used to check when player has zero cards
     return handPile.size();
