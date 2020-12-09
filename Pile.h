@@ -15,6 +15,8 @@ class Pile {
 
  public:
   Pile() { pile = new vector<Card>(); }
+ 
+  Pile(vector::<Card> p) { pile = p; }
 
   int size() const { return pile.size(); }
 
