@@ -6,20 +6,20 @@
 #include "Pile.h"
 
 class Hand : public Pile {
- protected:
-  Pile pile;
+ //protected:
+  //Pile pile;
  public:
-  Hand() { pile = new Pile(); }
+  //Hand() { pile = new Pile(); }
 
-  Hand(vector<Card>h) { pile = h; }
+  Hand(std::vector<Card> h) { Pile(h); }
 
   void display() const;
 
-  ~Hand();
+  //~Hand();
 
-  int size() { return pile.size(); }
+  //int size() { return pile.size(); }
 
-  void add(Card c) { pile.addCard(c); }
+  //void add(Card c) { pile.addCard(c); }
 };
 
 #endif
