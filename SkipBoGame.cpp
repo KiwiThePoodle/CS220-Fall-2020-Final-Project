@@ -103,7 +103,7 @@ SkipBoGame::SkipBoGame(bool isS, int pCount, int stk, std::string file) {
   
   
 
-  FaceUpPile stocks[] = new FaceUpPile[nump];
+  FaceUpPile stocks[nump];
   for(int i = 0; i < stock; i++) {
     for(int j = 0; j < nump; j++) {
       stocks[j].addCard(draw.topCard());
