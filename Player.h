@@ -33,7 +33,7 @@ class Player {
   }
   
   
-  Player(std::string player_name, FaceUpPile stock_pile, FaceUpPile discard_piles[4], Hand hand_pile) {   //player name and piles of a player
+  Player(std::string player_name, FaceUpPile* stock_pile, FaceUpPile discard_piles[4], Hand* hand_pile) {   //player name and piles of a player
     name = player_name;
     stock = stock_pile;
     discard = discard_piles;
