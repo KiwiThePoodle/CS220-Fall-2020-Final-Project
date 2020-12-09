@@ -189,14 +189,14 @@ SkipBoGame::SkipBoGame(bool isS, std::string file){
   save >> tempString;
   int deckSize;
   save >> deckSize;
-  DrawPile deckPile;
+  //DrawPile deckPile;
   for (int i5 = 0; i5 < deckSize; i5++){
     int cardNum;
     save >> cardNum;
     Card* c = new Card(cardNum);
-    deckPile.addCard(*c);
+    draw.addCard(*c);
   }
-  draw = new DrawPile(deckPile);
+  //draw = new DrawPile(deckPile);
   draw.setRand(isShuffle);
 
   for (int i6 = 0; i6 < 4; i6 ++){
