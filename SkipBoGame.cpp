@@ -61,6 +61,7 @@ std::string SkipBoGame::toString() const {
 SkipBoGame::SkipBoGame(bool isS, int pCount, int stk, std::string file) {
   if(isS) {    //if shuffle is on, random first player
     curp = rand() % pCount;
+    draw.setRand(true);
   }
   else {   //else first player is 0
     curp = 0;
@@ -121,6 +122,9 @@ SkipBoGame::SkipBoGame(bool isS, int pCount, int stk, std::string file) {
 SkipBoGame::SkipBoGame(bool isS, std::string file){
   isShuffle = isS;
 
+  if(isS) {
+    draw.setRand(true);
+  }
   end = false;
   
   std::ifstream save(file);
