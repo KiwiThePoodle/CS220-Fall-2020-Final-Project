@@ -69,13 +69,13 @@ SkipBoGame::SkipBoGame(bool isS, int pCount, int stk, string file) {
   stock = stk;
   isShuffle = isS;
   end = false;
-  draw = new Pile();
+  draw = new DrawPile();
 
   
   std::ifstream deck0("deck0.txt");
-  Pile tempDeck = new Pile();
+  Pile tempDeck = new DrawPile();
   tempDeck.readIn(deck0);
-  draw = new drawPile(tempDeck);
+  draw = new DrawPile(tempDeck);
   if(isS) {   //if shuffle is on, shuffle the draw pile
     std::random_shuffle(draw.pile.begin(), draw.pile.end());
   }
