@@ -56,26 +56,26 @@ class Player {
   DrawPile* getUpdatedDrawPile() { return updatedDrawPile; };   //called at the end of each players turn to update the drawPile in the game
 
   int handSize() {   //can be used to check when player has zero cards
-    return handPile.size();
+    return handPile->size();
   }
 
   int stockSize() {   //can be used to check if a player has won
-    return stock.size();
+    return stock->size();
   }
   
   //methods used to get the value of the card, should help with checking if cards can be moved to build pilea
   int getStockCardValue() {   //returns the value of the top card in the stock pile
-    return stock.topCard().getValue();
+    return stock->topCard().getValue();
   }
 
   int getDiscardCardValue(int discardNum) {   //value of the top card of a specified discard pile
     discardNum -= 1;
-    return discard[discardNum].topCard().getValue();
+    return discard[discardNum]->topCard().getValue();
   }
 
   int getHandCardValue(int handNum) {   //value of a specific hand card
     handNum -= 5;
-    std::vector<Card> temp = handPile.getPile();
+    std::vector<Card> temp = handPile->getPile();
    return temp.at(handNum).getValue();
   }
 
