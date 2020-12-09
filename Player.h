@@ -15,7 +15,7 @@ class Player {
  protected:
   std::string name;
   FaceUpPile* stock;
-  FaceUpPile* discard/*[4]*/;
+  FaceUpPile* discard/*[4]*/;//this is a pointer to the first value in an array of 4 discard piles
   //std::vector<Card>* discard;
   Hand* handPile;
   DrawPile* updatedDrawPile;   //used so a player can access the drawPile and update it as well
