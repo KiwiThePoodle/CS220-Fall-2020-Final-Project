@@ -189,7 +189,7 @@ SkipBoGame::SkipBoGame(bool isS, std::string file){
   save >> tempString;
   int deckSize;
   save >> deckSize;
-  vector<Card> deckPile;
+  DrawPile deckPile;
   for (int i5 = 0; i5 < deckSize; i5++){
     int cardNum;
     save >> cardNum;
