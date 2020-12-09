@@ -29,7 +29,7 @@ class Pile {
  
  vector<Card> getPile() { 
   vector<Card>r;
-  for (int i = 0; i < pile.size(); i ++){
+  for (int i = 0; i < (int)pile.size(); i ++){
    r.push_back(pile.at(i));
    
   }
