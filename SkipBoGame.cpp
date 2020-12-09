@@ -227,7 +227,7 @@ SkipBoGame::~SkipBoGame(){
 
 void SkipBoGame::playTurn(){
 
-  int playerToGo = (curp+1)%nump;
+  int playerToGo = (curp)%nump;
   bool discard = false;
   peep[playerToGo]->display();
 
