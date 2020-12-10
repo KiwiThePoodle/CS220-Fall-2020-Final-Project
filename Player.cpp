@@ -120,7 +120,7 @@ Card Player::getHandPileCard(int handNum) {   //returns a card from hand
   return temp;
 }  
 bool Player::discardIsEmpty(int discardNum) {
-  if(discard[discardNum].size() == 0) {
+  if(discard[discardNum - 1].size() == 0) {
     return true;
   }
   return false;
