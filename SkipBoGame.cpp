@@ -233,7 +233,6 @@ SkipBoGame::~SkipBoGame(){   //destructor
   }
   for (int i = 0; i < 4; i ++){
     delete build[i];
-    delete draw;
   }
 }
 
