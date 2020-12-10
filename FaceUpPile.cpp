@@ -9,12 +9,3 @@ void FaceUpPile::display() const {
   else std::cout << "--";
   std::cout << "/" << size();
 }
-
-/*FaceUpPile::~FaceUpPile() {
-  delete pile;
-}*/
-
-/*Card FaceUpPile::topCard() {
-  Card temp = pile.topCard();
-  return temp;
-}*/
