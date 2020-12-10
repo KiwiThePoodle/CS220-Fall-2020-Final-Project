@@ -316,7 +316,7 @@ while (move){
 	    
 	    int temp = peep[p]->getDiscardCardValue(f);
 	     if (build[b]->size() == 0){
-	    	c = peep[p]->getDiscardPileCard();
+	    	c = peep[p]->getDiscardPileCard(f);
 	    }else{
 	    if((temp == 0) || (temp == build[b]->topCardValue() + 1)) {
       c = peep[p]->getDiscardPileCard(f);
@@ -329,7 +329,7 @@ while (move){
 	    }else{
       int temp = peep[p]->getHandCardValue(f);
 	     if (build[b]->size() == 0){
-	    	c = peep[p]->getHandPileCard();
+	    	c = peep[p]->getHandPileCard(f);
 	    }else{
 	    if((temp == 0) || (temp == build[b]->topCardValue() + 1)) {
 	    c = peep[p]->getHandPileCard(f);
