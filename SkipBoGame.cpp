@@ -84,7 +84,7 @@ SkipBoGame::SkipBoGame(bool isS, int pCount, int stk, std::string file) {
   
   //need to make 4 piles for the build pile
   for (int i = 0; i < 4; i ++){
-    FaceUpPile* p = new FaceUpPile();
+    BuildPile* p = new BuildPile();
     build[i] = p;
   }
   
@@ -491,10 +491,12 @@ bool SkipBoGame::play(int p){
 	if (f == 0){
 	  c = Card(leave);
 	  build[b]->addCard(c);
+	  build[b]->incrementCardNumber();
 	}
 	if (f >= 1 && f <= 4){
 	  c = Card(leave);
 	  build[b]->addCard(c);
+	  build[b]->incrementCardNumber();
 	  
 	}
 	if (f >= 5 && f <= 9){
@@ -504,6 +506,7 @@ bool SkipBoGame::play(int p){
 	    return true;
 	  }
 	  build[b]->addCard(c);
+	  build[b]->incrementCardNumber();
 	}
       }else{
         move = false;
