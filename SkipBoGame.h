@@ -10,6 +10,7 @@
 #include "Player.h"
 #include "FaceUpPile.h"
 #include "Hand.h"
+#include "BuildPile.h"
 //not sure what to include so i just included a bunch of stuff for now
 
 class SkipBoGame{
@@ -18,7 +19,7 @@ private:
   int curp;
   int nump;
   int stock;
-  BuildPile * build[4];
+  BuildPile* build[4];
   DrawPile draw;
   
   std::string saveFile;
