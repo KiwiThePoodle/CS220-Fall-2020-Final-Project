@@ -310,7 +310,7 @@ bool SkipBoGame::play(int p){
     
     if (t <= 4 && t >= 1){
       //move to discard
-      peep[p]->handToDiscard(f-1, t-1);
+      peep[p]->handToDiscard(f-1, t);
       return true;
     }
     
