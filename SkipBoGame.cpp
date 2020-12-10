@@ -349,7 +349,12 @@ bool SkipBoGame::play(int p){
 	       //c = Card(temp);
 		     c = peep[p]->getHandPileCard(f);
 	//	     std::cout << "Test3" << std::endl;
-	     }else{move = false; illegalMove();}
+	     }else
+	     if((temp == peep[p]->getDiscardCardValue(t)+1){
+	     	move = true;
+		     c = peep[p]->getHandPileCard(f);
+		     
+	     }{move = false; illegalMove();}
 	   }
 	 }
        }
