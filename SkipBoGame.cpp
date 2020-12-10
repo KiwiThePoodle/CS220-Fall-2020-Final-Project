@@ -246,7 +246,7 @@ void SkipBoGame::illegalMove(){
 
     std::cout << "illegal command, try again" << std::endl << std::endl;
     display();
-    std::cout << "(m)ove [start] [end] or (d)raw ? ";
+    //std::cout << "(m)ove [start] [end] or (d)raw ? ";
     
 }
 
