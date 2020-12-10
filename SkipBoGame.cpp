@@ -119,8 +119,12 @@ SkipBoGame::SkipBoGame(bool isS, std::string file){
   }
   end = false;
   
+  
   std::ifstream save(file);
 
+	while(!save.eof()){
+		std::cout << save << std::endl;//////////////////////
+	}
   std::string trash;
   save >> trash;//dont care about this boolean, we want the one from the command line argument
 	std::cout << trash << std::endl;
