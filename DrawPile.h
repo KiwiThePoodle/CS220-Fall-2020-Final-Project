@@ -10,15 +10,16 @@ class DrawPile : public Pile {
  bool rand;
  public:
   DrawPile() { pile = std::vector<Card>{};rand=false;}
-   //pile = std::vector<Card>;
+ 
+  DrawPile(std::vector<Card> d) { pile = d; }
+ 
   bool getRand() const {   //returns whether random is on or not
-   return rand;
+    return rand;
   }
 
- void setRand(bool b){   //sets whether random is on or not
-  rand = b;
- }
-  DrawPile(std::vector<Card> d) { pile = d; }
+  void setRand(bool b){   //sets whether random is on or not
+    rand = b;
+  }
 
   void display() const;
 
