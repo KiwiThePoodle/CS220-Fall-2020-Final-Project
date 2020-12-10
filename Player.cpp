@@ -105,8 +105,8 @@ void Player::handToDiscard(Card c, int discardNum) {   //moves card from hand to
   discard[discardNum].addCard(c);
 }
 
-Card Player::getStockPileCard() {   //returns top card of stock
-  return stock->topCard();
+Card Player::getStockPileCard(int n) {   //returns top card of stock
+  return stock->removeCard(n);
 }
 
 Card Player::getDiscardPileCard(int discardNum) {   //returns top card of a discard pile
