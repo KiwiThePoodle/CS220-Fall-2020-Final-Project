@@ -290,17 +290,17 @@ bool SkipBoGame::play(int p){
     bool move = true;
     if (f == 0){
       int temp = peep[p]->getStockCardValue();
-      if((temp == 0) || (temp == build[b].topCardValue() + 1)) {
+      if((temp == 0) || (temp == build[b]->topCardValue() + 1)) {
 	      c = peep[p]->getStockPileCard();
       }
     }else if (f >= 1 && f <= 4){
 	    int temp = peep[p]->getDiscardCardValue(f);
-	    if(temp == 0) || (temp == build[b].topCardValue() + 1)) {
+	    if(temp == 0) || (temp == build[b]->topCardValue() + 1)) {
       c = peep[p]->getDiscardPileCard(f);
 	    }
     }else if (f >= 5 && f <= 9){
       int temp = peep[p]->getHandCardValue(f);
-	    if((temp == 0) || (temp == build[b].topCardValue() + 1)) {
+	    if((temp == 0) || (temp == build[b]->topCardValue() + 1)) {
 	    c = peep[p]->getHandPileCard(f);
 	    }
 	    else {
