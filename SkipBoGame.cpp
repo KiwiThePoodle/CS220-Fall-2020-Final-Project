@@ -123,12 +123,15 @@ SkipBoGame::SkipBoGame(bool isS, std::string file){
 
   std::string trash;
   save >> trash;//dont care about this boolean, we want the one from the command line argument
+	std::cout << trash << std::endl;
 
   save >> nump;
+	std::cout << nump << std::endl;
   save >> curp;
+	std::cout << curp << std::endl;
 
   std::string tempString = "a";
-  save >> tempString;
+  //save >> tempString;
 
   for (int i = 0; i < nump; i ++){
     std::string playerName;
