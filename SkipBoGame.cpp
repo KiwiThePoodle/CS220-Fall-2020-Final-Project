@@ -305,23 +305,35 @@ while (move){
    // bool move = true;
     if (f == 0){
       int temp = peep[p]->getStockCardValue();
+	    if (build[b]->size() == 0){
+	    	c = peep[p]->getStockPileCard();
+	    }else{
       if((temp == 0) || (temp == build[b]->topCardValue() + 1)) {
 	      c = peep[p]->getStockPileCard();
       }
+	    }
     }else if (f >= 1 && f <= 4){
 	    int temp = peep[p]->getDiscardCardValue(f);
+	     if (build[b]->size() == 0){
+	    	c = peep[p]->getDiscardPileCard();
+	    }else{
 	    if((temp == 0) || (temp == build[b]->topCardValue() + 1)) {
       c = peep[p]->getDiscardPileCard(f);
 	    }
+	     }
     }else if (f >= 5 && f <= 9){
 	    if (f - 5 > peep[p]->handSize()-1){
 	    	illegalMove();
 		    
 	    }
       int temp = peep[p]->getHandCardValue(f);
+	     if (build[b]->size() == 0){
+	    	c = peep[p]->getHandPileCard();
+	    }else{
 	    if((temp == 0) || (temp == build[b]->topCardValue() + 1)) {
 	    c = peep[p]->getHandPileCard(f);
 	    }
+	     }
     }
 	    else {
 		    move = false;
