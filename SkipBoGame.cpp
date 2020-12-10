@@ -205,7 +205,7 @@ SkipBoGame::SkipBoGame(bool isS, std::string file){
     save >> tempString;
     int buildSize;
     save >> buildSize;
-    vector<Card> b;
+    std::vector<Card> b;
     for (int i7 = 0; i7 < buildSize; i7 ++){
       int cardNum;
       save >> cardNum;
