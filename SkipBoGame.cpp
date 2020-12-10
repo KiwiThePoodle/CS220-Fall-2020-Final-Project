@@ -236,8 +236,10 @@ void SkipBoGame::playTurn(){
 	
   while(!discard && !checkWin()){
    display();
+	  std::cout << "Check 1" <<std::endl;
     discard = play(playerToGo);
   display();
+	  std::cout << "Check 2" <<std::endl;
     
   }
   DrawPile* temp = peep[playerToGo]->getUpdatedDrawPile();
