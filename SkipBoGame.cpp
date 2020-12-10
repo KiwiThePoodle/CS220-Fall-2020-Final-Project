@@ -410,7 +410,7 @@ bool SkipBoGame::play(int p){
      std::cin>>to;   //depending on user input (move) checks validity
      while (((from == "1" || from == "2" || from == "3" || from == "4") &&(to == "1" || to == "2" || to == "3" || to == "4") ) || (from == "0" && (to == "1" || to == "2" || to == "3" || to == "4")) || ((action!= "m" && action != "d") || (from != "0" && from != "1" && from != "2" && from != "3" && from != "4" && from != "5" && from != "6" && from != "7" && from != "8" && from != "9")  ||(to != "a" && to != "b" && to != "c" && to != "d" && to != "1" && to != "2" && to != "3" && to != "4" )) || ((from == "5" || from == "6" || from == "7" || from == "8" || from == "9") &&(to == "5" || to == "6" || to == "7" || to == "8" || to == "9"))){
        illegalMove();
-	     std::cout <<"illegal combo" << std::endl;
+	     
        std::cout << "(m)ove [start] [end] or (d)raw ? ";
        std::cin >> action;
        std::cin >> from;
@@ -426,6 +426,7 @@ bool SkipBoGame::play(int p){
      if (action != "d"){   //just converts from letter to number for easier usage
        f = std::stoi(from);
        if (to == "a" || to == "b" || to == "c" || to == "d"){
+	       std::cout << "BUILD HAS BEEN ACCEPTED" << std::endl;////////////////////////////////////////////////
 	        if (to == "a"){b = 0;}
 	        if (to == "b"){b = 1;}
 	        if (to == "c"){b = 2;}
@@ -452,6 +453,7 @@ bool SkipBoGame::play(int p){
 	     
       if (f == 0){
         leave = peep[p]->getStockCardValue();
+	      std::cout << "TEST " << leave << std::endl;///////////////////////////////
       }
       if (f >= 1 && f <= 4){
 	if(peep[p]->discardIsEmpty(f)){
