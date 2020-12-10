@@ -8,16 +8,14 @@
 #include <algorithm>
 #include "Card.h"
 
-using std::vector;
-
 class Pile {
  protected:
-  vector<Card> pile;
+  std::vector<Card> pile;
 
  public:
   Pile() { }
  
-  Pile(vector<Card> p) { pile = p; }
+  Pile(std::vector<Card> p) { pile = p; }
  
   ~Pile(){
      /*for(int i = 0; i < pile.size(); i ++){
@@ -26,8 +24,8 @@ class Pile {
    //delete (pile);
   }
  
- vector<Card> getPile() {   //returns the pile
-  vector<Card>r;
+ std::vector<Card> getPile() {   //returns the pile
+  std::vector<Card>r;
   for (int i = 0; i < (int)pile.size(); i ++){
    r.push_back(pile.at(i));
    
