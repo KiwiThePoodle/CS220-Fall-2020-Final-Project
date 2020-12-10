@@ -253,6 +253,8 @@ void SkipBoGame::illegalMove(){
 }
 
 bool SkipBoGame::play(int p){
+	bool move = true;
+	while (move){
   std::cout << "(m)ove [start] [end] or (d)raw ? ";
   std::string action;
   std::string from;
@@ -300,7 +302,7 @@ bool SkipBoGame::play(int p){
     bool go = true;
 	  
 	  Card c;
-    bool move = true;
+   // bool move = true;
     if (f == 0){
       int temp = peep[p]->getStockCardValue();
       if((temp == 0) || (temp == build[b]->topCardValue() + 1)) {
@@ -335,17 +337,19 @@ bool SkipBoGame::play(int p){
     if(move) {
     build[b]->addCard(c);
     }
-	  else {
+	//  else {
 		  std::cout << "illegal command, try again" << std::endl << std::endl;
     display();
-    std::cout << "(m)ove [start] [end] or (d)raw ? ";
+    /*std::cout << "(m)ove [start] [end] or (d)raw ? ";
     std::cin >> action;
     std::cin >> from;
     std::cin>>to;
+    */
+	  move = !move;
 	  }
     
   }
-  
+	}
   return false;
 }
 
