@@ -315,23 +315,22 @@ while (move){
       }
 	    }
     }else if (f >= 1 && f <= 4){
-	    
-	    int temp = peep[p]->getDiscardCardValue(f);
-	     if (build[b]->size() == 0){
-	    	c = peep[p]->getDiscardPileCard(f);
-		     move = true;
-	    }else{
+	int temp = peep[p]->getDiscardCardValue(f);
+	if (build[b]->size() == 0){
+	 	c = peep[p]->getDiscardPileCard(f);
+		 move = true;
+	}else{
 	    if((temp == 0) || (temp == build[b]->topCardValue() + 1)) {
-      c = peep[p]->getDiscardPileCard(f);
-		    move = true;
+      		c = peep[p]->getDiscardPileCard(f);
+		move = true;
 	    }
-	     }
+	}
     }else if (f >= 5 && f <= 9){
-	    if (f - 5 > peep[p]->handSize()-1){
+	if (f - 5 > peep[p]->handSize()-1){
 	    	illegalMove();
 		    move=false;
 		    
-	    }else{
+	}else{
       		int temp = peep[p]->getHandCardValue(f);
 	     	if (build[b]->size() == 0){
 	    		c = peep[p]->getHandPileCard(f);
@@ -351,11 +350,11 @@ while (move){
 
    
     if (move = true){
-    if (t <= 4 && t >= 1){
-      //move to discard
-      peep[p]->handToDiscard(c, t);
-	   // std::cout << "test";
-      return true;
+    	if (t <= 4 && t >= 1){
+      
+      	peep[p]->handToDiscard(c, t);
+	
+      	return true;
     }
     }
     if(move) {
@@ -369,6 +368,7 @@ while (move){
     std::cin >> from;
     std::cin>>to;
     */
+	  move = false;
 	  move = !move;
   }
     
