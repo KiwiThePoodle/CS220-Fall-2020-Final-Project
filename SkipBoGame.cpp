@@ -326,7 +326,7 @@ while (move){
 	    if (f - 5 > peep[p]->handSize()-1){
 	    	illegalMove();
 		    
-	    }
+	    }else{
       int temp = peep[p]->getHandCardValue(f);
 	     if (build[b]->size() == 0){
 	    	c = peep[p]->getHandPileCard();
@@ -335,6 +335,7 @@ while (move){
 	    c = peep[p]->getHandPileCard(f);
 	    }
 	     }
+    }
     }
 	    else {
 		    move = false;
