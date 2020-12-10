@@ -5,6 +5,7 @@
 #include "Card.h"
 #include "Pile.h"
 #include "FaceUpPile.h"
+#include "DrawPile.h"
 
 class BuildPile : public FaceUpPile {
  private:
