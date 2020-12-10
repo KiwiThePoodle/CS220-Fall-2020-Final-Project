@@ -93,16 +93,6 @@ void Player::readIn(std::istream & is) {
   }
 }
 
-/*Player::~Player() {   //deletes each pile for a player
-  delete stock;
-  delete handPile;
-  delete discard[0];
-  delete discard[1];
-  delete discard[2];
-  delete discard[3];
-  delete updatedDrawPile;
-}*/
-
 void Player::drawToHand() {                   //called at the start of player's turn, draws cards until hand is full
   int cardsToDraw = 5 - handPile->size();
   for(int i = 0; i < cardsToDraw; i++) {
