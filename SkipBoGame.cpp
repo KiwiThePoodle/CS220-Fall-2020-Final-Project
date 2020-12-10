@@ -298,8 +298,9 @@ bool SkipBoGame::play(int p){
 	 }
        }
      }
+     Card c;
      else if (action == "m"){   //moves cards depending on where from and where to  
-       Card c;
+       
        if (f == 0){
 	 int temp = peep[p]->getStockCardValue();
 	 if (build[b]->size() == 0){
@@ -309,8 +310,8 @@ bool SkipBoGame::play(int p){
 	   if((temp == 0) || (temp == build[b]->topCardValue() + 1)) {
 	     c = peep[p]->getStockPileCard();
 	     move = true;
-	   }
-	 }else{move = false;}
+	   }else{move = false;}
+	 }
        }else if (f >= 1 && f <= 4){
 	 int temp = peep[p]->getDiscardCardValue(f);
 	 if (build[b]->size() == 0){
@@ -320,8 +321,8 @@ bool SkipBoGame::play(int p){
 	   if((temp == 0) || (temp == build[b]->topCardValue() + 1)) {
 	     c = peep[p]->getDiscardPileCard(f);
 	     move = true;
-	   }
-	 }else{move = false;}
+	   }else{move = false;}
+	 }
        }else if (f >= 5 && f <= 9){
 	 if (f - 5 > peep[p]->handSize()-1){
 	   illegalMove();
