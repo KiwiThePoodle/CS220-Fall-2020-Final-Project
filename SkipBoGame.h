@@ -51,6 +51,8 @@ public:
   //to true when
   //a stock pile is realized as empty
 
+  void illegalMove();//prints illegal move stuff
+  
   void save(std::string file);//saves the game to the file
   //UPDATE: save(string file) needs to be implemented
   
