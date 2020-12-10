@@ -20,6 +20,7 @@ std::string Pile::toString() const {
 
 Card Pile::topCard() {   //useful method that gets the top card in the pile and removes it from the current pile as well
   Card temp = pile.at(0);
-  pile.erase(pile.begin());
+  //pile.erase(pile.begin());
+  delete pile.begin();
   return temp;
 }
