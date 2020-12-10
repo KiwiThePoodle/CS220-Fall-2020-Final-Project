@@ -15,34 +15,23 @@ class Player {
  protected:
   std::string name;
   FaceUpPile* stock;
-  FaceUpPile discard[4];//this is a pointer to the first value in an array of 4 discard piles
-  //std::vector<Card>* discard;
+  FaceUpPile discard[4];   //this is a pointer to the first value in an array of 4 discard piles
   Hand* handPile;
   DrawPile* updatedDrawPile;   //used so a player can access the drawPile and update it as well
  public:
   Player(std::string player_name) {   //blank player
     name = player_name;          //in a new game, everything should start out empty except for player name, stock pile for each player will be filled
     stock = new FaceUpPile();    //soon after
-    
-    
-    //FaceUpPile discardP[4];
-    //discard = discardP;
-    
-    
     handPile = new Hand();
     updatedDrawPile = new DrawPile();
   }
   
-  
   Player(std::string player_name, FaceUpPile* stock_pile, FaceUpPile discard_piles[4], Hand* hand_pile) {   //player name and piles of a player
     name = player_name;
     stock = stock_pile;
-    //discard = discard_piles; have to implement discard pile properly
     for (int i = 0; i < 4; i ++){
      discard[i] = discard_piles[i];
-     
     }
-   // delete discard_piles;
     handPile = hand_pile;
   }
 
@@ -55,7 +44,7 @@ class Player {
 
   //~Player();   //destructor
 
-  void addToStockPile(Card c) { stock->addCard(c); }
+  void addToStockPile(Card c) { stock->addCard(c); }   //adds a card to the stockpile
 
   void updateDrawPile(DrawPile* d) { updatedDrawPile = d; }   //called at the start of each players turn to update the drawPile for the player to access
 
