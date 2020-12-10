@@ -297,7 +297,9 @@ bool SkipBoGame::play(int p){
     }
   }
   else if (action == "m"){   //moves cards depending on where from and where to
-    Card c;
+    bool go = true;
+	  
+	  Card c;
     bool move = true;
     if (f == 0){
       int temp = peep[p]->getStockCardValue();
@@ -312,6 +314,7 @@ bool SkipBoGame::play(int p){
     }else if (f >= 5 && f <= 9){
 	    if (f - 5 > peep[p]->handSize()-1){
 	    	illegalMove();
+		    
 	    }
       int temp = peep[p]->getHandCardValue(f);
 	    if((temp == 0) || (temp == build[b]->topCardValue() + 1)) {
@@ -342,6 +345,7 @@ bool SkipBoGame::play(int p){
 	  }
     
   }
+  
   return false;
 }
 
