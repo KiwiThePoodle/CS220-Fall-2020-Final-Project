@@ -500,9 +500,9 @@ bool SkipBoGame::play(int p){
     if (action == "d"){   //checks if player can draw, then draws if player's hand size is zero
     //draw
        if (peep[p]->handSize() == 0){
-	        for (int i = 0; i < 5; i ++){
-	            peep[p]->drawToHand();
-	        }
+	       // for (int i = 0; i < 5; i ++){
+	    peep[p]->drawToHand();
+	        //}
        }
     }
      
