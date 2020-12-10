@@ -47,8 +47,7 @@ class Pile {
 
   Card removeCard(int cardIndex){
      Card c = pile.at(cardIndex);
-     //delete pile.at(cardIndex);
-    pile.erase(pile.begin() + cardIndex);  
+     pile.erase(pile.begin() + cardIndex);  
    return c;
   }
  
@@ -58,8 +57,7 @@ class Pile {
       int n;
       is >> n;
       Card* c = new Card(n);
-      //pile.push_back(*c);
-      pile.insert(pile.begin(), 1, *c);
+      pile.insert(pile.begin(), 1, *c);   //instead of push_back so the cards are not read-in backwards
     }
     
   }// students to write this, companion to toString()
