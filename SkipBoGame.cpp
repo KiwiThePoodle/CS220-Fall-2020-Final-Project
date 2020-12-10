@@ -426,7 +426,7 @@ bool SkipBoGame::play(int p){
      if (action != "d"){   //just converts from letter to number for easier usage
        f = std::stoi(from);
        if (to == "a" || to == "b" || to == "c" || to == "d"){
-	       std::cout << "BUILD HAS BEEN ACCEPTED" << std::endl;////////////////////////////////////////////////
+	       //std::cout << "BUILD HAS BEEN ACCEPTED" << std::endl;////////////////////////////////////////////////
 	        if (to == "a"){b = 0;}
 	        if (to == "b"){b = 1;}
 	        if (to == "c"){b = 2;}
@@ -453,7 +453,7 @@ bool SkipBoGame::play(int p){
 	     
       if (f == 0){
         leave = peep[p]->getStockCardValue();
-	      std::cout << "TEST " << leave << std::endl;///////////////////////////////
+	      //std::cout << "TEST " << leave << std::endl;///////////////////////////////
       }
       if (f >= 1 && f <= 4){
 	if(peep[p]->discardIsEmpty(f)){
