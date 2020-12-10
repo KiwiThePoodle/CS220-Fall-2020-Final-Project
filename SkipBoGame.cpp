@@ -70,13 +70,9 @@ SkipBoGame::SkipBoGame(bool isS, int pCount, int stk, std::string file) {
   stock = stk;
   isShuffle = isS;
   end = false;
-  //draw = new DrawPile();
-
   
-  std::ifstream deck0("deck0.txt");
-  //DrawPile tempDeck = new DrawPile();
-  //tempDeck.readIn(deck0);
-  draw.readIn(deck0); //= new DrawPile(tempDeck);
+  std::ifstream deck0("deck0.txt");   //reads in the playing deck
+  draw.readIn(deck0);
   draw.setRand(isShuffle);
 	
   if(isS) {   //if shuffle is on, shuffle the draw pile
@@ -102,21 +98,12 @@ SkipBoGame::SkipBoGame(bool isS, int pCount, int stk, std::string file) {
   }
   
   int index = curp;
-  //std::vector<FaceUpPile> stocks(nump);
-  for(int i = 0; i < stock; i++) {
+  for(int i = 0; i < stock; i++) {   //gives each player's stock pile a card in round-robin fashion
     for(int j = 0; j < nump; j++) {
-      //stocks[j].getPile().push_back(draw.topCard());
       peep[index]->addToStockPile(draw.topCard());                                
       index = (index + 1) % nump; 
     }
   }
-
-  /*  int index = curp;
-  for(int i = 0; i < nump; i++) {
-    peep[index]->addToStockPile(stocks[i].topCard());
-    index = (index + 1) % nump;
-  }
-  */
   std::string saveFile = file;
   }
 
@@ -191,14 +178,12 @@ SkipBoGame::SkipBoGame(bool isS, std::string file){
   save >> tempString;
   int deckSize;
   save >> deckSize;
-  //DrawPile deckPile;
   for (int i5 = 0; i5 < deckSize; i5++){
     int cardNum;
     save >> cardNum;
     Card* c = new Card(cardNum);
     draw.addCard(*c);
   }
-  //draw = new DrawPile(deckPile);
   draw.setRand(isShuffle);
 
   for (int i6 = 0; i6 < 4; i6 ++){
@@ -237,11 +222,8 @@ void SkipBoGame::playTurn(){
 	display();	
   while(!discard && !checkWin()){
    
-	  //std::cout << "Check 1" <<std::endl;
     discard = play(playerToGo);
-  display();
-	  //std::cout << "Check 2" <<std::endl;
-    
+  display();    
   }
   DrawPile* temp = peep[playerToGo]->getUpdatedDrawPile();
   draw = *temp;
@@ -275,44 +257,24 @@ bool SkipBoGame::play(int p){
     std::cin >> action;
     std::cin >> from;
     std::cin>>to;
-  }	  
-  /*while (action!= "m" || action != "d"){
-  	std::cout << "illegal command, try again" << endl;
-	display();
-	  std::cout << "(m)ove [start] [end] or (d)raw ? ";
-	  std cin >> action;
-	  std::cin >> from;
-	  std::cin>>to;
   }
-  if (action != "d"){
-  	std::cin >> from;
-	  std::cin>>to;
-	  std cin >> action;
-	  std::cin >> from;
-	  std::cin>>to;
-	  }
-  }
-  */
 	
   std::cout << std::endl;
 
   int f;
   int t;
-  //bool built = false;
   int b;
   
   if (action != "d"){
     f = std::stoi(from);
     if (to == "a" || to == "b" || to == "c" || to == "d"){
-      //built = true;
       if (to == "a"){b = 0;}
       if (to == "b"){b = 1;}
       if (to == "c"){b = 2;}
       if (to == "d"){b = 3;}
     }
     else{
-      t = std::stoi(to);
-      //built = false;    
+      t = std::stoi(to);  
     }
   }
   
@@ -351,25 +313,7 @@ bool SkipBoGame::play(int p){
 
 void SkipBoGame::save(std::string file){
   
-  //int turn = curp;
   std::ofstream saveFile(file);
-  /*saveFile << isShuffle << " " << nump << " " << curp << endl;
-  for (int i = curp; i < nump + curp; i ++){
-    int playerN = i;
-    if (i > nump-1){
-      playerN -= nump;
-    }
-    std::string p = peep[playerN]->toString();
-    saveFile << p << endl;//might need hand tostring unless it inherits from pile?
-    
-  }
-
-  saveFile << draw.toString() << endl;
-
-  for (int i = 0; i < 4; i ++){
-    saveFile << build[i]->toString() << endl;
-  }
-  */
   saveFile << toString();
 
 
