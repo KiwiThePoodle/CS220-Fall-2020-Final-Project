@@ -42,8 +42,6 @@ class Player {
 
   void readIn(std::istream & is);
 
-  //~Player();   //destructor
-
   void addToStockPile(Card c) { stock->addCard(c); }   //adds a card to the stockpile
 
   void updateDrawPile(DrawPile* d) { updatedDrawPile = d; }   //called at the start of each players turn to update the drawPile for the player to access
