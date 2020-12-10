@@ -75,8 +75,8 @@ SkipBoGame::SkipBoGame(bool isS, int pCount, int stk, std::string file) {
   isShuffle = isS;
   end = false;
   
-  std::ifstream deck0("deck0.txt");   //reads in the playing deck
-  draw.readIn(deck0);
+  std::ifstream deck(file);   //reads in the playing deck
+  draw.readIn(file);
   draw.setRand(isShuffle);
 	
   if(isS) {   //if shuffle is on, shuffle the draw pile
