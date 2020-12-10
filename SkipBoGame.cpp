@@ -330,11 +330,11 @@ bool SkipBoGame::play(int p){
        }else if (f >= 5 && f <= 9){
 	       std::cout << "Test1" << std::endl;
 	       std::cout << f-5 << "." << peep[p]->handSize()-1 << std::endl;
-	 if (f - 5 > peep[p]->handSize()-1){
-	   illegalMove();
-	   move=false;
+	 	if (f - 5 > peep[p]->handSize()-1){
+	   		illegalMove();
+	   		move=false;
 	   
-	 }else{
+	 	}else{
 	   int temp = peep[p]->getHandCardValue(f);
 		
 	   if (build[b]->size() == 0){
@@ -349,7 +349,7 @@ bool SkipBoGame::play(int p){
 	       //c = Card(temp);
 		     c = peep[p]->getHandPileCard(f);
 		     std::cout << "Test3" << std::endl;
-	     }
+	     }else{move = false; illegalMove();}
 	   }
 	 }
        }
