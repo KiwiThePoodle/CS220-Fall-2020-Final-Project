@@ -11,7 +11,7 @@ using std::cout;
 using std::endl;
 
 int main(int argc, char *argv[]) {
-  bool shuffle;
+  bool shuffle; //fields for skipbogame
   int numPlayers;
   int stockPileSize;
 
@@ -39,10 +39,10 @@ int main(int argc, char *argv[]) {
     }
     else {
       //continue the game, not sure how to do this
-      SkipBoGame* game = new SkipBoGame(shuffle, argv[2]);
+      SkipBoGame* game = new SkipBoGame(shuffle, argv[2]); //creation of skipbogame object for resuming play
 
       while(!game->checkWin()) {
-        cout << "\n >> " << game->getCurrentPlayer() << " turn next" << endl;
+        cout << "\n >> " << game->getCurrentPlayer() << " turn next" << endl; //playing the game out
         cout << "(p)lay, (s)ave, or (q)uit ? ";
         std::string psq;
         std::cin >> psq;
@@ -79,7 +79,7 @@ int main(int argc, char *argv[]) {
       cout << "num players is " << numPlayers << endl;
     }
 
-    if((numPlayers == 6 && atoi(argv[3]) > 20) || (numPlayers <= 5 && atoi(argv[3]) > 30)) { //not exactly sure its supposed to be 162
+    if((numPlayers == 6 && atoi(argv[3]) > 20) || (numPlayers <= 5 && atoi(argv[3]) > 30)) {
       cout << "invalid program usage: bad stock size" << endl;
       return 1;
     }
@@ -95,10 +95,10 @@ int main(int argc, char *argv[]) {
     }
     else {
       //create a skipbogame object
-      SkipBoGame* game = new SkipBoGame(shuffle, numPlayers, stockPileSize, argv[4]);
+      SkipBoGame* game = new SkipBoGame(shuffle, numPlayers, stockPileSize, argv[4]); //creation of skipbogame object for new game
       
       while(!game->checkWin()) {
-	cout << "\n >> " << game->getCurrentPlayer() << " turn next" << endl;
+	cout << "\n >> " << game->getCurrentPlayer() << " turn next" << endl; //playing the game out
 	cout << "(p)lay, (s)ave, or (q)uit ? ";
 	std::string psq;
 	std::cin >> psq;
