@@ -3,6 +3,7 @@
 Our gitlog.txt file is really long with hundreds of commits since we edited our project through github. We thought that this was easier since we wanted to receive updates from each other while we worked together over zoom. We initially started with regular commits from emacs with regular/meaningful commit messages (approximately 10 commits per group member).
 
 We were rushed for time at the end of the project (we were not able to work on the project much earlier on as Thomas and James were moving) with debugging so we likely will have memory leakage issues that are unresolved. The game functionality should be fine as long as the user doesn't imput illegal moves.
+Update: we received an extension for the project.
 
 We did not include a BuildPile class as we thought it was not necessary for our code specifically and we saw on Piazza that it was alright to not have one.
 
