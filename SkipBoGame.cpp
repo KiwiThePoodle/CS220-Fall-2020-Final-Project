@@ -348,7 +348,7 @@ while (move){
       peep[p]->handToDiscard(c, t);
       return true;
     }
-    if(move) {
+    if(!move) {
 	    build[b]->addCard(c);
     }
 	//  else {
