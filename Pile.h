@@ -64,7 +64,7 @@ class Pile {
 
   virtual void display() const = 0;  // for live game play, must override
 
-  Card topCard();
+  Card topCard();   //function returns the top card of a pile
 };
 
 
