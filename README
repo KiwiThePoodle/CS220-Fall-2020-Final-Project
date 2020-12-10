@@ -2,6 +2,6 @@
 
 Our gitlog.txt file is really long with hundreds of commits since we edited our project through github. We thought that this was easier since we wanted to receive updates from each other while we worked together. We initially started with regular commits from emacs with good commit messages.
 
-We were rushed for time at the end of the project with debugging so we likely will have memory leakage issues that are unresolved. The game functionality should be fine as long as the user doesn't imput illegal moves.
+We were rushed for time at the end of the project (we were not able to work on the project much earlier on as Thomas and James were moving) with debugging so we likely will have memory leakage issues that are unresolved. The game functionality should be fine as long as the user doesn't imput illegal moves.
 
 All members put in a lot of time and worked on the project together.
