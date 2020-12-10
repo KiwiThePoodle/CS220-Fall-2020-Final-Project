@@ -50,8 +50,6 @@ class Pile {
   }
  
   void readIn(std::istream & is){
-   int temp;
-   is >> temp;
     while(!is.eof()){
       int n;
       is >> n;
