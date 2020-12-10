@@ -231,6 +231,10 @@ SkipBoGame::~SkipBoGame(){   //destructor
   for (int i = 0; i < (int)peep.size(); i ++){
     delete peep.at(i);
   }
+  for (int i = 0; i < 4; i ++){
+    delete build[i];
+    delete draw;
+  }
 }
 
 void SkipBoGame::playTurn(){   //just plays a player's entire turn
