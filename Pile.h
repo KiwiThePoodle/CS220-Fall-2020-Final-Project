@@ -54,7 +54,6 @@ class Pile {
       is >> n;
       Card* c = new Card(n);
       pile.insert(pile.begin(), 1, *c);   //instead of push_back so the cards are not read-in backwards
-      Card c2 = topCard();
     }
     
   }// students to write this, companion to toString()
