@@ -263,10 +263,34 @@ bool SkipBoGame::play(int p){
   std::string to;
 
   std::cin >> action;
+  std::cin >> from;
+  std::cin>>to;
+  while (action!= "m" || action != "d" || from != "0" || from != "1" || from != "2" || from != "3" || from != "4" || from != "5" || from != "6" || from != "7" || from != "8" || from != "9" || to != "a" || to != "b" || to != "c" || to != "d" || to != "1" || to != "2" || to != "3" || to != "4" ){
+  	std::cout << "illegal command, try again" << endl;
+  	display();
+	std::cout << "(m)ove [start] [end] or (d)raw ? ";
+	std cin >> action;
+	std::cin >> from;
+	std::cin>>to;
+  }	  
+  /*while (action!= "m" || action != "d"){
+  	std::cout << "illegal command, try again" << endl;
+	display();
+	  std::cout << "(m)ove [start] [end] or (d)raw ? ";
+	  std cin >> action;
+	  std::cin >> from;
+	  std::cin>>to;
+  }
   if (action != "d"){
   	std::cin >> from;
 	  std::cin>>to;
+	  std cin >> action;
+	  std::cin >> from;
+	  std::cin>>to;
+	  }
   }
+  */
+	
   std::cout << std::endl;
 
   int f;
