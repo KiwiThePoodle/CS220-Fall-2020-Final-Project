@@ -336,6 +336,7 @@ while (move){
 	     	if (build[b]->size() == 0){
 	    		c = peep[p]->getHandPileCard(f);
 			move = true;
+			
 	    	}else{
 	    		if((temp == 0) || (temp == build[b]->topCardValue() + 1)) {
 	    			move = true;
@@ -353,6 +354,7 @@ while (move){
     if (t <= 4 && t >= 1){
       //move to discard
       peep[p]->handToDiscard(c, t);
+	    std::cout << "test";
       return true;
     }
     if(move) {
