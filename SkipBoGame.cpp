@@ -91,7 +91,7 @@ SkipBoGame::SkipBoGame(bool isS, int pCount, int stk, std::string file) {
   
 	
   //need to generate deck, and draw cards for everyone, taking those cards out of the deck
-  for (int i = 0; i < pCount-1; i ++){
+  for (int i = 0; i < pCount; i ++){
     //generate players
     std::string n = "Player";
     std::string name = n + std::to_string(i);//gives us player0, player1, and so on
