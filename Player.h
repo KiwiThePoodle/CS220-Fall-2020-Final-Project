@@ -56,7 +56,7 @@ class Player {
     return stock->size();
   }
   
-  //methods used to get the value of the card, should help with checking if cards can be moved to build pilea
+  //methods used to get the value of the card, should help with checking if cards can be moved to build piles
   int getStockCardValue() {   //returns the value of the top card in the stock pile
     return stock->topCard().getValue();
   }
