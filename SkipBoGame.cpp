@@ -287,12 +287,25 @@ bool SkipBoGame::play(int p){
   }
   else if (action == "m"){   //moves cards depending on where from and where to
     Card c;
+    bool move = true;
     if (f == 0){
-      c = peep[p]->getStockPileCard();
+      int temp = peep[p]->getStockCardValue();
+      if((temp == 0) || (temp == build[b].topCardValue() + 1)) {
+	      c = peep[p]->getStockPileCard();
+      }
     }else if (f >= 1 && f <= 4){
+	    int temp = peep[p]->getDiscardCardValue(f);
+	    if(temp == 0) || (temp == build[b].topCardValue() + 1)) {
       c = peep[p]->getDiscardPileCard(f);
+	    }
     }else if (f >= 5 && f <= 9){
-      c = peep[p]->getHandPileCard(f);
+      int temp = peep[p]->getHandCardValue(f);
+	    if((temp == 0) || (temp == build[b].topCardValue() + 1)) {
+	    c = peep[p]->getHandPileCard(f);
+	    }
+	    else {
+		    move = false;
+	    }
     }
     //move
    
@@ -302,8 +315,17 @@ bool SkipBoGame::play(int p){
       peep[p]->handToDiscard(c, t);
       return true;
     }
-    
+    if(move) {
     build[b]->addCard(c);
+    }
+	  else {
+		  std::cout << "illegal command, try again" << std::endl << std::endl;
+    display();
+    std::cout << "(m)ove [start] [end] or (d)raw ? ";
+    std::cin >> action;
+    std::cin >> from;
+    std::cin>>to;
+	  }
     
   }
   return false;
