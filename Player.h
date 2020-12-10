@@ -42,7 +42,7 @@ class Player {
      discard[i] = discard_piles[i];
      
     }
-    delete discard_piles;
+   // delete discard_piles;
     handPile = hand_pile;
   }
 
