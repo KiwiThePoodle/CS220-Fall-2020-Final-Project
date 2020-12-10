@@ -307,9 +307,11 @@ while (move){
       int temp = peep[p]->getStockCardValue();
 	    if (build[b]->size() == 0){
 	    	c = peep[p]->getStockPileCard();
+		    move = true;
 	    }else{
       if((temp == 0) || (temp == build[b]->topCardValue() + 1)) {
 	      c = peep[p]->getStockPileCard();
+	      move = true;
       }
 	    }
     }else if (f >= 1 && f <= 4){
@@ -317,22 +319,27 @@ while (move){
 	    int temp = peep[p]->getDiscardCardValue(f);
 	     if (build[b]->size() == 0){
 	    	c = peep[p]->getDiscardPileCard(f);
+		     move = true;
 	    }else{
 	    if((temp == 0) || (temp == build[b]->topCardValue() + 1)) {
       c = peep[p]->getDiscardPileCard(f);
+		    move = true;
 	    }
 	     }
     }else if (f >= 5 && f <= 9){
 	    if (f - 5 > peep[p]->handSize()-1){
 	    	illegalMove();
+		    move=false;
 		    
 	    }else{
       		int temp = peep[p]->getHandCardValue(f);
 	     	if (build[b]->size() == 0){
 	    		c = peep[p]->getHandPileCard(f);
+			move = true;
 	    	}else{
 	    		if((temp == 0) || (temp == build[b]->topCardValue() + 1)) {
-	    			c = peep[p]->getHandPileCard(f);
+	    			move = true;
+				c = peep[p]->getHandPileCard(f);
 	    		}
 	     	}
     	}
