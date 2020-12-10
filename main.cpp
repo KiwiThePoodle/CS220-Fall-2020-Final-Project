@@ -79,7 +79,7 @@ int main(int argc, char *argv[]) {
       cout << "num players is " << numPlayers << endl;
     }
 
-    if((numPlayers == 6 && atoi(argv[3]) > 20) || (numPlayers <= 5 && atoi(argv[3]) > 30)) {
+    if((numPlayers == 6 && atoi(argv[3]) > 20) || (numPlayers <= 5 && atoi(argv[3]) > 30) || (atoi(arg[3]) < 1)) {
       cout << "invalid program usage: bad stock size" << endl;
       return 1;
     }
