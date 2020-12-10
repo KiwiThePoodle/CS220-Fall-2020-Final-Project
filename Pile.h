@@ -58,7 +58,8 @@ class Pile {
       int n;
       is >> n;
       Card* c = new Card(n);
-      pile.push_back(*c);
+      //pile.push_back(*c);
+      pile.insert(begin(), 1, *c);
     }
     
   }// students to write this, companion to toString()
