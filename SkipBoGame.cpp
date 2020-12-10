@@ -471,7 +471,7 @@ bool SkipBoGame::play(int p){
         if (build[b]->size()==0){
           target = 0;
         }else{
-          target = build[b]->topCardValue();
+          target = build[b]->getCardValue();
         }
       }
        
