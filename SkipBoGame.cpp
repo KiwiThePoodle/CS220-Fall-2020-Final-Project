@@ -126,12 +126,12 @@ SkipBoGame::SkipBoGame(bool isS, std::string file){
 	
   std::string trash;
   save >> trash;//dont care about this boolean, we want the one from the command line argument
-	std::cout << trash << std::endl;
+	//std::cout << trash << std::endl;
 
   save >> nump;
-	std::cout << nump << std::endl;
+	//std::cout << nump << std::endl;
   save >> curp;
-	std::cout << curp << std::endl;
+	//std::cout << curp << std::endl;
 
   std::string tempString = "a";
  // save >> tempString;
@@ -148,11 +148,11 @@ SkipBoGame::SkipBoGame(bool isS, std::string file){
     std::string playerName;
     save >> playerName;
     
-	  std::cout << playerName << std::endl;
+	  //std::cout << playerName << std::endl;
     save >> tempString; //should get rid of word "stock"
-	  std::cout << tempString << std::endl;
+	  //std::cout << tempString << std::endl;
     int stockSize;
-	  std::cout << stockSize << std::endl;
+	  //std::cout << stockSize << std::endl;
     save >> stockSize;
 	  /*std::cout<<"Player " << i << std::endl;/////////////////////////////////////////////////////////*/
 	  /*std::cout<<std::endl<<"TEST " << stockSize<<std::endl;/////////////////////////////////////////*/
