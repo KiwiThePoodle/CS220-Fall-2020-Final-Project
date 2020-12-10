@@ -113,7 +113,7 @@ void Player::drawToHand() {                   //called at the start of player's 
 void Player::handToDiscard(int handNum, int discardNum) {   //moves card from hand to a discard pile
   handNum -= 5;
   Card temp = handPile->removeCard(handNum);
-  handPile.addCard(temp);
+  handPile->addCard(temp);
   discardNum -= 1;
   discard[discardNum].addCard(temp);
 }
