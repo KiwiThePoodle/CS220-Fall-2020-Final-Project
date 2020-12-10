@@ -1,0 +1,70 @@
+false 4 0
+Player0
+Stock 5
+0 0 0 0 0
+Hand 0
+
+Discard0 0
+
+Discard1 0
+
+Discard2 0
+
+Discard3 0
+
+Player1
+Stock 5
+0 0 0 0 0
+Hand 0
+
+Discard0 0
+
+Discard1 0
+
+Discard2 0
+
+Discard3 0
+
+Player2
+Stock 5
+0 0 0 0 0
+Hand 0
+
+Discard0 0
+
+Discard1 0
+
+Discard2 0
+
+Discard3 0
+
+Player3
+Stock 5
+0 0 0 0 1
+Hand 0
+
+Discard0 0
+
+Discard1 0
+
+Discard2 0
+
+Discard3 0
+
+Draw 143
+1 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2
+2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 4 4 4 4 4
+4 4 4 4 4 4 4 5 5 5 5 5 5 5 5 5 5 5 5 6
+6 6 6 6 6 6 6 6 6 6 6 7 7 7 7 7 7 7 7 7
+7 7 7 8 8 8 8 8 8 8 8 8 8 8 8 9 9 9 9 9
+9 9 9 9 9 9 9 10 10 10 10 10 10 10 10 10 10 10 10 11
+11 11 11 11 11 11 11 11 11 11 11 12 12 12 12 12 12 12 12 12
+12 12 12
+Builda 0
+
+Buildb 0
+
+Buildc 0
+
+Buildd 0
+
