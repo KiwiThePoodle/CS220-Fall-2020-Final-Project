@@ -5,12 +5,3 @@
 void DrawPile::display() const {
   std::cout << "[XX]/" << size();
 }
-
-/*DrawPile::~DrawPile() {
-  delete drawPile;
-}*/
-
-/*Card DrawPile::topCard() {
-  Card temp = drawPile.topCard();
-  return temp;
-}*/
