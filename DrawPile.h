@@ -13,8 +13,11 @@ class DrawPile : public Pile {
  
   DrawPile(std::vector<Card> d) { pile = d; }
  
-  bool getRand() const {   //returns whether random is on or not
-    return rand;
+  std::string getRand() const {   //returns whether random is on or not
+   if(rand == false) {
+    return "false";
+   }
+   return "true";
   }
 
   void setRand(bool b){   //sets whether random is on or not
