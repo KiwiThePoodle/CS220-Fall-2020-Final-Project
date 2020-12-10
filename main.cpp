@@ -122,6 +122,6 @@ int main(int argc, char *argv[]) {
       cout << "\nGAME OVER - " << game->getCurrentPlayer() << " wins!" << endl;
       delete game;
     }
-    return 0;
+    return 1;
   }
 }
