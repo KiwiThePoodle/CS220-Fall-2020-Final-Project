@@ -16,7 +16,7 @@ class Hand : public Pile {
 
   ~Hand(){
    for (int i = 0; i < getHandSize(); i ++){
-    delete &pile.at(i)
+    delete &pile.at(i);
    }
   }
   void display() const;
