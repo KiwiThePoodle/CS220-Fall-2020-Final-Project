@@ -295,7 +295,7 @@ bool SkipBoGame::play(int p){
       }
     }else if (f >= 1 && f <= 4){
 	    int temp = peep[p]->getDiscardCardValue(f);
-	    if(temp == 0) || (temp == build[b]->topCardValue() + 1)) {
+	    if((temp == 0) || (temp == build[b]->topCardValue() + 1)) {
       c = peep[p]->getDiscardPileCard(f);
 	    }
     }else if (f >= 5 && f <= 9){
