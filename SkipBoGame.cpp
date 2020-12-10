@@ -469,7 +469,7 @@ bool SkipBoGame::play(int p){
       }
        
       if (t >= 1 && t <=4){
-        target = getDiscardCardValue(t);
+        target = peep[p]->getDiscardCardValue(t);
       }
        
       if (leave > target + 1 || leave == 0){
