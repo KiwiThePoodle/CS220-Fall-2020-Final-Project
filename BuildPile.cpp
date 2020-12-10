@@ -1,7 +1,7 @@
 #include <iostream>
 #include "BuildPile.h"
 
-void BuildPile::addCards(Drawpile* d) {
+void BuildPile::addCards(DrawPile* d) {
 
   for(int i = 0; i < pile.size(); i++) {
     Card c = pile.topCard();
