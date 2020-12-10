@@ -88,7 +88,7 @@ class Player {
   //methods that help a player perform a move
   void drawToHand();   //called either at the start of a player's turn or when the player has no cards in hand
 
-  void handToDiscard(int handNum, int discardNum);   //directly moves a card from hand to a discard pile
+  void handToDiscard(Card c, int discardNum);   //directly moves a card from hand to a discard pile
 
   Card getStockPileCard();   //returns the top card in the stock pile to be placed in a build pile
 
