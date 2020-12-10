@@ -313,6 +313,7 @@ while (move){
       }
 	    }
     }else if (f >= 1 && f <= 4){
+	    
 	    int temp = peep[p]->getDiscardCardValue(f);
 	     if (build[b]->size() == 0){
 	    	c = peep[p]->getDiscardPileCard();
