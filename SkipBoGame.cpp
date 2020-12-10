@@ -327,18 +327,18 @@ while (move){
 	    	illegalMove();
 		    
 	    }else{
-      int temp = peep[p]->getHandCardValue(f);
-	     if (build[b]->size() == 0){
-	    	c = peep[p]->getHandPileCard(f);
-	    }else{
-	    if((temp == 0) || (temp == build[b]->topCardValue() + 1)) {
-	    c = peep[p]->getHandPileCard(f);
-	    }
-	     }
+      		int temp = peep[p]->getHandCardValue(f);
+	     	if (build[b]->size() == 0){
+	    		c = peep[p]->getHandPileCard(f);
+	    	}else{
+	    		if((temp == 0) || (temp == build[b]->topCardValue() + 1)) {
+	    			c = peep[p]->getHandPileCard(f);
+	    		}
+	     	}
+    	}
     }
-    }
-	    else {
-		    move = false;
+	  else {
+	    move = false;
 	    }
     //move
    
@@ -349,18 +349,18 @@ while (move){
       return true;
     }
     if(move) {
-    build[b]->addCard(c);
+	    build[b]->addCard(c);
     }
 	//  else {
-		  std::cout << "illegal command, try again" << std::endl << std::endl;
-    display();
+
+    //display();
     /*std::cout << "(m)ove [start] [end] or (d)raw ? ";
     std::cin >> action;
     std::cin >> from;
     std::cin>>to;
     */
 	  move = !move;
-	  }
+  }
     
   }
 
