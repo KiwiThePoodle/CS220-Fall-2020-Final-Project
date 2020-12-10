@@ -329,6 +329,7 @@ bool SkipBoGame::play(int p){
 	 }
        }else if (f >= 5 && f <= 9){
 	       std::cout << "Test1" << std::endl;
+	       std::cout << f-5 << "." << peep[p]->handSize()-1 << std::endl;
 	 if (f - 5 > peep[p]->handSize()-1){
 	   illegalMove();
 	   move=false;
