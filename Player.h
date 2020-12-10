@@ -81,7 +81,7 @@ class Player {
 
   void handToDiscard(Card c, int discardNum);   //directly moves a card from hand to a discard pile
 
-  Card getStockPileCard();   //returns the top card in the stock pile to be placed in a build pile
+  Card getStockPileCard(int n);   //returns the card in the stock pile to be placed in a build pile
 
   Card getDiscardPileCard(int discardNum);   //returns the top card in a specified discard pile to be placed in a build pile
 
