@@ -58,7 +58,8 @@ class Pile {
     pile.erase(pile.begin());
     
   }// students to write this, companion to toString()
-
+  void addFront(Card c){ pile.insert(pile.begin(), 1, c);}
+ 
   virtual void display() const = 0;  // for live game play, must override
 
   Card topCard();   //function returns the top card of a pile
