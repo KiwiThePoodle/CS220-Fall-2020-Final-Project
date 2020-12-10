@@ -137,6 +137,8 @@ SkipBoGame::SkipBoGame(bool isS, std::string file){
     save >> tempString; //should get rid of word "stock"
     int stockSize;
     save >> stockSize;
+	  std::cout<<"Player " << i << std::endl;/////////////////////////////////////////////////////////
+	  std::cout<<std::endl<<"TEST " << stockSize<<std::endl;/////////////////////////////////////////
     FaceUpPile* sp = new FaceUpPile;
     for (int i2 = 0; i2 < stockSize; i2 ++){
       int cardNum;
