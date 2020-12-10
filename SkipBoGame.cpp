@@ -484,7 +484,7 @@ bool SkipBoGame::play(int p){
 	}
       }
        
-      if (leave == target + 1 || leave == 0 || (t >= 1 && t <=4)){
+      if (leave == target + 1 || leave == 0 || (t >= 1 && t <=4 && leave != 100)){
 	if (!(t >= 1 && t <=4)){
 	   leave = target + 1;
 	}
