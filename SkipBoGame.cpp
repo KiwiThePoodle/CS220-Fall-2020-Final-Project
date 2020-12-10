@@ -237,7 +237,7 @@ void SkipBoGame::playTurn(){
   while(!discard && !checkWin()){
    display();
     discard = play(playerToGo);
- display();
+  display();
     
   }
   DrawPile* temp = peep[playerToGo]->getUpdatedDrawPile();
