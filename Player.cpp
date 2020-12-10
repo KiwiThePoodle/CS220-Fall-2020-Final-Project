@@ -99,7 +99,7 @@ void Player::drawToHand() {                   //called at the start of player's 
     Card c = updatedDrawPile->topCard();
     handPile->addCard(c);
     //handPile->addCard(updatedDrawPile->topCard());   //adds top card from draw pile to hand, *removes card from draw pile*
-    delete c;
+    delete &c;
   }
 }
 
