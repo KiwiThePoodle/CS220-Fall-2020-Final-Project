@@ -484,8 +484,10 @@ bool SkipBoGame::play(int p){
 	}
       }
        
-      if (leave == target + 1 || leave == 0){
-	leave = target + 1;
+      if (leave == target + 1 || leave == 0 || (t >= 1 && t <=4)){
+	if (!(t >= 1 && t <=4)){
+	   leave = target + 1;
+	}
         move = true;
 	if (f == 0){
 	  c = Card(leave);
