@@ -6,13 +6,13 @@ CONSERVATIVE_FLAGS = -std=c++11 -Wall -Wextra -pedantic
 DEBUGGING_FLAGS = -g -O0
 CFLAGS = $(CONSERVATIVE_FLAGS) $(DEBUGGING_FLAGS)
 
-skipbo: main.o SkipBoGame.o Card.o DrawPile.o FaceUpPile.o Hand.o Pile.o Player.o
-	$(CC) -o skipbo main.o SkipBoGame.o Card.o DrawPile.o FaceUpPile.o Hand.o Player.o Pile.o
+skipbo: main.o SkipBoGame.o Card.o DrawPile.o FaceUpPile.o Hand.o Pile.o Player.o BuildPile.o
+	$(CC) -o skipbo main.o SkipBoGame.o Card.o DrawPile.o FaceUpPile.o Hand.o Player.o Pile.o BuildPile.o
 
 main.o: main.cpp SkipBoGame.h
 	$(CC) $(CFLAGS) -c main.cpp
 
-SkipBoGame.o: SkipBoGame.cpp SkipBoGame.h DrawPile.h Pile.h Card.h Player.h FaceUpPile.h Hand.h 
+SkipBoGame.o: SkipBoGame.cpp SkipBoGame.h DrawPile.h Pile.h Card.h Player.h FaceUpPile.h BuildPile.h Hand.h 
 	$(CC) $(CFLAGS) -c SkipBoGame.cpp
 
 Card.o: Card.cpp Card.h
@@ -23,6 +23,9 @@ DrawPile.o: DrawPile.cpp DrawPile.h Card.h Pile.h
 	
 FaceUpPile.o: FaceUpPile.cpp FaceUpPile.h Card.h Pile.h
 	$(CC) $(CFLAGS) -c FaceUpPile.cpp
+
+BuildPile.o: BuildPile.cpp BuildPile.h Card.h Pile.h FaceUpPile.h
+	$(CC) $(CFLAGS) -c BuildPile.cpp
 	
 Hand.o: Hand.cpp Hand.h Card.h Pile.h
 	$(CC) $(CFLAGS) -c Hand.cpp
