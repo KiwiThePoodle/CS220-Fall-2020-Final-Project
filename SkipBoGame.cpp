@@ -283,6 +283,7 @@ bool SkipBoGame::play(int p){
 	 if (to == "b"){b = 1;}
 	 if (to == "c"){b = 2;}
 	 if (to == "d"){b = 3;}
+	       t = 100;
        }
        else{
 	 t = std::stoi(to);  
