@@ -1,0 +1,1729 @@
+commit 9972e6a0be1a2b2b3707c893e69ae6bcf243b49d
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Wed Dec 9 18:24:00 2020 -0800
+
+    Update Pile.h
+
+commit 85eb8ca345f29c114915ebca01f410f98a7ba63b
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Wed Dec 9 18:22:48 2020 -0800
+
+    Update Pile.h
+
+commit 9cb9416f8dce236ff3286ce0e93f6a3313e3caf3
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Wed Dec 9 18:21:23 2020 -0800
+
+    Update Pile.h
+
+commit 5cfac9cbe2b43b9908eeb12704efb788ac62c5cf
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Wed Dec 9 18:13:10 2020 -0800
+
+    Update DrawPile.h
+
+commit 1c12e24874ae8b4904290c9a2a629a58f3d83b58
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Wed Dec 9 20:43:43 2020 -0500
+
+    Update SkipBoGame.cpp
+
+commit e11b3a57332eb46d964c6b1f37f423290301c6d7
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Wed Dec 9 20:42:40 2020 -0500
+
+    Update SkipBoGame.cpp
+
+commit f731fb4c21efb23ff152dbb2b5517d4bbc803066
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Wed Dec 9 20:41:16 2020 -0500
+
+    Update SkipBoGame.cpp
+
+commit ad2750f3e0d68819695c59a533977fcd9467d756
+Author: KiwiThePoodle <42877043+KiwiThePoodle@users.noreply.github.com>
+Date:   Wed Dec 9 17:41:11 2020 -0800
+
+    Update Pile.h
+
+commit ad0e4b9b163e3a9408b8997e8393873e441516ed
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Wed Dec 9 20:40:54 2020 -0500
+
+    Update SkipBoGame.cpp
+
+commit ffabb6e148fb51cec8af78a9e76121307cc760e2
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Wed Dec 9 20:38:25 2020 -0500
+
+    Update SkipBoGame.cpp
+
+commit a17bfc5af1179a80b9501865a1ddae0238692c19
+Author: KiwiThePoodle <42877043+KiwiThePoodle@users.noreply.github.com>
+Date:   Wed Dec 9 17:37:51 2020 -0800
+
+    Update Player.h
+
+commit 4fcfc311503e5f5fa1a424bb446720cff9d86cfd
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Wed Dec 9 20:36:37 2020 -0500
+
+    Update SkipBoGame.cpp
+
+commit 58128b157ab0f604a884e12b9cc6f52e51b0ba55
+Author: KiwiThePoodle <42877043+KiwiThePoodle@users.noreply.github.com>
+Date:   Wed Dec 9 17:34:15 2020 -0800
+
+    Update Player.cpp
+
+commit 70ca9e94dd6c012e03af4da076c5264c957682b1
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Wed Dec 9 20:30:16 2020 -0500
+
+    Update SkipBoGame.cpp
+
+commit b206ec0ab502285c8cad7bfddbcd3e56c78de8cc
+Author: Thomas <tyu34@jhu.edu>
+Date:   Wed Dec 9 20:26:45 2020 -0500
+
+    fixed indents
+
+commit ee579434d7a4d68c409ec48cef881df383b4e6c9
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Wed Dec 9 20:24:21 2020 -0500
+
+    Update SkipBoGame.cpp
+
+commit a7484e7cdeecbba4a2d4a8c550fab2d6a3214921
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Wed Dec 9 20:23:28 2020 -0500
+
+    Update SkipBoGame.cpp
+
+commit 7c811741d980d9b0674d2fa91cce7e6a40c6f67f
+Author: KiwiThePoodle <42877043+KiwiThePoodle@users.noreply.github.com>
+Date:   Wed Dec 9 17:22:06 2020 -0800
+
+    Update Hand.h
+
+commit 1ad5f66b2b1f16032d2efb0b80360f1cacab19f6
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Wed Dec 9 20:21:05 2020 -0500
+
+    Update SkipBoGame.cpp
+
+commit 0bd2072b6de7c2d46da85addc5f53c550f9787dd
+Author: KiwiThePoodle <42877043+KiwiThePoodle@users.noreply.github.com>
+Date:   Wed Dec 9 17:20:51 2020 -0800
+
+    Update Hand.cpp
+
+commit c94eacbeab6ec4ecdebc6d0da42a33aa7215457f
+Author: KiwiThePoodle <42877043+KiwiThePoodle@users.noreply.github.com>
+Date:   Wed Dec 9 17:19:31 2020 -0800
+
+    Update DrawPile.h
+
+commit fc9631f3de609390c082937e71c6bc13c0ca5de0
+Author: KiwiThePoodle <42877043+KiwiThePoodle@users.noreply.github.com>
+Date:   Wed Dec 9 17:17:22 2020 -0800
+
+    Update FaceUpPile.cpp
+
+commit ff2fe5443b36aeb91f6c1673d50bae9f33c19f06
+Author: KiwiThePoodle <42877043+KiwiThePoodle@users.noreply.github.com>
+Date:   Wed Dec 9 17:16:49 2020 -0800
+
+    Update FaceUpPile.h
+
+commit e0297673bff405679942261bc54c0b672e746a4e
+Author: KiwiThePoodle <42877043+KiwiThePoodle@users.noreply.github.com>
+Date:   Wed Dec 9 17:15:05 2020 -0800
+
+    Update DrawPile.cpp
+
+commit 86765cf8d3e73493ea73bdcdda88a1328a08feab
+Author: KiwiThePoodle <42877043+KiwiThePoodle@users.noreply.github.com>
+Date:   Wed Dec 9 17:14:41 2020 -0800
+
+    Update DrawPile.h
+
+commit 05a9bbc65dc9649374da76a1ca48d1d5d7b36aea
+Author: KiwiThePoodle <42877043+KiwiThePoodle@users.noreply.github.com>
+Date:   Wed Dec 9 17:10:43 2020 -0800
+
+    Update Pile.h
+
+commit a86c7d41247eca24609ab581c867bd29e7528df1
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Wed Dec 9 20:09:54 2020 -0500
+
+    Update SkipBoGame.cpp
+
+commit d0911de1b4bbfc74a385b24973a716a390fca1b3
+Author: KiwiThePoodle <42877043+KiwiThePoodle@users.noreply.github.com>
+Date:   Wed Dec 9 17:09:41 2020 -0800
+
+    Update Pile.cpp
+
+commit cb4446eb73e563b821486587ff9e5eb287577d57
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Wed Dec 9 20:08:14 2020 -0500
+
+    Update SkipBoGame.cpp
+
+commit 488d2970cbe681d1213c30f3c36ef99543cf6a6e
+Author: KiwiThePoodle <42877043+KiwiThePoodle@users.noreply.github.com>
+Date:   Wed Dec 9 17:06:41 2020 -0800
+
+    Update Pile.h
+
+commit 811b8aa53bb86d6de1d269ee585f589329a3e14b
+Author: KiwiThePoodle <42877043+KiwiThePoodle@users.noreply.github.com>
+Date:   Wed Dec 9 17:06:00 2020 -0800
+
+    Update Pile.h
+
+commit dc35f5997e38d15368c6bc7d0fac14ab41ec77fa
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Wed Dec 9 20:04:58 2020 -0500
+
+    Update SkipBoGame.cpp
+
+commit d1d44da52d77a3c08bf1c4f84e7e82fa48975226
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Wed Dec 9 17:04:54 2020 -0800
+
+    Update SkipBoGame.h
+
+commit dcd7825a939f753a71af80aecc50e08282b93489
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Wed Dec 9 20:03:44 2020 -0500
+
+    Update SkipBoGame.cpp
+
+commit 828eb30b020cecd3ba9b5ef4016787f91efb3ba4
+Author: KiwiThePoodle <42877043+KiwiThePoodle@users.noreply.github.com>
+Date:   Wed Dec 9 17:03:32 2020 -0800
+
+    Update Pile.h
+
+commit e02c67a3085998c9776df643c0dd8cf8f111f83e
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Wed Dec 9 17:03:06 2020 -0800
+
+    Update SkipBoGame.h
+
+commit 0e08b0d146c035ae945b8d08c6d88aeb102182ff
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Wed Dec 9 17:01:41 2020 -0800
+
+    Update SkipBoGame.h
+
+commit 44c3a13325e524378c208a241d0a5dd5de19c221
+Author: KiwiThePoodle <42877043+KiwiThePoodle@users.noreply.github.com>
+Date:   Wed Dec 9 17:00:56 2020 -0800
+
+    Update Pile.h
+
+commit 8172ca1492a743eff9e6f5a609c9f194d7582a29
+Author: KiwiThePoodle <42877043+KiwiThePoodle@users.noreply.github.com>
+Date:   Wed Dec 9 16:57:54 2020 -0800
+
+    Update Pile.h
+
+commit e4b23403f113801b949e04d4df74fd545dba49e7
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Wed Dec 9 19:57:36 2020 -0500
+
+    Update SkipBoGame.cpp
+
+commit e09d2b31508b18da8756e3b3102f9633ed2e7742
+Author: KiwiThePoodle <42877043+KiwiThePoodle@users.noreply.github.com>
+Date:   Wed Dec 9 16:57:03 2020 -0800
+
+    Update Pile.h
+
+commit 736d9a6f39063b781afdb200835c59d0a2ac0634
+Author: KiwiThePoodle <42877043+KiwiThePoodle@users.noreply.github.com>
+Date:   Wed Dec 9 16:55:50 2020 -0800
+
+    Update Pile.h
+
+commit f1b4d1e6215ba1ce3419d68ec83f16deda74cd0f
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Wed Dec 9 19:51:14 2020 -0500
+
+    Update Player.h
+
+commit 272e2aad901deb35edb11b47cf20db463a839351
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Wed Dec 9 19:50:24 2020 -0500
+
+    Update SkipBoGame.cpp
+
+commit 1b165a0e36af7850a6a46bcefedbe44d7e78292d
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Wed Dec 9 19:50:07 2020 -0500
+
+    Update Player.cpp
+
+commit 8e89ab787be0e93fa1739e4b3faa2ffa39fe0941
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Wed Dec 9 19:45:36 2020 -0500
+
+    Update SkipBoGame.cpp
+
+commit 7116142021d21944464a60ebb1f6feda67f3acaf
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Wed Dec 9 19:42:51 2020 -0500
+
+    Update SkipBoGame.cpp
+
+commit da79d02856d23cccc900f5b41e958223602eca60
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Wed Dec 9 19:40:48 2020 -0500
+
+    Update SkipBoGame.cpp
+
+commit 54a6c2b957863015886783b2093bba9a03da8075
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Wed Dec 9 19:40:18 2020 -0500
+
+    Update SkipBoGame.cpp
+
+commit def98d90dd99eef84744838392dde2e3433afde9
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Wed Dec 9 19:35:26 2020 -0500
+
+    Update SkipBoGame.cpp
+
+commit e79df88b17de3a2007debb178f2425df2093044a
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Wed Dec 9 19:32:11 2020 -0500
+
+    Update Player.cpp
+
+commit e86b0dce1b5b8ed79977592d31c0eb97982bfcd0
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Wed Dec 9 19:31:13 2020 -0500
+
+    Update Player.cpp
+
+commit 35ac653e1846b42fc5c7b40fa1be79bc96e432cd
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Wed Dec 9 19:29:22 2020 -0500
+
+    Update Player.cpp
+
+commit 47d0f417ab40a51545a5d7e0462a34dabcf6eb07
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Wed Dec 9 19:18:56 2020 -0500
+
+    Update Pile.h
+
+commit abca1547ba3ae00fb6e424b39b1c85fef4d6cb27
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Wed Dec 9 19:17:13 2020 -0500
+
+    Update Pile.h
+
+commit 643bfcaf32f2390500596eaaebb2abab2022cb5e
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Wed Dec 9 19:13:47 2020 -0500
+
+    Update SkipBoGame.h
+
+commit 2cff9b3f3e8fab1ee3c92b3149a28a20374923ad
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Wed Dec 9 19:09:06 2020 -0500
+
+    Update SkipBoGame.cpp
+
+commit 2b0ac1a7ae99de56a5a2c08f85e58c8adfc85ce0
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Wed Dec 9 19:08:07 2020 -0500
+
+    Update SkipBoGame.cpp
+
+commit 673e3813d6eb54469bfc7d1fb5d79dfdb9ad8d6d
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Wed Dec 9 19:05:17 2020 -0500
+
+    Update SkipBoGame.cpp
+
+commit 7b32ca50e9d471d798c36b508895344dc6ab5dec
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Wed Dec 9 19:02:06 2020 -0500
+
+    Update Player.h
+
+commit 9ca1e9bec0ac9eaa035ef603703b5f784e237b32
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Wed Dec 9 19:00:56 2020 -0500
+
+    Update SkipBoGame.cpp
+
+commit 6d953ff2be7f3c9da1d6c42db860c5f5b5bcf55b
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Wed Dec 9 18:59:08 2020 -0500
+
+    Update Player.h
+
+commit 86077aa1d189e2eb24209ad833b2f6c5681024a1
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Wed Dec 9 18:58:27 2020 -0500
+
+    Update Player.h
+
+commit f1fd00aae3e17136c188d59b778a3822847165ed
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Wed Dec 9 18:56:38 2020 -0500
+
+    Update SkipBoGame.cpp
+
+commit 4103283df99e0eee88eb3831dd6ecee31bb8e32b
+Author: Thomas <tyu34@jhu.edu>
+Date:   Wed Dec 9 18:52:05 2020 -0500
+
+    vgcore stuff
+
+commit c033123d0f173d0bb2a8afd45f7887a37b4541c8
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Wed Dec 9 15:10:52 2020 -0500
+
+    Update SkipBoGame.cpp
+
+commit bc258de0ee6d94bc7eb40f65b2b4d9ae68a28f23
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Wed Dec 9 15:07:53 2020 -0500
+
+    Update SkipBoGame.h
+
+commit 140cff75bdec3fa816ddae37b875ca9c6cb1b7dd
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Wed Dec 9 15:06:19 2020 -0500
+
+    Update SkipBoGame.h
+
+commit 7ebc5486f26d461306bd2b3b8bc5da27f31c396a
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Wed Dec 9 15:05:15 2020 -0500
+
+    Update SkipBoGame.h
+
+commit 423bf3f66c0bfc42c681165addfadee6c5d3e236
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Wed Dec 9 12:00:36 2020 -0800
+
+    Update main.cpp
+
+commit 84a5ee2b6422a9f64b29e00ad2ddd8352def80b7
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Wed Dec 9 11:58:11 2020 -0800
+
+    Update main.cpp
+
+commit a41d946cd8751f957c58de0e262d2c540e6aa270
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Wed Dec 9 14:56:28 2020 -0500
+
+    Update SkipBoGame.cpp
+
+commit b1da733518680683f4e2b225250e364ffe879def
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Wed Dec 9 14:54:49 2020 -0500
+
+    Update SkipBoGame.cpp
+
+commit caba8539644f2df388491442eea46f1361e12dd6
+Author: Thomas <tyu34@jhu.edu>
+Date:   Wed Dec 9 14:52:09 2020 -0500
+
+    make clean
+
+commit 349782aa8f777b4ccafba73538ecfa65e5efa5a7
+Author: Thomas <tyu34@jhu.edu>
+Date:   Wed Dec 9 14:50:52 2020 -0500
+
+    fixed bugs
+
+commit 5ab8ffe9c9d146de8b475bd3bb23d78a1ec67fa2
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Wed Dec 9 14:12:21 2020 -0500
+
+    Update Pile.h
+
+commit 4c8e2d1d01e3458a993f0c671116b27c09687eaa
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Wed Dec 9 14:11:32 2020 -0500
+
+    Update Pile.h
+
+commit fe404595506cb66c857e52d78924389bb317cc1a
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Wed Dec 9 11:01:21 2020 -0800
+
+    Update main.cpp
+
+commit f38a3e0532471e20d79abd50298a75f122588e94
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Wed Dec 9 10:56:55 2020 -0800
+
+    Update Player.h
+
+commit 37359b991930305529063b0e4d9d549505de1cd5
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Wed Dec 9 10:55:35 2020 -0800
+
+    Update Makefile
+
+commit 45cee625eed6c47896afb7685971b9fe4da18052
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Wed Dec 9 10:52:23 2020 -0800
+
+    Update Player.cpp
+
+commit 8df24e34ab2516e639fa64dadd28b59295b687b9
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Wed Dec 9 10:50:06 2020 -0800
+
+    Update Player.cpp
+
+commit 6032b764293477ab4c4833c4ce1f53eeabe7d40e
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Wed Dec 9 10:48:08 2020 -0800
+
+    Update Player.cpp
+
+commit f182cdf545975867451368d1d4863066aab3a283
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Wed Dec 9 10:46:21 2020 -0800
+
+    Update Player.cpp
+
+commit c24ebe8e6e8796934bf1490501046522220a9d3b
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Wed Dec 9 10:44:27 2020 -0800
+
+    Update Player.cpp
+
+commit 1f63976e02c68939c00adf11ce7312529acf484b
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Wed Dec 9 03:46:27 2020 -0800
+
+    Update Pile.cpp
+
+commit 441e5f6e110865403845ba3e7865af31ea6477cc
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Wed Dec 9 03:44:34 2020 -0800
+
+    Update Pile.cpp
+
+commit 86d2fce53ab4f85178efea2571e4da5983c28b42
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Wed Dec 9 03:43:51 2020 -0800
+
+    Update Pile.cpp
+
+commit 3800d3781c7e6a14baffff57e0b53f0227df6696
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Wed Dec 9 03:40:56 2020 -0800
+
+    Update Pile.cpp
+
+commit 847c4e548f945e51f7318f3577a2115a4652c7e1
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Wed Dec 9 03:34:56 2020 -0800
+
+    Update Makefile
+
+commit 3aed9fefdb7cc1bea34153e1170cc5e688220602
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 23:11:45 2020 -0800
+
+    Update SkipBoGame.cpp
+
+commit b9b4be048481a98ca8696bbd6a1e05bff395a0c5
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 23:11:00 2020 -0800
+
+    Update SkipBoGame.cpp
+
+commit be050d0dbdc37f1f7b77df42af91adc156f0fa86
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 23:08:58 2020 -0800
+
+    Update SkipBoGame.cpp
+
+commit fba0bfeae3a199986230362c75794d9c89a9f9ad
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 23:07:33 2020 -0800
+
+    Update SkipBoGame.cpp
+
+commit 58c4ff15e8e769f108aa5c2885048db02dd30572
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 23:06:51 2020 -0800
+
+    Update SkipBoGame.cpp
+
+commit b31c7169804e517d7cdcdb199764cbb2be4c60af
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 23:05:57 2020 -0800
+
+    Update SkipBoGame.cpp
+
+commit 7268f0f6cd701283797fd06cb21ac75703fe862c
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 23:04:49 2020 -0800
+
+    Update SkipBoGame.cpp
+
+commit 56d06c357ad55bf23912d02dad01e6c8de539c9d
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 23:01:24 2020 -0800
+
+    Update SkipBoGame.cpp
+
+commit c21d0bd78eb425882bebc729150ddb83c7e99c60
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 23:00:00 2020 -0800
+
+    Update SkipBoGame.cpp
+
+commit e786a095de4779e7b4aaaede6cbe6ede36e8c0eb
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 22:55:26 2020 -0800
+
+    Update SkipBoGame.cpp
+
+commit e266eb728bf61044b39cfa752542d7dc33c18b00
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 22:54:33 2020 -0800
+
+    Update SkipBoGame.cpp
+
+commit 6251498f5501fc9b05519207fc6f9c349a3f26ed
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 22:51:51 2020 -0800
+
+    Update SkipBoGame.cpp
+
+commit 38dbe8c2ed0aa9290cdd74205ed70095ebf1adc4
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 22:51:04 2020 -0800
+
+    Update SkipBoGame.cpp
+
+commit 90bb3ea4b3b049c402bc9e46ab642086a1cc797d
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 22:49:46 2020 -0800
+
+    Update SkipBoGame.cpp
+
+commit ac398dcc3595397cb73161341f1008f375234225
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 22:48:03 2020 -0800
+
+    Update SkipBoGame.cpp
+
+commit 9711c32c1db508a6bb641305e758a36b13e605da
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 22:47:03 2020 -0800
+
+    Update SkipBoGame.cpp
+
+commit ff7f51a5facb6c2d6b9aecec1ef6035861631f1f
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 22:46:09 2020 -0800
+
+    Update SkipBoGame.cpp
+
+commit cb7056184f02f82124ac6118c3c120caf484c7f5
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 22:44:35 2020 -0800
+
+    Update SkipBoGame.cpp
+
+commit 30f2e420d37d9c309945adc75bbc010c6ed8ff87
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 22:43:46 2020 -0800
+
+    Update SkipBoGame.cpp
+
+commit a84be650a5d0c936cd769393bfa08e7ad37d6e14
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 22:41:09 2020 -0800
+
+    Update SkipBoGame.cpp
+
+commit 23f6d22fa83f9a1d006bcd7d4d9b3d7e1a466f71
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 22:39:15 2020 -0800
+
+    Update SkipBoGame.cpp
+
+commit 3d66ea85a1b6fe92e51d458e51632569278a5e10
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 22:38:06 2020 -0800
+
+    Update SkipBoGame.cpp
+
+commit 70570cf04f8e0bad5acf1776168a1fa6446c4df9
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 22:36:22 2020 -0800
+
+    Update SkipBoGame.cpp
+
+commit 5d16cc8eff3a438a57c68071a76707c09cda5eb2
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 22:34:09 2020 -0800
+
+    Update SkipBoGame.cpp
+
+commit 0770e446b8d1fb35190fa58c385ca48dc89dcdab
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 22:31:59 2020 -0800
+
+    Update SkipBoGame.cpp
+
+commit 162b4ba05b30e8de5ce8dfa12453dc64cc3f2b19
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 22:29:44 2020 -0800
+
+    Update SkipBoGame.cpp
+
+commit 4b139d4fa5acc61b1fdf186a8442cf7049868c62
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 22:28:21 2020 -0800
+
+    Update SkipBoGame.cpp
+
+commit 74c1821e099aecaf2c94ea090b9bc7db08f043b6
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 22:23:20 2020 -0800
+
+    Update Player.h
+
+commit 5b89152956093c20eb3136583d7317d1b4090fd7
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 22:22:13 2020 -0800
+
+    Update SkipBoGame.cpp
+
+commit 30884976498927f1d677100ff5a671f044bf22f8
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 22:19:55 2020 -0800
+
+    Update Player.h
+
+commit 434f12ff2579970413fc3db8d2a175abaac678e2
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 22:15:03 2020 -0800
+
+    Update SkipBoGame.cpp
+
+commit 2e3b29505723004522660a6c64ef51356638840a
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 22:14:35 2020 -0800
+
+    Update SkipBoGame.cpp
+
+commit 4b017038c4c7b0dcf3cb5fd35a081be249114e42
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 22:13:13 2020 -0800
+
+    Update SkipBoGame.cpp
+
+commit 3bcfc2f934221423d914727e5d4adf4853fb6dfe
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 22:10:03 2020 -0800
+
+    Update SkipBoGame.cpp
+
+commit c46c924aa7d16ee2f2223faf798387164f40276b
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 22:08:57 2020 -0800
+
+    Update SkipBoGame.cpp
+
+commit cd0f2c61d2eb633ba292274a9fe0c527191ce7bd
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 22:06:57 2020 -0800
+
+    Update SkipBoGame.cpp
+
+commit bfe9c5c7b743ca42730e1d415f226f4df18b74cc
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 22:04:17 2020 -0800
+
+    Update SkipBoGame.cpp
+
+commit 8324b16e386d65e8624efa9b89b163e169ea89f6
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 22:03:28 2020 -0800
+
+    Update SkipBoGame.cpp
+
+commit 1b4d8f9064da361407df321ecfa7c4a5026a8ca3
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 22:02:36 2020 -0800
+
+    Update SkipBoGame.cpp
+
+commit 61d9d6d2663d5073002fce2eaec217148fc874f7
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 21:59:31 2020 -0800
+
+    Update SkipBoGame.cpp
+
+commit 775d82f18bdb720543a748abe457da2ec3406629
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 21:57:41 2020 -0800
+
+    Update SkipBoGame.cpp
+
+commit 38a9291cacefcb91a08f185cfc5f042d0ac626cf
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 21:55:21 2020 -0800
+
+    Update SkipBoGame.cpp
+
+commit 8b71acf0c8b147c553ed9e0928747abb22945511
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 21:53:45 2020 -0800
+
+    Update SkipBoGame.cpp
+
+commit aa7c97c369eebd25a65ee20b307098c967b1684f
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 21:51:29 2020 -0800
+
+    Update SkipBoGame.cpp
+
+commit f4d2c10d7642487c2976fac574a66b7164113fbf
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 21:49:30 2020 -0800
+
+    Update DrawPile.h
+
+commit e87715802da1fb8f03010492903e27d1b24a33a3
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 21:44:23 2020 -0800
+
+    Update SkipBoGame.cpp
+
+commit 7eeda381b67399b2e676ba71bbd7c27b1ebb15ea
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 21:38:08 2020 -0800
+
+    Update SkipBoGame.cpp
+
+commit ff8e8d93489cda9c97b741dd9307d147f879e288
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Wed Dec 9 00:33:10 2020 -0500
+
+    Update SkipBoGame.cpp
+
+commit 56724c46580ef07cbeab7d8eaa8cff88daa389af
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Wed Dec 9 00:31:38 2020 -0500
+
+    Update DrawPile.h
+
+commit 92ffe04bacd4d118d0ba7c71e07c4e31894c0644
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Wed Dec 9 00:31:06 2020 -0500
+
+    Update DrawPile.h
+
+commit ccebc4baa1d2557ce0ddcfdd6f0db60d7a0a4b2b
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 21:26:00 2020 -0800
+
+    Update SkipBoGame.cpp
+
+commit 61693ba489419f691cfe7a5cf5208ae84bdbf1e7
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 21:21:46 2020 -0800
+
+    Update SkipBoGame.cpp
+
+commit 116a7a8019c53993a256358a3a5a0eab1e1ec932
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 21:19:49 2020 -0800
+
+    Update main.cpp
+
+commit 1e04837e963f34e405ea746f1254fb2cb63e3fa8
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 21:18:29 2020 -0800
+
+    Update main.cpp
+
+commit b1d10bdc1f2418811a44331670579d428383e49e
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 21:14:16 2020 -0800
+
+    Update main.cpp
+
+commit fc1c64ed0998a1f669bf169103fb2a368711c190
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 21:13:12 2020 -0800
+
+    Update main.cpp
+
+commit f8ed308334de9db0eb8c21cb1e906fe12064c90b
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 21:11:13 2020 -0800
+
+    Update main.cpp
+
+commit b28736442aad6d0ab74bddf1983d8b09d5eba8be
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 21:10:13 2020 -0800
+
+    Update main.cpp
+
+commit 41ef3f723814f3f7b696a8c73b003007d1467ef8
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 21:09:25 2020 -0800
+
+    Update main.cpp
+
+commit f35caa3b5099730339606541258e37fe58fee22a
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 21:06:04 2020 -0800
+
+    Update SkipBoGame.h
+
+commit 1001350ccac91d0189d0bafe4935c9f69c535df2
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 21:05:28 2020 -0800
+
+    Update SkipBoGame.h
+
+commit ca09e3770b3096b8b7840ebc8c1945a588c27353
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 21:03:27 2020 -0800
+
+    Update Player.cpp
+
+commit f2124c51d92047a0093159606180c91ecdbf5b16
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 21:02:12 2020 -0800
+
+    Update Player.h
+
+commit d308566de8b9ebaa3a1ce2822703eb56ad8f423b
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 21:01:05 2020 -0800
+
+    Update Player.h
+
+commit b318dd57dd90070221f35b2619c023e35ba3c55a
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 23:59:29 2020 -0500
+
+    Update Player.h
+
+commit d9c7ba3e2f9fd90fb00e78d53727dfe2b4cabd6d
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 23:57:59 2020 -0500
+
+    Update Player.h
+
+commit 7af7e5ac8b6e6a14118a2097b1d63337fed6e9db
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 23:56:27 2020 -0500
+
+    Update Player.h
+
+commit 60cd4d4ca6a0d3fd9dad4283c802397b38942cee
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 23:54:22 2020 -0500
+
+    Update Player.h
+
+commit 508115131019fee4cda5dc6dd758cabfc51f6d36
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 20:53:54 2020 -0800
+
+    Update Player.h
+
+commit dfb9f3ca4cca6758aee354f6f63603f852633e1d
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 20:50:42 2020 -0800
+
+    Update Player.h
+
+commit 32a7e49fe7f9164e2e8e9bb9aa85ecba27bd3110
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 23:48:10 2020 -0500
+
+    Update Player.h
+
+commit 11e766aa22b56587bcada267365e0b7148eae16a
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 23:46:01 2020 -0500
+
+    Update Player.h
+
+commit 6bf094744337710407c17f4400d7592ff06e9462
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 23:45:16 2020 -0500
+
+    Update Player.h
+
+commit fdc7a51003df0ad78be8e1a38cfd74ac931ca7b6
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 23:41:03 2020 -0500
+
+    Update Player.h
+
+commit f4848e067752fa33f3a8ec32c63c5eff6cc8c2b4
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 23:38:52 2020 -0500
+
+    Update Player.h
+
+commit 00053d5aebd7f1912091a65c561a5ca7618c0edd
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 23:37:58 2020 -0500
+
+    Update Player.h
+
+commit 3d4f2edcb7a809f910ef329ec79cf661c3b3ce34
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 23:36:30 2020 -0500
+
+    Update Player.h
+
+commit f6c91a3a1c6dc1a90570928a8671c4458d2cba78
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 20:35:43 2020 -0800
+
+    Update Player.cpp
+
+commit a1f286d5a8bbfa6c0f00eb9f0d1cb24a7bcab4e0
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 23:31:46 2020 -0500
+
+    Update Player.h
+
+commit d473ad48313b581607d8627ca7cee3bd22cbd5c1
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 20:25:34 2020 -0800
+
+    Update Hand.h
+
+commit b0c0f3001de3bf23cda281b4ace4b660d1ae8a8b
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 20:23:56 2020 -0800
+
+    Update Player.cpp
+
+commit 4a905724997a468620ca64e74eaab57915f5d420
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 23:23:39 2020 -0500
+
+    Update Player.h
+
+commit bc02016c7f61071222518a18fc94dd3998ec29a1
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 23:23:22 2020 -0500
+
+    Update Player.h
+
+commit 45a4ee9571b46c32794f6c865574f06d95a7e88e
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 20:22:20 2020 -0800
+
+    Update Player.h
+
+commit 4b3a03364b1996c1d47a7c4f8187484c49458975
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 20:19:06 2020 -0800
+
+    Update FaceUpPile.h
+
+commit c6a05524a230e3a5a5d2ed70959a524fabf685df
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 20:18:09 2020 -0800
+
+    Update Hand.h
+
+commit 3d688c4ed4a7dde5719cf131e8313da1819463f9
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 20:17:41 2020 -0800
+
+    Update DrawPile.h
+
+commit b34ca232d9f9fdb968900f37d273e509469c370c
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 20:15:28 2020 -0800
+
+    Update Player.h
+
+commit a7b139e3f71de69972a09961714a401d534e0186
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 20:14:20 2020 -0800
+
+    Update Player.h
+
+commit 1bf9a4155ac91d80cdd9e2a197dd0c5d043b1080
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 20:12:58 2020 -0800
+
+    Update Player.h
+
+commit fa15773dff3af425d3bbcdd387805cd0eaedac97
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 23:02:30 2020 -0500
+
+    Update DrawPile.h
+
+commit 3d1638cd81cefbcef9083f8cbc144a190a0edd48
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 23:02:09 2020 -0500
+
+    Update FaceUpPile.h
+
+commit 067a442322b6dc2ba9a1abb8159697037897b24a
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 23:01:50 2020 -0500
+
+    Update Hand.h
+
+commit dfeb8fe2f94ea409292315f2ee259e6e41d6df01
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 23:00:34 2020 -0500
+
+    Update Hand.h
+
+commit fb5399749117a9f121a2273086617168bc7eb2b4
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 23:00:11 2020 -0500
+
+    Update FaceUpPile.h
+
+commit 2f02bf2b48a3df67f81e405ad20dfd2ea19f1c3d
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 22:59:50 2020 -0500
+
+    Update DrawPile.h
+
+commit 05a8e7c746f1f15fe9c33ffff6c3e143afa3cfee
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 22:58:45 2020 -0500
+
+    Update Pile.h
+
+commit 05651c42b2951f6c70e018516d1f411fcebff7eb
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 22:56:15 2020 -0500
+
+    Update SkipBoGame.cpp
+
+commit 5bfc16d820ef39e2a904ac5fdc1b77d23f8e23ad
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 22:50:49 2020 -0500
+
+    Update Pile.h
+
+commit 08a590863e88a395fa53ae5aa5b0c20c42ed1550
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 22:49:54 2020 -0500
+
+    Update Hand.h
+
+commit f01012a5f2557356837434a247945312cf6b04af
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 22:49:40 2020 -0500
+
+    Update DrawPile.h
+
+commit eed5324afc6fcc2dc4b36f2c305bb8b24e13c27b
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 22:49:24 2020 -0500
+
+    Update Pile.h
+
+commit 0547a8506a79f0e800a5b61ca94161f98b7ac944
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 22:43:18 2020 -0500
+
+    Update Hand.h
+
+commit 19bf5b7521a11ebccdb7580ed415df40761f3998
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 22:43:06 2020 -0500
+
+    Update FaceUpPile.h
+
+commit c673c8fa440b82ba0bdd971e7bb8dac96ae28dbc
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 22:42:52 2020 -0500
+
+    Update DrawPile.h
+
+commit f148f85a43c73a07f352ba0148f1c4f59cdd8dad
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 22:40:31 2020 -0500
+
+    Update DrawPile.h
+
+commit b667757f73563a129e5de2c05ee4834ed109d64f
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 22:39:34 2020 -0500
+
+    Update Hand.h
+
+commit 9983fb46caf208627372ccac97b83030a1107bc3
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 22:39:14 2020 -0500
+
+    Update FaceUpPile.h
+
+commit 5f23745b661a1648fec1fd30f2b40d17a385fe35
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 22:37:41 2020 -0500
+
+    Update DrawPile.h
+
+commit d5e1f34ef5ef0111f4b6ea4422f1c61c1e8b2ba3
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 22:36:32 2020 -0500
+
+    Update SkipBoGame.cpp
+
+commit e2180c7e1a9b65fb23374f760d7cdee488d9447a
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 22:36:12 2020 -0500
+
+    Update Player.h
+
+commit eb00672c5272e70974f72debcbc365ddb8016b02
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 22:35:11 2020 -0500
+
+    Update Player.h
+
+commit 3f41a2ff34ba9da4f838016bdb0baa72486c77fc
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 22:33:40 2020 -0500
+
+    Update Player.h
+
+commit bc012816521d274e2b5c2b8f425d011861564d02
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 19:31:58 2020 -0800
+
+    Update Pile.h
+
+commit 679f2ba6d44960d460576b75d1492fe213ab986d
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 22:29:02 2020 -0500
+
+    Update Player.h
+
+commit 47f0ec3774732b99044a519baa0276e019769b3e
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 22:28:12 2020 -0500
+
+    Update Player.h
+
+commit 3f8f384e41329d15f6af4c535c84652814bb410e
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 22:23:48 2020 -0500
+
+    Update Player.h
+
+commit 0b67cd3c36484d90cc550a0f211fa77e04c4c628
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 22:22:40 2020 -0500
+
+    Update SkipBoGame.cpp
+
+commit 9bd2f4595cb3a6ba8bdcc8bcc8d7f83cbfccebb7
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 22:13:30 2020 -0500
+
+    Update Player.h
+
+commit 8596dd9857e64131e3d63f59ee0a93743e5a2238
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 22:11:48 2020 -0500
+
+    Update SkipBoGame.h
+
+commit 751661310a09dd86a1a0477d301667acbd86facd
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 22:11:12 2020 -0500
+
+    Update Player.h
+
+commit 0e67ac973ca0f704eff15d8d9228a23213c99d5b
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 22:06:57 2020 -0500
+
+    Update Hand.h
+
+commit c2322167f208b80f151ad23ce6227dae63adb428
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 22:06:30 2020 -0500
+
+    Update FaceUpPile.h
+
+commit 893ba8d4f18fab61f33f3d510ba9017e9bba3c95
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 22:06:11 2020 -0500
+
+    Update DrawPile.h
+
+commit 2d8b05a46f7dbe2bb807172b3f8920d47bcf63d0
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 22:03:54 2020 -0500
+
+    Update Hand.h
+
+commit baf1a36d0b3a18eff46733c40f36cbe4dbaf0f59
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 22:03:32 2020 -0500
+
+    Update FaceUpPile.h
+
+commit 0f91bebe86e468fc00ecd5e75ff03ede90c5facc
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 22:03:17 2020 -0500
+
+    Update DrawPile.h
+
+commit 7a85d07bc8f9534b1d3c178b19806cf926433c7c
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 22:02:21 2020 -0500
+
+    Update Pile.h
+
+commit 6c5a8056da74bb6db616ce522db085de77aaeb35
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 22:01:29 2020 -0500
+
+    Update Pile.h
+
+commit c5f9f42b587571ac71fb6189a603cf2b9197f537
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 21:56:26 2020 -0500
+
+    Update Pile.h
+
+commit 3917fa074bd5b2334a0c2b44a05458047cc7da0b
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 21:54:58 2020 -0500
+
+    Update Pile.h
+
+commit 3293f6ad2caee77ad1bf5ea947084cdddd5aa4f4
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 21:52:51 2020 -0500
+
+    Update Pile.h
+
+commit 6f109ae8a45f61d5df10a749ab5c20d4a07a1c06
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 18:45:59 2020 -0800
+
+    Update SkipBoGame.cpp
+
+commit 900c611f8a97e0b879516016f845208ab148163a
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 21:37:24 2020 -0500
+
+    Update SkipBoGame.cpp
+
+commit 67932c5f3d8f9dfd70eee4c143e307c326fae802
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 21:33:16 2020 -0500
+
+    Update SkipBoGame.cpp
+
+commit 8d401bb0a9ed8aac0894240e94dd208d5d7a02f2
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 21:26:36 2020 -0500
+
+    Update SkipBoGame.cpp
+
+commit da728bcc3da1c242a531468c3dd5f3963fefb363
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 21:23:21 2020 -0500
+
+    Update SkipBoGame.h
+
+commit 0370442e1ad7b1be28a868c46b4ffa5cbe6dee07
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 21:22:05 2020 -0500
+
+    Update SkipBoGame.cpp
+
+commit e3a385f66ce2af991622a243c9d9e2431cb4f662
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 18:16:51 2020 -0800
+
+    Update Pile.cpp
+
+commit c8eba976b57af5f4a3db38f7abee8209076c043b
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 18:13:48 2020 -0800
+
+    Update Player.cpp
+
+commit 8f92d037b040c450f84d7a744c73309f7587b65f
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 21:11:35 2020 -0500
+
+    Update Pile.h
+
+commit d4b9ff6e56421d44c8045074cce58c824773f265
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 21:10:19 2020 -0500
+
+    Update Pile.h
+
+commit 83abf2a607085484a01a306e6cca6ca4b21c0f00
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 21:08:26 2020 -0500
+
+    Update SkipBoGame.cpp
+
+commit 7ce434610c7eb19c855d06f470456f99c505b345
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 18:07:29 2020 -0800
+
+    Update Player.cpp
+
+commit 3494667601b4bafadaa67143851e78dd12eabbce
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 21:07:25 2020 -0500
+
+    Update Pile.h
+
+commit ad84981f805cdeb0c6a4eb8cbdb49a0879e005ff
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 21:04:21 2020 -0500
+
+    Update Pile.h
+
+commit f385ef79aca24e4a37280bd71c76e867a3f9925d
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 17:57:21 2020 -0800
+
+    Update Player.cpp
+
+commit b343c1a589beb4b2644f013bea849ce267b8e104
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 17:54:36 2020 -0800
+
+    Update Player.h
+
+commit 58ba48050bbaf3afa9378a958890bc3f39df7203
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 17:51:53 2020 -0800
+
+    Update Hand.h
+
+commit a2a1aaa6261e3ad980d9b4b81c5b39a41672f205
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 20:50:16 2020 -0500
+
+    Update SkipBoGame.cpp
+
+commit e6577cd4cd894b666f35d40a27d9138d6b827eb8
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 17:49:11 2020 -0800
+
+    Update Hand.h
+
+commit abc6a9f75072944f8878fdcb47ff34c7c38aa185
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 17:48:50 2020 -0800
+
+    Update FaceUpPile.h
+
+commit af5903012922ccc5b0adeb7450c69368558cdec0
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 17:47:38 2020 -0800
+
+    Update DrawPile.h
+
+commit 3a22dda767f16dbfd5c7013f1aefcb3dc9eb4e23
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 17:44:11 2020 -0800
+
+    Update Pile.h
+
+commit 2fe7917804751f7ac11934a983d52dcad4aca56c
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 17:42:53 2020 -0800
+
+    Update Hand.cpp
+
+commit cec9d9b4bc2e310613b0bbdaec099c48dcb16ed6
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 17:42:26 2020 -0800
+
+    Update Hand.h
+
+commit b1e9306845b7e95805c9671412b5608768dc3361
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 20:41:50 2020 -0500
+
+    Update FaceUpPile.h
+
+commit c42a06e01345bb8b8a88313efbc2fdf0368c55b6
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 20:40:14 2020 -0500
+
+    Update Pile.h
+
+commit 8045d5df8a2400d6ebde340f953fc4fb1cc78c1b
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 17:39:00 2020 -0800
+
+    Update FaceUpPile.cpp
+
+commit 98eedb11cf13ad692301b8cc398872ecceeed4b5
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 17:38:12 2020 -0800
+
+    Update FaceUpPile.h
+
+commit 36e513152f65ec00c8da9ac9716ab0a19c86ebe5
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 20:33:51 2020 -0500
+
+    Update Hand.h
+
+commit 0390e65816f6b472c30de5468d3b49d987934ae8
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 17:33:20 2020 -0800
+
+    Update DrawPile.h
+
+commit 338477a920508ebe17e37a4586f2e83fe0332a20
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 17:32:23 2020 -0800
+
+    Update DrawPile.cpp
+
+commit c9563eb8354b6502e91b684841a7356a8f26002b
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 17:29:19 2020 -0800
+
+    Update Pile.h
+
+commit cce71b54b42f04df1acc921b247f817eff7fbddf
+Author: Thomas-Yu <42897266+Thomas-Yu@users.noreply.github.com>
+Date:   Tue Dec 8 17:29:10 2020 -0800
+
+    Update DrawPile.h
+
+commit a6183de22399df8c9a73ff36ad861b77db83b5a8
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 20:25:24 2020 -0500
+
+    Update Hand.h
+
+commit 9966f62cc0f22ba5072d4239e9c077511b52aff3
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 20:20:06 2020 -0500
+
+    Update SkipBoGame.cpp
+
+commit 9b4a4c4dc0d278fc04f3369cce9d580c96171398
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Tue Dec 8 20:17:29 2020 -0500
+
+    Update SkipBoGame.h
+
+commit 664972e6b9231def96c6707b3749283bf3bac8bd
+Author: Thomas <tyu34@jhu.edu>
+Date:   Tue Dec 8 20:16:33 2020 -0500
+
+    whatever
+
+commit 45441a24ea10ccc0b83ef8b23aa205a94a7a05b7
+Author: James Yu <jyu132@jh.edu>
+Date:   Tue Dec 8 19:09:59 2020 -0500
+
+    added a function that returns the stock size for a player
+
+commit 3e4b90e2ab6c02eedda48836ea6c5106e63f7c58
+Author: Jeffrey Wang <jwang378@jhu.edu>
+Date:   Tue Dec 8 18:31:07 2020 -0500
+
+    added a few missing things, need another function in player for checkwin
+
+commit 7470234263f0c4e5234153ef85cc88ca37b9a947
+Author: Jeffrey Wang <jwang378@jhu.edu>
+Date:   Tue Dec 8 18:18:51 2020 -0500
+
+    More functions
+
+commit 1035c5f4e900e96fcf0d576ee0f3f8351a2d4d5b
+Author: Thomas <tyu34@jhu.edu>
+Date:   Tue Dec 8 05:13:52 2020 -0500
+
+    James: fixed skipbogame so that each player is created with empty stock piles, discard piles, and hands, stock piles are then given to each player in round robin order. Thomas: syntax checks, fixed up main method
+
+commit 1feebbb32b560adc023574c4340ef32658539790
+Author: James Yu <jyu132@jh.edu>
+Date:   Tue Dec 8 03:23:27 2020 -0500
+
+    added shuffled/unshuffled
+
+commit 1eebf07306f2863f366b6cfc2c675fed4d46864b
+Author: Thomas <tyu34@jhu.edu>
+Date:   Tue Dec 8 03:22:12 2020 -0500
+
+    completed the main function
+
+commit 93b4b5cd980e2b90580c1459cbb08d85dee00340
+Author: James Yu <jyu132@jh.edu>
+Date:   Tue Dec 8 02:43:49 2020 -0500
+
+    changed the names of a few fields in SkipBoGame.h and SkipBoGame.cpp to match the names in display and toString
+
+commit 757428c658042edf4a0a3f9d5e62f30f5815c2bf
+Author: James Yu <jyu132@jh.edu>
+Date:   Tue Dec 8 01:51:09 2020 -0500
+
+    finished implementing functions in Player.h and Player.cpp
+
+commit a0d35a5eec5387fadc5d4f5428f8e8ff6f16f6cd
+Author: Thomas <tyu34@jhu.edu>
+Date:   Mon Dec 7 04:50:08 2020 -0500
+
+    created a makefile
+
+commit a3f2a0c31b77ea9f33d2fdb471ea5e1238fff6a1
+Author: Thomas <tyu34@jhu.edu>
+Date:   Mon Dec 7 04:12:36 2020 -0500
+
+    implemented a method in player and adjustements
+
+commit ff1fa6390e52050e1996080433834a041c626144
+Author: James Yu <jyu132@jh.edu>
+Date:   Sun Dec 6 13:57:24 2020 -0500
+
+    fixed a few files, add methods in Player to access updatedDrawPile, next step: implement functions in player to move cards from pile to pile
+
+commit a72ab184bceff2856882ba56de3da0841017ab04
+Author: James Yu <jyu132@jh.edu>
+Date:   Sun Dec 6 12:10:13 2020 -0500
+
+    Created a method in Pile to remove the first card and return it. Add some notes on what to do next.
+
+commit 5aaf85e80327c5c4391e164e8fcd3286f526461e
+Author: James Yu <jyu132@jh.edu>
+Date:   Sun Dec 6 11:30:33 2020 -0500
+
+    we need the Pile class to have a method that either removes and returns the top card from the pile vector or a specific card in the vector
+
+commit 97608a7b187163a3d093ef7e015fe35d6fb9b8ca
+Author: Jeffrey Wang <jwang378@jhu.edu>
+Date:   Sat Dec 5 17:22:04 2020 -0500
+
+    Worked more on SkipBoGame.cpp, will likely need other files completed to continue with certain pieces here
+
+commit 4ca15bcf9147bf5497a3b1b858baf6857d38be5d
+Author: James Yu <jyu132@jh.edu>
+Date:   Sat Dec 5 08:41:30 2020 -0500
+
+    created DrawPile.h, FaceUpPile.h, and Hand.h
+
+commit 2863eb4c1bcff060de24252257fa11c629c06575
+Author: James Yu <jyu132@jh.edu>
+Date:   Sat Dec 5 08:25:24 2020 -0500
+
+    adjusted Player.h and Player.cpp, implemented readIN and destructor
+
+commit 79ae84b7d89bc1da79ab1385a711b5a15d6d8ab2
+Author: Thomas <tyu34@jhu.edu>
+Date:   Sat Dec 5 02:20:46 2020 -0500
+
+    small changes for main
+
+commit 1a39ade9f26c7ed2e97d183c75260718176fb978
+Author: Jeffrey Wang <jwang378@jhu.edu>
+Date:   Fri Dec 4 14:37:36 2020 -0500
+
+    Few changes to .h, some code in for constructor of SkipBoGame
+
+commit 304de85d356b113614acb62a9624814a76081cef
+Author: James Yu <jyu132@jh.edu>
+Date:   Fri Dec 4 10:16:19 2020 -0500
+
+    created player.h, not fully completed, just added methods to see if logic is correct first
+
+commit 83f84d947fb68e65218c6a2824ec610052e8351d
+Author: Jeffrey Wang <jwang378@jhu.edu>
+Date:   Thu Dec 3 21:22:19 2020 -0500
+
+    Put rest of functions into SkipBoGame.cpp, will define them later. Also changed from using Player to Player* and added vector of players to private field in .h
+
+commit bc0e8645bcf2bd737d99b3e09e4aa5ee9c1c2f77
+Author: Jeffrey Wang <jwang378@jhu.edu>
+Date:   Thu Dec 3 21:14:07 2020 -0500
+
+    Added the two starter code functions to skipbogame.h
+
+commit 695b599c2b795a1a38993e2887f6ca936574fd6b
+Author: Jeffrey Wang <jwang378@jhu.edu>
+Date:   Thu Dec 3 21:09:49 2020 -0500
+
+    Added functions to SkipBoGame.h, should be defined in .cpp later
+
+commit 1796a0661f95c954cdbb3a7ca9f9ac30d8377468
+Author: Thomas <tyu34@jhu.edu>
+Date:   Thu Dec 3 02:16:06 2020 -0500
+
+    fixed up the main method, dont know how to continue or start a skibpogame from file
+
+commit 37d89d4dc183ad2c6fa274ddc6cdfc9ecf906eb6
+Author: Jeffrey Wang <jwang378@jhu.edu>
+Date:   Wed Dec 2 14:44:15 2020 -0500
+
+    Tried readin, not sure if this is what it's supposed to be yet but for now it takes a string stream of ints and makes them into cards, which it pushes into a vector
+
+commit 7e206aad6a387e35c33710c1d1b7ec67a665fda7
+Author: Jeffrey Wang <jwang378@jhu.edu>
+Date:   Wed Dec 2 14:13:13 2020 -0500
+
+    Added a few files, didn't touch anything yet
+
+commit de83a46bf113ce11e609a4c201c6a170d0fe7888
+Author: Thomas <tyu34@jhu.edu>
+Date:   Wed Dec 2 07:56:52 2020 -0500
+
+    working on main.cpp, Thomas can finish it later
+
+commit 0d845186d54203e4f182fbd072d99d6232d3a34f
+Author: jwang378 <70606745+jwang378@users.noreply.github.com>
+Date:   Mon Nov 30 14:24:43 2020 -0500
+
+    Delete README_FIRST.txt
+    
+    that was not supposed to be moved in there
+
+commit fffa508c99adec257545c69dccfab067a9cfbd0a
+Author: Jeffrey Wang <jwang378@jhu.edu>
+Date:   Mon Nov 30 14:07:03 2020 -0500
+
+    final project stuff from public repo
+
+commit 93579bdbd623d2d43222bcab255eeb036d6d5b08
+Author: Jeffrey Wang <jwang378@jhu.edu>
+Date:   Mon Nov 30 14:05:42 2020 -0500
+
+    first commit

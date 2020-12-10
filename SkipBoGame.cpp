@@ -221,10 +221,10 @@ void SkipBoGame::playTurn(){   //just plays a player's entire turn
   peep[playerToGo]->updateDrawPile(&draw);   //update draw pile to player and draw to hand
   peep[playerToGo]->drawToHand();
 
-	display();	
+  display();	
   while(!discard && !checkWin()){   //if played to discard pile or player wins, end turn
    
-    discard = play(playerToGo);
+  discard = play(playerToGo);
   display();    
   }
   DrawPile* temp = peep[playerToGo]->getUpdatedDrawPile();   //receives draw pile back from player
@@ -254,111 +254,111 @@ void SkipBoGame::illegalMove(){
 
 bool SkipBoGame::play(int p){
    bool move = true;
-while (move){
-             std::cout << "(m)ove [start] [end] or (d)raw ? ";
-             std::string action;
-             std::string from;
-  std::string to;
+   while (move){
+     std::cout << "(m)ove [start] [end] or (d)raw ? ";
+     std::string action;
+     std::string from;
+     std::string to;
 
-  std::cin >> action;
-  std::cin >> from;
-  std::cin>>to;   //depending on user input (move) checks validity
-        while ((from == "0" && (to == "1" || to == "2" || to == "3" || to == "4")) || (action!= "m" && action != "d") || (from != "0" && from != "1" && from != "2" && from != "3" && from != "4" && from != "5" && from != "6" && from != "7" && from != "8" && from != "9")  ||(to != "a" && to != "b" && to != "c" && to != "d" && to != "1" && to != "2" && to != "3" && to != "4" )){
-        illegalMove();
-	  std::cin >> action;
-	  std::cin >> from;
-	  std::cin >> to;
-        }
+     std::cin >> action;
+     std::cin >> from;
+     std::cin>>to;   //depending on user input (move) checks validity
+     while ((from == "0" && (to == "1" || to == "2" || to == "3" || to == "4")) || (action!= "m" && action != "d") || (from != "0" && from != "1" && from != "2" && from != "3" && from != "4" && from != "5" && from != "6" && from != "7" && from != "8" && from != "9")  ||(to != "a" && to != "b" && to != "c" && to != "d" && to != "1" && to != "2" && to != "3" && to != "4" )){
+       illegalMove();
+       std::cin >> action;
+       std::cin >> from;
+       std::cin >> to;
+     }
 	
-  std::cout << std::endl;
+     std::cout << std::endl;
 
-  int f;
-  int t;
-  int b;
+     int f;
+     int t;
+     int b;
   
-  if (action != "d"){   //just converts from letter to number for easier usage
-    f = std::stoi(from);
-    if (to == "a" || to == "b" || to == "c" || to == "d"){
-      if (to == "a"){b = 0;}
-      if (to == "b"){b = 1;}
-      if (to == "c"){b = 2;}
-      if (to == "d"){b = 3;}
-    }
-    else{
-      t = std::stoi(to);  
-    }
-  }
+     if (action != "d"){   //just converts from letter to number for easier usage
+       f = std::stoi(from);
+       if (to == "a" || to == "b" || to == "c" || to == "d"){
+	 if (to == "a"){b = 0;}
+	 if (to == "b"){b = 1;}
+	 if (to == "c"){b = 2;}
+	 if (to == "d"){b = 3;}
+       }
+       else{
+	 t = std::stoi(to);  
+       }
+     }
   
   
-  if (action == "d"){   //checks if player can draw, then draws if player's hand size is zero
+     if (action == "d"){   //checks if player can draw, then draws if player's hand size is zero
     //draw
-    if (peep[p]->handSize() == 0){
-      for (int i = 0; i < 5; i ++){
-	peep[p]->drawToHand();
-      }
-    }
-  }
-  else if (action == "m"){   //moves cards depending on where from and where to  
-	  Card c;
-    if (f == 0){
-      int temp = peep[p]->getStockCardValue();
-	    if (build[b]->size() == 0){
-	    	c = peep[p]->getStockPileCard();
-		    move = true;
-	    }else{
-      if((temp == 0) || (temp == build[b]->topCardValue() + 1)) {
-	      c = peep[p]->getStockPileCard();
-	      move = true;
-      }
-	    }else{move = false;}
-    }else if (f >= 1 && f <= 4){
-	int temp = peep[p]->getDiscardCardValue(f);
-	if (build[b]->size() == 0){
-	 	c = peep[p]->getDiscardPileCard(f);
-		 move = true;
-	}else{
-	    if((temp == 0) || (temp == build[b]->topCardValue() + 1)) {
-      		c = peep[p]->getDiscardPileCard(f);
-		move = true;
-	    }
-	}else{move = false;}
-    }else if (f >= 5 && f <= 9){
-	if (f - 5 > peep[p]->handSize()-1){
-	    	illegalMove();
-		    move=false;
-		    
-	}else{
-      		int temp = peep[p]->getHandCardValue(f);
-	     	if (build[b]->size() == 0){
-	    		c = peep[p]->getHandPileCard(f);
-			move = true;
-			
-	    	}else{
-	    		if((temp == 0) || (temp == build[b]->topCardValue() + 1)) {
-	    			move = true;
-				c = peep[p]->getHandPileCard(f);
-	    		}
-	     	}
-    	}
-    }
-    else {
-        move = false;
-    }
-
-   
-    if (move = true){
-    	if (t <= 4 && t >= 1){
-      
-      	peep[p]->handToDiscard(c, t);
-	
-      	return true;
-    }
-    }
-    if(move) {
-	    build[b]->addCard(c);
-    }
-	//  else {
-
+       if (peep[p]->handSize() == 0){
+	 for (int i = 0; i < 5; i ++){
+	   peep[p]->drawToHand();
+	 }
+       }
+     }
+     else if (action == "m"){   //moves cards depending on where from and where to  
+       Card c;
+       if (f == 0){
+	 int temp = peep[p]->getStockCardValue();
+	 if (build[b]->size() == 0){
+	   c = peep[p]->getStockPileCard();
+	   move = true;
+	 }else{
+	   if((temp == 0) || (temp == build[b]->topCardValue() + 1)) {
+	     c = peep[p]->getStockPileCard();
+	     move = true;
+	   }
+	 }else{move = false;}
+       }else if (f >= 1 && f <= 4){
+	 int temp = peep[p]->getDiscardCardValue(f);
+	 if (build[b]->size() == 0){
+	   c = peep[p]->getDiscardPileCard(f);
+	   move = true;
+	 }else{
+	   if((temp == 0) || (temp == build[b]->topCardValue() + 1)) {
+	     c = peep[p]->getDiscardPileCard(f);
+	     move = true;
+	   }
+	 }else{move = false;}
+       }else if (f >= 5 && f <= 9){
+	 if (f - 5 > peep[p]->handSize()-1){
+	   illegalMove();
+	   move=false;
+	   
+	 }else{
+	   int temp = peep[p]->getHandCardValue(f);
+	   if (build[b]->size() == 0){
+	     c = peep[p]->getHandPileCard(f);
+	     move = true;
+	     
+	   }else{
+	     if((temp == 0) || (temp == build[b]->topCardValue() + 1)) {
+	       move = true;
+	       c = peep[p]->getHandPileCard(f);
+	     }
+	   }
+	 }
+       }
+       else {
+	 move = false;
+       }
+       
+       
+       if (move = true){
+	 if (t <= 4 && t >= 1){
+	   
+	   peep[p]->handToDiscard(c, t);
+	   
+	   return true;
+	 }
+       }
+       if(move) {
+	 build[b]->addCard(c);
+       }
+       //  else {
+       
     //display();
     /*std::cout << "(m)ove [start] [end] or (d)raw ? ";
     std::cin >> action;
@@ -366,12 +366,12 @@ while (move){
     std::cin>>to;
     */
 	  
-	  move = !move;
-  }
-    
-  }
-
-  return false;
+       move = !move;
+     }
+     
+   }
+   
+   return false;
 }
 
 void SkipBoGame::save(std::string file){   //saves game
