@@ -45,7 +45,7 @@ class Pile {
   }
  
   int topCardValue(){
-   Card c = pile.at(0);
+   Card c = pile.at(pile.size()-1);
    return c.getValue();
   }
   void readIn(std::istream & is){
