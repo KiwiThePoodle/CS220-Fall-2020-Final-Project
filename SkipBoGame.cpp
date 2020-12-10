@@ -27,7 +27,7 @@ void SkipBoGame::display() const {
     std::cout << " ";
   }
   std::cout << std::endl;
-  peep[curp]->display();
+  peep[curp%nump]->display();
 }
 
 /* for saving state - must not change format!
