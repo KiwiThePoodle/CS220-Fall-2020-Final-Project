@@ -19,7 +19,7 @@ class BuildPile : public FaceUpPile {
   
   int getCardNumber() { return cardNumber; }
 
-  void reshuffle(DrawPile* d);
+  void addCards(DrawPile* d);
 };
 
 #endif
