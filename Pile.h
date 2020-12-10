@@ -50,10 +50,10 @@ class Pile {
   }
  
   void readIn(std::istream & is){
-
+   int temp;
+   is >> temp;
     while(!is.eof()){
       int n;
-      is >> n;
       is >> n;
       Card* c = new Card(n);
       pile.insert(pile.begin(), 1, *c);   //instead of push_back so the cards are not read-in backwards
