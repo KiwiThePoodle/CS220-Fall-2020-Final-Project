@@ -351,7 +351,7 @@ bool SkipBoGame::play(int p){
 		     c = peep[p]->getHandPileCard(f);
 	//	     std::cout << "Test3" << std::endl;
 	     }else
-		if (t < =4 &&t>=1){     
+		if (t <= 4 &&t>=1){     
 		     if((temp == peep[p]->getDiscardCardValue(t)+1)){
 	     		move = true;
 		     	c = peep[p]->getHandPileCard(f);
