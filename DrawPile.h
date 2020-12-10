@@ -8,25 +8,21 @@
 class DrawPile : public Pile {
  private:
  bool rand;
- //protected:
-  //std::vector<Card> drawPile;
  public:
   DrawPile() { pile = std::vector<Card>{};rand=false;}
    //pile = std::vector<Card>;
-  bool getRand() const {
+  bool getRand() const {   //returns whether random is on or not
    return rand;
   }
 
- void setRand(bool b){
+ void setRand(bool b){   //sets whether random is on or not
   rand = b;
  }
   DrawPile(std::vector<Card> d) { pile = d; }
 
   void display() const;
 
-  //~DrawPile();
-
-  //Card topCard();
+  //other functions inherited from pile.h
 };
 
 #endif
