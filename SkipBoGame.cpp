@@ -475,11 +475,12 @@ bool SkipBoGame::play(int p){
       }
        
       if (t >= 1 && t <=4){
+	      std::cout << "TEST1" << std::endl;
 	if (peep[p]->discardIsEmpty(t)){
+		std::cout << "TEST2" << std::endl;
 		target = 0;
 	}else{
-		
-       	 	target = peep[p]->getDiscardCardValue(t-1);
+       	 	target = peep[p]->getDiscardCardValue(t);
 	}
       }
        
