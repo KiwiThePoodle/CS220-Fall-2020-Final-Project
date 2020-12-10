@@ -255,7 +255,7 @@ void SkipBoGame::illegalMove(){
 bool SkipBoGame::play(int p){
    bool move = true;
    while (move){
-     //std::cout << "(m)ove [start] [end] or (d)raw ? ";
+     std::cout << "(m)ove [start] [end] or (d)raw ? ";
      std::string action;
      std::string from;
      std::string to;
