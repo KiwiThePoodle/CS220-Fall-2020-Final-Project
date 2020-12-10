@@ -529,6 +529,10 @@ bool SkipBoGame::play(int p){
       }
        
       if (t == 100){
+	if (build[b]->size() == 12){
+	  target = 100;
+	  leave = -1;
+	}
         if (build[b]->size()==0){
           target = 0;
         }else{
