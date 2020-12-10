@@ -248,8 +248,9 @@ void SkipBoGame::playTurn(){
 bool SkipBoGame::checkWin(){
   for (int i = 0; i < nump; i ++){
     if (peep[i]->stockSize() == 0){
-      return true;
-	    curp--;
+      curp--;
+	    return true;
+	    
     }
   }
   return false;
