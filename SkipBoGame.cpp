@@ -299,7 +299,7 @@ bool SkipBoGame::play(int p){
        }
      }
      Card c;
-     else if (action == "m"){   //moves cards depending on where from and where to  
+     if (action == "m"){   //moves cards depending on where from and where to  
        
        if (f == 0){
 	 int temp = peep[p]->getStockCardValue();
@@ -347,7 +347,7 @@ bool SkipBoGame::play(int p){
        }
        
        
-       if (move = true){
+       if (move == true){
 	 if (t <= 4 && t >= 1){
 	   
 	   peep[p]->handToDiscard(c, t);
