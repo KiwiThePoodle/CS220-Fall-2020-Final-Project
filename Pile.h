@@ -45,7 +45,7 @@ class Pile {
 
   std::string toString() const;  // for saving state
 
-  Card removeCard(int cardIndex){.  //removes and returns a card at a given index
+  Card removeCard(int cardIndex){  //removes and returns a card at a given index
      Card c = pile.at(cardIndex);
      pile.erase(pile.begin() + cardIndex);  
    return c;
