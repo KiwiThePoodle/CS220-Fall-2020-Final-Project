@@ -254,7 +254,7 @@ void SkipBoGame::illegalMove(){
 
 bool SkipBoGame::play(int p){
 	bool move = true;
-	while (move){
+while (move){
   std::cout << "(m)ove [start] [end] or (d)raw ? ";
   std::string action;
   std::string from;
@@ -299,7 +299,7 @@ bool SkipBoGame::play(int p){
     }
   }
   else if (action == "m"){   //moves cards depending on where from and where to
-    bool go = true;
+    
 	  
 	  Card c;
    // bool move = true;
@@ -349,7 +349,7 @@ bool SkipBoGame::play(int p){
 	  }
     
   }
-	}
+
   return false;
 }
 
