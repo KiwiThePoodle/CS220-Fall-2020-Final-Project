@@ -6,22 +6,14 @@
 #include "Pile.h"
 
 class Hand : public Pile {
- //protected:
-  //Pile pile;
  public:
-  Hand() { pile = std::vector<Card>{};/*Pile();*/}
-   //pile = vector<Card>;
-  
+  Hand() { pile = std::vector<Card>{}; }
 
   Hand(std::vector<Card> h) { pile = h; }
 
   void display() const;
 
-  //~Hand();
-
-  //int size() { return pile.size(); }
-
-  //void add(Card c) { pile.addCard(c); }
+  //inherits functions from pile
 };
 
 #endif
