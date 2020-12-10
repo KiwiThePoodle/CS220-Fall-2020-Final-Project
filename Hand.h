@@ -9,6 +9,9 @@ class Hand : public Pile {
  public:
   Hand() { pile = std::vector<Card>{}; }
 
+  int getHandSize(){
+   return pile.size();
+  }
   Hand(std::vector<Card> h) { pile = h; }
 
   void display() const;
