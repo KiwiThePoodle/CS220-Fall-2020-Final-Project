@@ -171,14 +171,14 @@ SkipBoGame::SkipBoGame(bool isS, std::string file){
       disPiles[i] = dp;
     }
 
-    Player* p = new Player(playerName, sp, disPiles, h);
+    Player* p = new Player(playerName, sp, disPiles, h);   //creates players
     peep.push_back(p);
   }
   
   save >> tempString;
   int deckSize;
   save >> deckSize;
-  for (int i5 = 0; i5 < deckSize; i5++){
+  for (int i5 = 0; i5 < deckSize; i5++){    //cards to draw pile
     int cardNum;
     save >> cardNum;
     Card* c = new Card(cardNum);
@@ -186,7 +186,7 @@ SkipBoGame::SkipBoGame(bool isS, std::string file){
   }
   draw.setRand(isShuffle);
 
-  for (int i6 = 0; i6 < 4; i6 ++){
+  for (int i6 = 0; i6 < 4; i6 ++){   //cards to build piles
     save >> tempString;
     int buildSize;
     save >> buildSize;
@@ -204,38 +204,36 @@ SkipBoGame::SkipBoGame(bool isS, std::string file){
   
 }
 
-SkipBoGame::~SkipBoGame(){
+SkipBoGame::~SkipBoGame(){   //destructor
   for (int i = 0; i < (int)peep.size(); i ++){
     delete peep.at(i);
   }
 }
 
-void SkipBoGame::playTurn(){
+void SkipBoGame::playTurn(){   //just plays a player's entire turn
 
-  int playerToGo = (curp)%nump;
-  bool discard = false;
-  //peep[playerToGo]->display();
+  int playerToGo = (curp)%nump;   //updates player
+  bool discard = false;   //for if the player plays a card to a discard pile
 
-  peep[playerToGo]->updateDrawPile(&draw);
+  peep[playerToGo]->updateDrawPile(&draw);   //update draw pile to player and draw to hand
   peep[playerToGo]->drawToHand();
 
 	display();	
-  while(!discard && !checkWin()){
+  while(!discard && !checkWin()){   //if played to discard pile or player wins, end turn
    
     discard = play(playerToGo);
   display();    
   }
-  DrawPile* temp = peep[playerToGo]->getUpdatedDrawPile();
+  DrawPile* temp = peep[playerToGo]->getUpdatedDrawPile();   //receives draw pile back from player
   draw = *temp;
   curp ++;
 }
 
 bool SkipBoGame::checkWin(){
-  for (int i = 0; i < nump; i ++){
+  for (int i = 0; i < nump; i ++){   //just checks if any player has zero cards in stock
     if (peep[i]->stockSize() == 0){
       curp = i;
-	    return true;
-	    
+      return true;
     }
   }
   return false;
@@ -249,7 +247,7 @@ bool SkipBoGame::play(int p){
 
   std::cin >> action;
   std::cin >> from;
-  std::cin>>to;
+  std::cin>>to;   //depending on user input (movve) checks validity
   while ((from == "0" && (to == "1" || to == "2" || to == "3" || to == "4")) || (action!= "m" && action != "d") || (from != "0" && from != "1" && from != "2" && from != "3" && from != "4" && from != "5" && from != "6" && from != "7" && from != "8" && from != "9")  ||(to != "a" && to != "b" && to != "c" && to != "d" && to != "1" && to != "2" && to != "3" && to != "4" )){
     std::cout << "illegal command, try again" << std::endl << std::endl;
     display();
@@ -265,7 +263,7 @@ bool SkipBoGame::play(int p){
   int t;
   int b;
   
-  if (action != "d"){
+  if (action != "d"){   //just converts from letter to number for easier usage
     f = std::stoi(from);
     if (to == "a" || to == "b" || to == "c" || to == "d"){
       if (to == "a"){b = 0;}
@@ -279,7 +277,7 @@ bool SkipBoGame::play(int p){
   }
   
   
-  if (action == "d"){
+  if (action == "d"){   //checks if player can draw, then draws if player's hand size is zero
     //draw
     if (peep[p]->handSize() == 0){
       for (int i = 0; i < 5; i ++){
@@ -287,7 +285,7 @@ bool SkipBoGame::play(int p){
       }
     }
   }
-  else if (action == "m"){
+  else if (action == "m"){   //moves cards depending on where from and where to
     Card c;
     if (f == 0){
       c = peep[p]->getStockPileCard();
@@ -311,7 +309,7 @@ bool SkipBoGame::play(int p){
   return false;
 }
 
-void SkipBoGame::save(std::string file){
+void SkipBoGame::save(std::string file){   //saves game
   
   std::ofstream saveFile(file);
   saveFile << toString();
