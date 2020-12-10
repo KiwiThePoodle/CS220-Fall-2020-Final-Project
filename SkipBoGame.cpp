@@ -269,7 +269,7 @@ bool SkipBoGame::play(int p){
   	std::cout << "illegal command, try again" << std::endl;
   	display();
 	std::cout << "(m)ove [start] [end] or (d)raw ? ";
-	std cin >> action;
+	std::cin >> action;
 	std::cin >> from;
 	std::cin>>to;
   }	  
