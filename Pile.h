@@ -26,7 +26,7 @@ class Pile {
    //delete (pile);
   }
  
- vector<Card> getPile() { 
+ vector<Card> getPile() {   //returns the pile
   vector<Card>r;
   for (int i = 0; i < (int)pile.size(); i ++){
    r.push_back(pile.at(i));
@@ -35,7 +35,7 @@ class Pile {
   return r;
   }
 
-  void shuffle(){
+  void shuffle(){.  //for shuffling the deck if random is on
      std::random_shuffle(pile.begin(), pile.end());
   }
  
@@ -45,7 +45,7 @@ class Pile {
 
   std::string toString() const;  // for saving state
 
-  Card removeCard(int cardIndex){
+  Card removeCard(int cardIndex){.  //removes and returns a card at a given index
      Card c = pile.at(cardIndex);
      pile.erase(pile.begin() + cardIndex);  
    return c;
