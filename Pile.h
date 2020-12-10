@@ -58,7 +58,7 @@ class Pile {
       int n;
       is >> n;
       Card* c = new Card(n);
-      pile.push_front(*c);
+      pile.push_back(*c);
     }
     
   }// students to write this, companion to toString()
