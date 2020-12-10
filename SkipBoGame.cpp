@@ -317,6 +317,7 @@ bool SkipBoGame::play(int p){
 	    if((temp == 0) || (temp == build[b]->topCardValue() + 1)) {
 	    c = peep[p]->getHandPileCard(f);
 	    }
+    }
 	    else {
 		    move = false;
 	    }
