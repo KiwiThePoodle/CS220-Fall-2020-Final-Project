@@ -12,6 +12,7 @@
 #include "Pile.h"
 #include "Card.h"
 #include "Player.h"
+#include "BuildPile.h"
 
 
 /* for live game play - must not change format!
