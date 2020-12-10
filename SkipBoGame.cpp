@@ -451,7 +451,12 @@ bool SkipBoGame::play(int p){
         leave = peep[p]->getStockCardValue();
       }
       if (f >= 1 && f <= 4){
-        leave = peep[p]->getDiscardCardValue(f);
+	if(peep[p]->discardIsEmpty(f)){
+		leave = 100;
+	}else{
+		
+        	leave = peep[p]->getDiscardCardValue(f);
+      	}
       }
       if (f >= 5 && f <= 9){
 	if (f-5 > peep[p]->handSize()-1){
@@ -470,7 +475,11 @@ bool SkipBoGame::play(int p){
       }
        
       if (t >= 1 && t <=4){
-        target = peep[p]->getDiscardCardValue(t);
+	if (peep[p]->discardIsEmpty(t)){
+		target = 0;
+	}else{
+       	 	target = peep[p]->getDiscardCardValue(t);
+	}
       }
        
       if (leave == target + 1 || leave == 0){
