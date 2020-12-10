@@ -400,6 +400,43 @@ bool SkipBoGame::play(int p){
 bool SkipBoGame::play(int p){
    bool move = true;
    while (move){
+
+	   /*
+	    *
+	    *
+	    *
+	    *
+	    *
+	    *
+	    */
+	    
+     if (draw.size() == 0){
+	bool fullbuild = false;
+     	for(int i = 0; i < 4; i ++){
+	   if (build[i]->size() == 12){
+	   	build[i]->addCards(*draw);//not sure if this will work
+		std::cout << "Draw pile is out of cards, build " << i << " will be added to it." << std::endl;
+		fullbuild = true;
+	   }
+	   if (!fullbuild){
+	   	std::cout << "Draw pile is out of cards, no build pile is complete, they will all be added back." << std::endl;
+		for (int i = 0; i < 4; i ++){
+			build[i]->addCards(*draw);//again not sure if the *draw is allowed
+		}
+	   }
+	}
+	if (isShuffle){
+		draw.shuffle();
+	}
+     }
+     /*
+     *
+     *
+     *
+     *
+     */
+	   
+	  
      std::cout << "(m)ove [start] [end] or (d)raw ? ";
      std::string action;
      std::string from;
