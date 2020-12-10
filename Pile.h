@@ -44,6 +44,10 @@ class Pile {
    return c;
   }
  
+  int topCardValue(){
+   Card c = pile.at(0);
+   return c.getValue();
+  }
   void readIn(std::istream & is){
     while(!is.eof()){
       int n;
