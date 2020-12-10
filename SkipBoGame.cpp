@@ -354,7 +354,7 @@ while (move){
     if (t <= 4 && t >= 1){
       //move to discard
       peep[p]->handToDiscard(c, t);
-	    std::cout << "test";
+	   // std::cout << "test";
       return true;
     }
     }
