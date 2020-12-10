@@ -58,12 +58,12 @@ class Player {
   
   //methods used to get the value of the card, should help with checking if cards can be moved to build piles
   int getStockCardValue() {   //returns the value of the top card in the stock pile
-    return stock->topCard().getValue();
+    return stock->topCardValue();
   }
 
   int getDiscardCardValue(int discardNum) {   //value of the top card of a specified discard pile
     discardNum -= 1;
-    return discard[discardNum].topCard().getValue();
+    return discard[discardNum].topCardValue();
   }
 
   int getHandCardValue(int handNum) {   //value of a specific hand card
