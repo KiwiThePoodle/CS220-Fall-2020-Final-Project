@@ -310,7 +310,7 @@ bool SkipBoGame::play(int p){
       c = peep[p]->getDiscardPileCard(f);
 	    }
     }else if (f >= 5 && f <= 9){
-	    if (f - 5 > peep[p]->handSize()-1;){
+	    if (f - 5 > peep[p]->handSize()-1){
 	    	illegalMove();
 	    }
       int temp = peep[p]->getHandCardValue(f);
