@@ -59,7 +59,7 @@ class Pile {
       is >> n;
       Card* c = new Card(n);
       //pile.push_back(*c);
-      pile.insert(begin(), 1, *c);
+      pile.insert(std::begin(), 1, *c);
     }
     
   }// students to write this, companion to toString()
