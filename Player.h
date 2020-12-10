@@ -73,7 +73,7 @@ class Player {
   }
  
   void removeFromDiscard(int n){
-    discard[n].topCard();
+    discard[n-1].topCard();
   }
  
   //methods that help a player perform a move
