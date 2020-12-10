@@ -35,7 +35,7 @@ class Pile {
   return r;
   }
 
-  void shuffle(){.  //for shuffling the deck if random is on
+  void shuffle(){  //for shuffling the deck if random is on
      std::random_shuffle(pile.begin(), pile.end());
   }
  
