@@ -438,12 +438,13 @@ bool SkipBoGame::play(int p){
 		std::cout << "Draw pile is out of cards, build " << i << " will be added to it." << std::endl;
 		fullbuild = true;
 	   }
-	   if (!fullbuild){
-	   	std::cout << "Draw pile is out of cards, no build pile is complete, they will all be added back." << std::endl;
+	   
+	}
+	if (!fullbuild){
+		std::cout << "Draw pile is out of cards, no build pile is complete, they will all be added back." << std::endl;
 		for (int i = 0; i < 4; i ++){
 			build[i]->addCards(&draw);
 		}
-	   }
 	}
 	if (isShuffle){
 		draw.shuffle();
