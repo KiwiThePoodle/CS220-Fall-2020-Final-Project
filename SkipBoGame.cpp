@@ -555,7 +555,7 @@ bool SkipBoGame::play(int p){
 	
         move = true;
 	if (f == 0){
-	  peep[p]->getStockPileCard();
+	  peep[p]->getStockPileCard(0);
 	  c = Card(leave);
 	  build[b]->addCard(c);
 	  build[b]->incrementCardNumber();
