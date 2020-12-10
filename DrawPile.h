@@ -19,7 +19,9 @@ class DrawPile : public Pile {
    }
    return "true";
   }
-
+  
+  ~DrawPile() {}
+  
   void setRand(bool b){   //sets whether random is on or not
     rand = b;
   }
