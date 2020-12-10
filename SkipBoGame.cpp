@@ -457,7 +457,7 @@ bool SkipBoGame::play(int p){
 	if (f-5 > peep[p]->handSize()-1){
 		leave = 100;
 	}
-        leave = getHandCardValue(f);
+        leave = peep[p]->getHandCardValue(f);
       }
        
       if (t == 100){
