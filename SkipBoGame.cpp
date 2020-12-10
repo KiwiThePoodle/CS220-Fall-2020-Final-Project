@@ -343,20 +343,21 @@ bool SkipBoGame::play(int p){
 	//	   std::cout << "Test2" << std::endl;
 	     move = true;
 	     
-	   }else{
-		   std::cout << " TEST " << temp << std::endl;
+	   }else{////////////////////////////////////////////
+		  
 	     if((temp == 0) || (temp == build[b]->topCardValue() + 1)) {
 	       move = true;
 	       //c = Card(temp);
 		     c = peep[p]->getHandPileCard(f);
 	//	     std::cout << "Test3" << std::endl;
 	     }else
+		if (t < =4 &&t>=1){     
+		     if((temp == peep[p]->getDiscardCardValue(t)+1)){
+	     		move = true;
+		     	c = peep[p]->getHandPileCard(f);
 		     
-	     if((temp == peep[p]->getDiscardCardValue(t)+1)){
-	     	move = true;
-		     c = peep[p]->getHandPileCard(f);
-		     
-	     }{move = false; illegalMove();}
+	     	      }else{move = false; illegalMove();}
+		}else{move = false; illegalMove();}
 	   }
 	 }
        }
