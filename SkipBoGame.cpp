@@ -350,12 +350,13 @@ while (move){
     }
 
    
-    
+    if (move = true){
     if (t <= 4 && t >= 1){
       //move to discard
       peep[p]->handToDiscard(c, t);
 	    std::cout << "test";
       return true;
+    }
     }
     if(move) {
 	    build[b]->addCard(c);
