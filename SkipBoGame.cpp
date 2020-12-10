@@ -321,7 +321,6 @@ bool SkipBoGame::play(int p){
 	    else {
 		    move = false;
 	    }
-    }
     //move
    
     
