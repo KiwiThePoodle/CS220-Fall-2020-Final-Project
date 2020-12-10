@@ -47,7 +47,8 @@ bool SkipBoGame::play(int p){
      
       int leave;
       int target;
-       
+      Card c;
+	     
       if (f == 0){
         leave = peep[p]->getStockCardValue();
       }
@@ -55,6 +56,9 @@ bool SkipBoGame::play(int p){
         leave = peep[p]->getDiscardCardValue(f);
       }
       if (f >= 5 && f <= 9){
+	if (f-5 > peep[p]->handSize()-1){
+		leave = 100;
+	}
         leave = getHandCardValue(f);
       }
        
@@ -71,35 +75,33 @@ bool SkipBoGame::play(int p){
       }
        
       if (leave > target + 1 || leave == 0){
+	leave = target + 1;
         move = true;
-        
-        
-        
+	if (f == 0){
+	  c = Card(leave);
+	  build[b]->addCard(c);
+	}
+	if (f >= 1 && f <= 4){
+	  c = Card(leave);
+	  build[b]->addCard(c);
+	  
+	}
+	if (f >= 5 && f <= 9){
+	  c = peep[p]->getHandPileCard(f);
+	  if (t >= 1 && t <= 4){
+	    peep[p]->handToDiscard(c,t);
+	    return true;
+	  }
+	  build[b]->addCard(c);
+	}
       }else{
         move = false;
         illegalMove();
       }
-      
        
      }
     
-     
-     
-     
-     
-     
-   if (move == true){
-	    if (t <= 4 && t >= 1){
-	        peep[p]->handToDiscard(c, t);
-	   
-	        return true;
-	    }
-   }
-   if(move) {
-	    build[b]->addCard(c);
-   }
-    
-   move = !move;
+     move = !move;
      
    }
    
