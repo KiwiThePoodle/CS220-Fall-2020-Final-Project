@@ -83,6 +83,7 @@ class Player {
 
   Card getHandPileCard(int handNum);   //returns the specified card in the hand pile to be placed in a build pile
 
+  bool discardIsEmpty(int discardNum); //checks to see if discard pile is empty
 };
 
 
