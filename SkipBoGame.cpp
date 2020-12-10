@@ -301,7 +301,7 @@ bool SkipBoGame::play(int p){
     if (f == 0){
       c = peep[p]->getStockPileCard();
     }else if (f >= 1 && f <= 4){
-      c = peep[p]->getDiscardPileCard(f-1);
+      c = peep[p]->getDiscardPileCard(f);
     }else if (f >= 5 && f <= 9){
       c = peep[p]->getHandPileCard(f);
     }
