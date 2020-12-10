@@ -17,17 +17,8 @@ std::string Pile::toString() const {
   result.append("\n");
   return result;
 }
-/*
-void Pile::readIn(std::istream & is) {
-  while(!is.eof()) {
-    int n;
-    is >> n;
-    Card* c = new Card(n);
-    pile.push_back(c);
-  }
-}
-*/
-Card Pile::topCard() {
+
+Card Pile::topCard() {   //useful method that gets the top card in the pile and removes it from the current pile as well
   Card temp = pile.at(0);
   pile.erase(pile.begin());
   return temp;
