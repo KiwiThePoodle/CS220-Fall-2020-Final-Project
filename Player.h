@@ -71,7 +71,11 @@ class Player {
     std::vector<Card> temp = handPile->getPile();
    return temp.at(handNum).getValue();
   }
-
+ 
+  void removeFromDiscard(int n){
+    discard[n].topCard();
+  }
+ 
   //methods that help a player perform a move
   void drawToHand();   //called either at the start of a player's turn or when the player has no cards in hand
 
