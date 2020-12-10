@@ -255,7 +255,7 @@ void SkipBoGame::illegalMove(){
 bool SkipBoGame::play(int p){
    bool move = true;
    while (move){
-     std::cout << "(m)ove [start] [end] or (d)raw ? ";
+     //std::cout << "(m)ove [start] [end] or (d)raw ? ";
      std::string action;
      std::string from;
      std::string to;
@@ -305,22 +305,25 @@ bool SkipBoGame::play(int p){
        if (f == 0){
 	 int temp = peep[p]->getStockCardValue();
 	 if (build[b]->size() == 0){
-	   c = peep[p]->getStockPileCard();
+	   c = new Card(temp);
 	   move = true;
 	 }else{
 	   if((temp == 0) || (temp == build[b]->topCardValue() + 1)) {
-	     c = peep[p]->getStockPileCard();
+	     c = new Card(temp);
+		   //c = peep[p]->getStockPileCard();
 	     move = true;
 	   }else{move = false;}
 	 }
        }else if (f >= 1 && f <= 4){
 	 int temp = peep[p]->getDiscardCardValue(f);
 	 if (build[b]->size() == 0){
-	   c = peep[p]->getDiscardPileCard(f);
-	   move = true;
+	   //c = peep[p]->getDiscardPileCard(f);
+	   c = new Card(temp);
+		 move = true;
 	 }else{
 	   if((temp == 0) || (temp == build[b]->topCardValue() + 1)) {
-	     c = peep[p]->getDiscardPileCard(f);
+	     c = new Card(temp);
+		   //c = peep[p]->getDiscardPileCard(f);
 	     move = true;
 	   }else{move = false;}
 	 }
@@ -332,13 +335,15 @@ bool SkipBoGame::play(int p){
 	 }else{
 	   int temp = peep[p]->getHandCardValue(f);
 	   if (build[b]->size() == 0){
-	     c = peep[p]->getHandPileCard(f);
+	     c = new Card(temp);
+		   //c = peep[p]->getHandPileCard(f);
 	     move = true;
 	     
 	   }else{
 	     if((temp == 0) || (temp == build[b]->topCardValue() + 1)) {
 	       move = true;
-	       c = peep[p]->getHandPileCard(f);
+	       c = new Card(temp);
+		     //c = peep[p]->getHandPileCard(f);
 	     }
 	   }
 	 }
