@@ -473,6 +473,7 @@ bool SkipBoGame::play(int p){
           target = 0;
         }else{
           target = build[b]->getCardNumber();
+		std::cout <<"TEST << target << std::endl;
         }
       }
        
