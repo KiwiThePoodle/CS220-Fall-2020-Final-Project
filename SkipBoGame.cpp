@@ -459,9 +459,10 @@ bool SkipBoGame::play(int p){
       	}
       }
       if (f >= 5 && f <= 9){
-	if (f-5 > peep[p]->handSize()-1){
+	if (f-5 > peep[p]->handSize()/*-1*/){
 		leave = 100;
 	}else{
+		std::cout << "T2" << std::endl;
         	leave = peep[p]->getHandCardValue(f);
 	}
       }
@@ -478,6 +479,7 @@ bool SkipBoGame::play(int p){
 	if (peep[p]->discardIsEmpty(t)){
 		target = 0;
 	}else{
+		std::cout << "T1" << std::endl;//test
        	 	target = peep[p]->getDiscardCardValue(t);
 	}
       }
