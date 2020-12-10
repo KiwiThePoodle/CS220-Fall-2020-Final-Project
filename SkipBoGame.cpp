@@ -539,7 +539,7 @@ bool SkipBoGame::play(int p){
 	  c = Card(leave);
 	  build[b]->addCard(c);
 	  build[b]->incrementCardNumber();
-	  
+	  peep[p]->removeFromDiscard(f);
 	}
 	if (f >= 5 && f <= 9){
 	  c = peep[p]->getHandPileCard(f);
