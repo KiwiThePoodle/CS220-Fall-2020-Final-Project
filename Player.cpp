@@ -96,10 +96,10 @@ void Player::readIn(std::istream & is) {
 void Player::drawToHand() {                   //called at the start of player's turn, draws cards until hand is full
   int cardsToDraw = 5 - handPile->size();
   for(int i = 0; i < cardsToDraw; i++) {
-    Card c = updatedDrawPile->topCard();
-    handPile->addCard(c);
-    //handPile->addCard(updatedDrawPile->topCard());   //adds top card from draw pile to hand, *removes card from draw pile*
-    delete &c;
+    //Card c = updatedDrawPile->topCard();
+    //handPile->addCard(c);
+    handPile->addCard(updatedDrawPile->topCard());   //adds top card from draw pile to hand, *removes card from draw pile*
+    //delete &c;
   }
 }
 
