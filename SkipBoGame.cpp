@@ -312,7 +312,7 @@ bool SkipBoGame::play(int p){
 	     c = Card(temp);
 		   //c = peep[p]->getStockPileCard();
 	     move = true;
-	   }else{move = false;}
+	   }else{move = false;illegalMove();}
 	 }
        }else if (f >= 1 && f <= 4){
 	 int temp = peep[p]->getDiscardCardValue(f);
@@ -325,7 +325,7 @@ bool SkipBoGame::play(int p){
 	     c = Card(temp);
 		   //c = peep[p]->getDiscardPileCard(f);
 	     move = true;
-	   }else{move = false;}
+	   }else{move = false;illegalMove();}
 	 }
        }else if (f >= 5 && f <= 9){
 	 if (f - 5 > peep[p]->handSize()-1){
@@ -334,22 +334,24 @@ bool SkipBoGame::play(int p){
 	   
 	 }else{
 	   int temp = peep[p]->getHandCardValue(f);
+		
 	   if (build[b]->size() == 0){
-	     c = Card(temp);
-		   //c = peep[p]->getHandPileCard(f);
+	     //c = Card(temp);
+		   c = peep[p]->getHandPileCard(f);
 	     move = true;
 	     
 	   }else{
 	     if((temp == 0) || (temp == build[b]->topCardValue() + 1)) {
 	       move = true;
-	       c = Card(temp);
-		     //c = peep[p]->getHandPileCard(f);
+	       //c = Card(temp);
+		     c = peep[p]->getHandPileCard(f);
 	     }
 	   }
 	 }
        }
        else {
 	 move = false;
+	       illegalMove();
        }
        
        
