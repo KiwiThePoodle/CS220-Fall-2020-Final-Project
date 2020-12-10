@@ -3,9 +3,9 @@
 
 void BuildPile::addCards(DrawPile* d) {
 
-  for(int i = 0; i < pile.size(); i++) {
-    Card c = pile.topCard();
-    d->addcard(c);
+  for(int i = 0; i < (int)pile.size(); i++) {
+    Card c = this.topCard();
+    d->addCard(c);
   }
   cardNumber = 0;
 }
