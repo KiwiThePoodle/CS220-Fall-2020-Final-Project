@@ -17,7 +17,7 @@ class Pile {
  
   Pile(std::vector<Card> p) { pile = p; }
  
-  virtual ~Pile(){ pile.clear(); }
+  virtual ~Pile(){ }
  
  std::vector<Card> getPile() {   //returns the pile
   std::vector<Card>r;
