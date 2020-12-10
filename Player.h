@@ -34,7 +34,12 @@ class Player {
     }
     handPile = hand_pile;
   }
-
+  
+  ~Player() {
+   delete updatedDrawPile;
+   delete handPile;
+   delete stock;
+  }
   
   void display() const;
 
