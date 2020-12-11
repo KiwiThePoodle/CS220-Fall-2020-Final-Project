@@ -18,9 +18,9 @@ class Hand : public Pile {
    for (int i = 0; i < getHandSize(); i ++){
     delete &pile.at(i);
    }
-  }
+  }*/
   void display() const;
-*/
+
   //inherits functions from pile
 };
 
