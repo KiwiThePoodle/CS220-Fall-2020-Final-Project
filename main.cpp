@@ -39,15 +39,15 @@ int main(int argc, char *argv[]) {
     }
     else {
       //continue the game, not sure how to do this
-      SkipBoGame* game = new SkipBoGame(shuffle, argv[2]); //creation of skipbogame object for resuming play
+      SkipBoGame game = SkipBoGame(shuffle, argv[2]); //creation of skipbogame object for resuming play
 
-      while(!game->checkWin()) {
-        cout << "\n >> " << game->getCurrentPlayer() << " turn next" << endl; //playing the game out
+      while(!game.checkWin()) {
+        cout << "\n >> " << game.getCurrentPlayer() << " turn next" << endl; //playing the game out
         cout << "(p)lay, (s)ave, or (q)uit ? ";
         std::string psq;
         std::cin >> psq;
         if(psq == "q") {
-          delete game;
+          //delete game;
           cout << "thanks for playing" << endl;
           return 0;
         }
@@ -55,16 +55,16 @@ int main(int argc, char *argv[]) {
           std::string saveFile;
           cout << "save filename: ";
           std::cin >> saveFile;
-          game->save(saveFile);
-          delete game;
+          game.save(saveFile);
+          //delete game;
           return 0;
         }
         else if(psq == "p") {
-          game->playTurn();
+          game.playTurn();
         }
       }
-      cout << "\nGAME OVER - " << game->getCurrentPlayer() << " wins!" << endl;
-      delete game;
+      cout << "\nGAME OVER - " << game.getCurrentPlayer() << " wins!" << endl;
+      //delete game;
     }
     return 0;
   }
