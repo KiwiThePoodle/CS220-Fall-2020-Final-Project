@@ -2,7 +2,7 @@
 
 Our gitlog.txt file is really long with hundreds of commits since we edited our project through github. We thought that this was easier since we wanted to receive updates from each other while we worked together over zoom. We initially started with regular commits from emacs with regular/meaningful commit messages (approximately 10 commits per group member).
 
-Edit: the github editing was easier because when all our group members were actually able to meet together, we worked together by screen share, and to avoid branching issues, we decided it would be better to work on one screen, and we also decided it was easier for one person to simply pull each time rather than constantly adding, committing, and pushing. Furthermore, github allows for copying and pasting, which is exactly what SkipBoGameStuff.cpp is, when we realized the play() function in SkipBoGame.cpp wasn't working properly, we created a temporary dummy file to copy that one specific function to and work on it there. 
+Edit: the github editing was easier because when all our group members were actually able to meet together, we worked together by screen share, and to avoid branching issues, we decided it would be better to work on one screen, and we also decided it was easier for one person to simply pull each time rather than constantly adding, committing, and pushing. Furthermore, github allows for copying and pasting, which is exactly what SkipBoGameStuff.cpp is, when we realized the play() function in SkipBoGame.cpp wasn't working properly, we created a temporary dummy file to copy that one specific function to and work on it there. The SkipBoGameStuff.cpp file is not in the submission but can be viewed on github.
 
 We were rushed for time at the end of the project (we were not able to work on the project much earlier on as Thomas and James were moving) with debugging so we likely will have memory leakage issues that are unresolved. The game functionality should be fine as long as the user doesn't imput illegal moves.
 Update: we received an extension for the project due to Thomas and James moving and missing a week of productive work time.
@@ -12,3 +12,5 @@ We did not include a BuildPile class as we thought it was not necessary for our 
 Edit: we ended up using the BuildPile to allow for easier tracking of the status of the build when SkipBoCards were being played. I suppose it would've been possible to individually ask for the size of each pile instead of getting the current Card it was on in the field but this way we could add the shuffle function in the cpp file.
 
 All members put in a lot of time and worked on the project together.
+
+We don't know of any missing functionality in our program.
