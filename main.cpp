@@ -17,7 +17,7 @@ int main(int argc, char *argv[]) {
 
   if(argc <= 2 || argc == 4) {
     cout << "invalid program usage: invalid number of arguments" << endl;
-    return 0;
+    return 1;
   }
 
   if(std::string(argv[1]) == "false") {
