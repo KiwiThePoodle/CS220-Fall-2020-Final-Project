@@ -33,6 +33,7 @@ class Player {
      discard[i] = discard_piles[i];
     }
     handPile = hand_pile;
+    updatedDrawPile = new DrawPile();
   }
   
   ~Player() {
