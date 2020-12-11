@@ -14,13 +14,13 @@ class Hand : public Pile {
   }
   Hand(std::vector<Card> h) { pile = h; }
 
-  ~Hand(){
+  /*~Hand(){
    for (int i = 0; i < getHandSize(); i ++){
     delete &pile.at(i);
    }
   }
   void display() const;
-
+*/
   //inherits functions from pile
 };
 
