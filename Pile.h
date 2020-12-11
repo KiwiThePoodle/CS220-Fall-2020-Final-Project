@@ -17,7 +17,12 @@ class Pile {
  
   Pile(std::vector<Card> p) { pile = p; }
  
-  virtual ~Pile(){ delete[] pile; }
+  virtual ~Pile(){ 
+    int temp = pile.size()
+    for(int i = 0; i < pile.size(); i ++) {
+     delete pile[0];
+    }
+  }
  
  std::vector<Card> getPile() {   //returns the pile
   std::vector<Card>r;
