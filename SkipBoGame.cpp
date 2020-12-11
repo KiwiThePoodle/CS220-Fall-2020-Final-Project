@@ -250,7 +250,7 @@ void SkipBoGame::playTurn(){   //just plays a player's entire turn
   discard = play(playerToGo);
   display();    
   }
-  delete draw;
+  delete *draw;
   DrawPile* temp = peep[playerToGo]->getUpdatedDrawPile();   //receives draw pile back from player
   draw = *temp;
   curp ++;
