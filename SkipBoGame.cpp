@@ -245,6 +245,28 @@ void SkipBoGame::playTurn(){   //just plays a player's entire turn
   bool discard = false;   //for if the player plays a card to a discard pile
 
   peep[playerToGo]->updateDrawPile(&draw);   //update draw pile to player and draw to hand
+	
+  if ((5-peep[playerToGo]->handSize) > draw.size()){
+	bool fullbuild = false;
+     	for(int i = 0; i < 4; i ++){
+	   if (build[i]->size() == 12){
+		
+	   	build[i]->addCards(&draw);
+		std::cout << "Draw pile is out of cards, build " << i << " will be added to it." << std::endl;
+		fullbuild = true;
+	   }
+	   
+	}
+	if (!fullbuild){
+		std::cout << "Draw pile is out of cards, no build pile is complete, they will all be added back." << std::endl;
+		for (int i = 0; i < 4; i ++){
+			build[i]->addCards(&draw);
+		}
+	}
+	if (isShuffle){
+		draw.shuffle();
+	}
+     }	
   peep[playerToGo]->drawToHand();
 
   display();	
