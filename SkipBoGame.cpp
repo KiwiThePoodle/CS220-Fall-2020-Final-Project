@@ -463,6 +463,12 @@ bool SkipBoGame::play(int p){
 	  
      std::cout << "(m)ove [start] [end] or (d)raw ? ";
      std::string action;
+     
+     std::string from;
+     std::string to;
+
+     std::cin >> action;
+
      if (action == "d"){   //checks if player can draw, then draws if player's hand size is zero
     //draw
        if (peep[p]->handSize() == 0){
@@ -471,11 +477,13 @@ bool SkipBoGame::play(int p){
 	       return false;
 	  // }
        }
-    }
-     std::string from;
-     std::string to;
-
-     std::cin >> action;
+	     illegaMove();
+	     while (action != "d" || action != "m"){
+		     illegalMove();
+	     	std::cin >> action;
+	     }
+	     
+     }
      std::cin >> from;
      std::cin>>to;   //depending on user input (move) checks validity
      while (((from == "1" || from == "2" || from == "3" || from == "4") &&(to == "1" || to == "2" || to == "3" || to == "4") ) || (from == "0" && (to == "1" || to == "2" || to == "3" || to == "4")) || ((action!= "m" ) || (from != "0" && from != "1" && from != "2" && from != "3" && from != "4" && from != "5" && from != "6" && from != "7" && from != "8" && from != "9")  ||(to != "a" && to != "b" && to != "c" && to != "d" && to != "1" && to != "2" && to != "3" && to != "4" )) || ((from == "5" || from == "6" || from == "7" || from == "8" || from == "9") &&(to == "5" || to == "6" || to == "7" || to == "8" || to == "9"))){
