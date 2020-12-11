@@ -37,7 +37,7 @@ class Player {
   
   ~Player() {
    //delete updatedDrawPile;
-   //delete handPile;
+   delete handPile;
    delete stock;
   }
   
