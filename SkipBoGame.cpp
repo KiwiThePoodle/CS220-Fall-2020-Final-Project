@@ -161,7 +161,7 @@ SkipBoGame::SkipBoGame(bool isS, std::string file){
       save >> cardNum;
       Card* c = new Card(cardNum);
       sp->addCard(*c);
-      delete c; //////
+      //delete c; //////
     }
 
     save >> tempString; //gets rid of "Hand"
@@ -177,7 +177,7 @@ SkipBoGame::SkipBoGame(bool isS, std::string file){
       save >> cardNum;
       Card* c = new Card(cardNum);
       h->addCard(*c);//not sure how hand works yet, just using this as filler
-      delete c;
+      //delete c;
     }
 
     FaceUpPile disPiles[4];
@@ -191,7 +191,7 @@ SkipBoGame::SkipBoGame(bool isS, std::string file){
 	save >> cardNum;
 	Card* c = new Card(cardNum);
 	dp.addCard(*c);
-	delete c;
+	//delete c;
       }
       disPiles[i] = dp;
     }
@@ -208,7 +208,7 @@ SkipBoGame::SkipBoGame(bool isS, std::string file){
     save >> cardNum;
     Card* c = new Card(cardNum);
     draw.addCard(*c);
-    delete c;
+    //delete c;
   }
   draw.setRand(isShuffle);
 
@@ -222,7 +222,7 @@ SkipBoGame::SkipBoGame(bool isS, std::string file){
       save >> cardNum;
       Card* c = new Card(cardNum);
       b.push_back(*c);
-      delete c;
+      //delete c;
     }
     BuildPile* bd = new BuildPile(b);
     build[i6] = bd;
