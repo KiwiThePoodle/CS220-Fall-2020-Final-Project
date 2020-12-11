@@ -37,9 +37,9 @@ class Player {
   }
   
   ~Player() {
-   delete &updatedDrawPile;
-   delete &handPile;
-   delete &stock;
+   delete updatedDrawPile;
+   delete handPile;
+   delete stock;
   }
   
   void display() const;
