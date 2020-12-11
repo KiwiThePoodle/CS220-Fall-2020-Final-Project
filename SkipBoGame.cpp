@@ -474,6 +474,7 @@ bool SkipBoGame::play(int p){
        if (peep[p]->handSize() == 0){
 	   //for (int i = 0; i < 5; i ++){
 	     peep[p]->drawToHand();
+	     std::cout << "(m)ove [start] [end] or (d)raw ? ";
 	       return false;
 	  // }
        }
