@@ -256,7 +256,6 @@ void SkipBoGame::playTurn(){   //just plays a player's entire turn
   DrawPile* temp = peep[playerToGo]->getUpdatedDrawPile();   //receives draw pile back from player
   draw = *temp;
   curp ++;
-  delete temp;
 }
 
 bool SkipBoGame::checkWin(){
