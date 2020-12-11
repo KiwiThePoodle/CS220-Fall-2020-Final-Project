@@ -37,6 +37,9 @@ class Player {
   }
   
   ~Player() {
+   if(updatedDrawPile->size() == 0) {
+    delete updatedDrawPile;
+   }
    //delete updatedDrawPile;
    delete handPile;
    delete stock;
