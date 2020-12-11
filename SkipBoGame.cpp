@@ -246,7 +246,7 @@ void SkipBoGame::playTurn(){   //just plays a player's entire turn
 
   peep[playerToGo]->updateDrawPile(&draw);   //update draw pile to player and draw to hand
 	
-  if ((5-peep[playerToGo]->handSize() > draw.size()){
+  if ((5-peep[playerToGo]->handSize() > draw.size())){
 	bool fullbuild = false;
      	for(int i = 0; i < 4; i ++){
 	   if (build[i]->size() == 12){
