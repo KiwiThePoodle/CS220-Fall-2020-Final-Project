@@ -9,16 +9,12 @@ class Hand : public Pile {
  public:
   Hand() { pile = std::vector<Card>{}; }
 
-  int getHandSize(){
+   Hand(std::vector<Card> h) { pile = h; }
+ 
+  int getHandSize() {   //simply returns the number of cards in hand
    return pile.size();
   }
-  Hand(std::vector<Card> h) { pile = h; }
 
-  /*~Hand(){
-   for (int i = 0; i < getHandSize(); i ++){
-    delete &pile.at(i);
-   }
-  }*/
   void display() const;
 
   //inherits functions from pile
