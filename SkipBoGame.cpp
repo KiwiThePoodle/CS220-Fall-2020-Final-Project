@@ -477,8 +477,8 @@ bool SkipBoGame::play(int p){
 	       return false;
 	  // }
        }
-	     illegaMove();
-	     while (action != "d" || action != "m"){
+	     
+	     while (action != "m"){
 		     illegalMove();
 	     	std::cin >> action;
 	     }
