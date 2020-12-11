@@ -208,7 +208,7 @@ SkipBoGame::SkipBoGame(bool isS, std::string file){
     save >> cardNum;
     Card* c = new Card(cardNum);
     draw.addCard(*c);
-    //delete c;
+    delete c;
   }
   draw.setRand(isShuffle);
 
