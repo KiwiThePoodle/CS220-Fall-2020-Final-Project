@@ -55,7 +55,11 @@ class Player {
 
   void addToStockPile(Card c) { stock->addFront(c); }   //adds a card to the stockpile
 
-  void updateDrawPile(DrawPile* d) { delete updatedDrawPile; updatedDrawPile = d; }   //called at the start of each players turn to update the drawPile for the player to access
+  void updateDrawPile(DrawPile* d) { 
+   if(updatedDrawPile->size() == 0) {
+    delete updatedDrawPile; 
+   }
+   updatedDrawPile = d; }   //called at the start of each players turn to update the drawPile for the player to access
 
   DrawPile* getUpdatedDrawPile() { return updatedDrawPile; }   //called at the end of each players turn to update the drawPile in the game
 
