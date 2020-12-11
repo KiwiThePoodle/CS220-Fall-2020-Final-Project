@@ -15,7 +15,7 @@ class DrawPile : public Pile {
  
   ~DrawPile() {
    for(auto p : pile) {
-    delete p;
+    delete *p;
    }
    pile.clear();
   }
