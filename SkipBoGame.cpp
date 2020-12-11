@@ -358,16 +358,16 @@ bool SkipBoGame::play(int p){
        }
     
      
-     if (action == "m"){
+     if (action == "m"){   //if the player wants to move a card
      
       int leave;
       int target;
       Card c;
 	     
-      if (f == 0){
+      if (f == 0){   //from stock pile
         leave = peep[p]->getStockCardValue();
       }
-      if (f >= 1 && f <= 4){
+      if (f >= 1 && f <= 4){   //from a discard pile
 	if(peep[p]->discardIsEmpty(f)){
 		leave = 100;
 	}else{
@@ -375,7 +375,7 @@ bool SkipBoGame::play(int p){
         	leave = peep[p]->getDiscardCardValue(f);
       	}
       }
-      if (f >= 5 && f <= 9){
+      if (f >= 5 && f <= 9){   //from hand pile
 	if (f-5 > peep[p]->handSize()-1){
 		leave = 100;
 	}else{
@@ -383,7 +383,7 @@ bool SkipBoGame::play(int p){
 	}
       }
        
-      if (t == 100){
+      if (t == 100){   //to a build pile
 	if (build[b]->size() == 12){
 	  target = 100;
 	  leave = -1;
@@ -395,7 +395,7 @@ bool SkipBoGame::play(int p){
         }
       }
        
-      if (t >= 1 && t <=4){
+      if (t >= 1 && t <=4){   //to a discard pile
 	      
 	if (peep[p]->discardIsEmpty(t)){
 		
@@ -405,7 +405,7 @@ bool SkipBoGame::play(int p){
 	}
       }
        
-      if (leave == target + 1 || leave == 0 || (t >= 1 && t <=4 && leave != 100)){
+      if (leave == target + 1 || leave == 0 || (t >= 1 && t <=4 && leave != 100)){   //move
 	
         move = true;
 	if (f == 0){
