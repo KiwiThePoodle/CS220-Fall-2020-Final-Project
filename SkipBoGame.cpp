@@ -109,7 +109,7 @@ SkipBoGame::SkipBoGame(bool isS, int pCount, int stk, std::string file) {
     }
   }
   std::string saveFile = file;
-  }
+}
 
 SkipBoGame::SkipBoGame(bool isS, std::string file){
   isShuffle = isS;
@@ -209,7 +209,6 @@ SkipBoGame::SkipBoGame(bool isS, std::string file){
     BuildPile* bd = new BuildPile(b);
     build[i6] = bd;
   }
-  
 }
 
 SkipBoGame::~SkipBoGame(){   //destructor
@@ -229,33 +228,32 @@ void SkipBoGame::playTurn(){   //just plays a player's entire turn
   peep[playerToGo]->updateDrawPile(&draw);   //update draw pile to player and draw to hand
 	
   if ((5-peep[playerToGo]->handSize() > draw.size())){
-	bool fullbuild = false;
-     	for(int i = 0; i < 4; i ++){
-	   if (build[i]->size() == 12){
-		
-	   	build[i]->addCards(&draw);
-		std::cout << "Draw pile is out of cards, build " << i << " will be added to it." << std::endl;
-		fullbuild = true;
-	   }
-	   
-	}
-	if (!fullbuild){
-		std::cout << "Draw pile is out of cards, no build pile is complete, they will all be added back." << std::endl;
-		for (int i = 0; i < 4; i ++){
-			build[i]->addCards(&draw);
-		}
-	}
-	if (isShuffle){
-		draw.shuffle();
-	}
-     }	
+    bool fullbuild = false;
+    for(int i = 0; i < 4; i ++){
+      if (build[i]->size() == 12){	
+	build[i]->addCards(&draw);
+	std::cout << "Draw pile is out of cards, build " << i << " will be added to it." << std::endl;
+	fullbuild = true;
+      }
+      
+    }
+    if (!fullbuild){
+      std::cout << "Draw pile is out of cards, no build pile is complete, they will all be added back." << std::endl;
+      for (int i = 0; i < 4; i ++){
+	build[i]->addCards(&draw);
+      }
+    }
+    if (isShuffle){
+      draw.shuffle();
+    }
+  }	
   peep[playerToGo]->drawToHand();
-
+  
   display();	
   while(!discard && !checkWin()){   //if played to discard pile or player wins, end turn
-   
-  discard = play(playerToGo);
-  display();    
+    
+    discard = play(playerToGo);
+    display();    
   }
   DrawPile* temp = peep[playerToGo]->getUpdatedDrawPile();   //receives draw pile back from player
   draw = *temp;
@@ -280,172 +278,170 @@ void SkipBoGame::illegalMove(){
 }
 	
 bool SkipBoGame::play(int p){
-   bool move = true;
-   while (move){
-	   
-     if (draw.size() == 0){
-	bool fullbuild = false;
-     	for(int i = 0; i < 4; i ++){
-	   if (build[i]->size() == 12){
-		
-	   	build[i]->addCards(&draw);
-		std::cout << "Draw pile is out of cards, build " << i << " will be added to it." << std::endl;
-		fullbuild = true;
-	   }
-	   
-	}
-	if (!fullbuild){
-		std::cout << "Draw pile is out of cards, no build pile is complete, they will all be added back." << std::endl;
-		for (int i = 0; i < 4; i ++){
-			build[i]->addCards(&draw);
-		}
-	}
-	if (isShuffle){
-		draw.shuffle();
-	}
-     }   
+  bool move = true;
+  while (move){
+    
+    if (draw.size() == 0){
+      bool fullbuild = false;
+      for(int i = 0; i < 4; i ++){
+	if (build[i]->size() == 12){
 	  
-     std::cout << "(m)ove [start] [end] or (d)raw ? ";
-     std::string action;
-     
-     std::string from;
-     std::string to;
-
-     std::cin >> action;
-
-     if (action == "d"){   //checks if player can draw, then draws if player's hand size is zero
-    //draw
-       if (peep[p]->handSize() == 0){
-	     peep[p]->drawToHand();
-	     std::cout << "(m)ove [start] [end] or (d)raw ? ";
-	       return false;
-       }
-	     
-	     while (action != "m"){
-		     illegalMove();
-	     	std::cin >> action;
-	     }
-	     
-     }
-     std::cin >> from;
-     std::cin>>to;   //depending on user input (move) checks validity
-     while (((from == "1" || from == "2" || from == "3" || from == "4") &&(to == "1" || to == "2" || to == "3" || to == "4") ) || (from == "0" && (to == "1" || to == "2" || to == "3" || to == "4")) || ((action!= "m" ) || (from != "0" && from != "1" && from != "2" && from != "3" && from != "4" && from != "5" && from != "6" && from != "7" && from != "8" && from != "9")  ||(to != "a" && to != "b" && to != "c" && to != "d" && to != "1" && to != "2" && to != "3" && to != "4" )) || ((from == "5" || from == "6" || from == "7" || from == "8" || from == "9") &&(to == "5" || to == "6" || to == "7" || to == "8" || to == "9"))){
-       illegalMove();
-	     
-       std::cout << "(m)ove [start] [end] or (d)raw ? ";
-       std::cin >> action;
-       std::cin >> from;
-       std::cin >> to;
-     }
+	  build[i]->addCards(&draw);
+	  std::cout << "Draw pile is out of cards, build " << i << " will be added to it." << std::endl;
+	  fullbuild = true;
+	}
 	
-     std::cout << std::endl;
-
-     int f;
-     int t;
-     int b;
-  
-     if (action != "d"){   //just converts from letter to number for easier usage
-       f = std::stoi(from);
-       if (to == "a" || to == "b" || to == "c" || to == "d"){
-	        if (to == "a"){b = 0;}
-	        if (to == "b"){b = 1;}
-	        if (to == "c"){b = 2;}
-	        if (to == "d"){b = 3;}
+      }
+      if (!fullbuild){
+	std::cout << "Draw pile is out of cards, no build pile is complete, they will all be added back." << std::endl;
+	for (int i = 0; i < 4; i ++){
+	  build[i]->addCards(&draw);
+	}
+      }
+      if (isShuffle){
+	draw.shuffle();
+      }
+    }   
+    
+    std::cout << "(m)ove [start] [end] or (d)raw ? ";
+    std::string action;
+    
+    std::string from;
+    std::string to;
+    
+    std::cin >> action;
+    
+    if (action == "d"){   //checks if player can draw, then draws if player's hand size is zero
+      //draw
+      if (peep[p]->handSize() == 0){
+	peep[p]->drawToHand();
+	std::cout << "(m)ove [start] [end] or (d)raw ? ";
+	return false;
+      }
+      
+      while (action != "m"){
+	illegalMove();
+	std::cin >> action;
+      }
+      
+    }
+    std::cin >> from;
+    std::cin>>to;   //depending on user input (move) checks validity
+    while (((from == "1" || from == "2" || from == "3" || from == "4") &&(to == "1" || to == "2" || to == "3" || to == "4") ) || (from == "0" && (to == "1" || to == "2" || to == "3" || to == "4")) || ((action!= "m" ) || (from != "0" && from != "1" && from != "2" && from != "3" && from != "4" && from != "5" && from != "6" && from != "7" && from != "8" && from != "9")  ||(to != "a" && to != "b" && to != "c" && to != "d" && to != "1" && to != "2" && to != "3" && to != "4" )) || ((from == "5" || from == "6" || from == "7" || from == "8" || from == "9") &&(to == "5" || to == "6" || to == "7" || to == "8" || to == "9"))){
+      illegalMove();
+      
+      std::cout << "(m)ove [start] [end] or (d)raw ? ";
+      std::cin >> action;
+      std::cin >> from;
+      std::cin >> to;
+    }
+    
+    std::cout << std::endl;
+    
+    int f;
+    int t;
+    int b;
+    
+    if (action != "d"){   //just converts from letter to number for easier usage
+      f = std::stoi(from);
+      if (to == "a" || to == "b" || to == "c" || to == "d"){
+	if (to == "a"){b = 0;}
+	if (to == "b"){b = 1;}
+	if (to == "c"){b = 2;}
+	if (to == "d"){b = 3;}
 	            t = 100;
-          }else{
-	            t = std::stoi(to);  
-          }
-       }
-    
-     
-     if (action == "m"){   //if the player wants to move a card
-     
-      int leave;
-      int target;
-      Card c;
-	     
-      if (f == 0){   //from stock pile
-        leave = peep[p]->getStockCardValue();
-      }
-      if (f >= 1 && f <= 4){   //from a discard pile
-	if(peep[p]->discardIsEmpty(f)){
-		leave = 100;
-	}else{
-		
-        	leave = peep[p]->getDiscardCardValue(f);
-      	}
-      }
-      if (f >= 5 && f <= 9){   //from hand pile
-	if (f-5 > peep[p]->handSize()-1){
-		leave = 100;
-	}else{
-        	leave = peep[p]->getHandCardValue(f);
-	}
-      }
-       
-      if (t == 100){   //to a build pile
-	if (build[b]->size() == 12){
-	  target = 100;
-	  leave = -1;
-	}
-        if (build[b]->size()==0){
-          target = 0;
-        }else{
-          target = build[b]->getCardNumber();
-        }
-      }
-       
-      if (t >= 1 && t <=4){   //to a discard pile
-	      
-	if (peep[p]->discardIsEmpty(t)){
-		
-		target = 0;
-	}else{
-       	 	target = peep[p]->getDiscardCardValue(t);
-	}
-      }
-       
-      if (leave == target + 1 || leave == 0 || (t >= 1 && t <=4 && leave != 100)){   //move
-	
-        move = true;
-	if (f == 0){
-	  peep[p]->getStockPileCard(peep[p]->stockSize()-1);
-	  c = Card(leave);
-	  build[b]->addCard(c);
-	  build[b]->incrementCardNumber();
-	}
-	if (f >= 1 && f <= 4){
-	  c = Card(leave);
-	  build[b]->addCard(c);
-	  build[b]->incrementCardNumber();
-	  peep[p]->removeFromDiscard(f);
-	}
-	if (f >= 5 && f <= 9){
-	  c = peep[p]->getHandPileCard(f);
-	  if (t >= 1 && t <= 4){
-	    peep[p]->handToDiscard(c,t);
-	    return true;
-	  }
-	  build[b]->addCard(c);
-	  build[b]->incrementCardNumber();
-	}
       }else{
-        move = false;
-        illegalMove();
+	t = std::stoi(to);  
       }
+    }
+    
+    
+     if (action == "m"){   //if the player wants to move a card
+       
+       int leave;
+       int target;
+       Card c;
+       
+       if (f == 0){   //from stock pile
+	 leave = peep[p]->getStockCardValue();
+       }
+       if (f >= 1 && f <= 4){   //from a discard pile
+	 if(peep[p]->discardIsEmpty(f)){
+	   leave = 100;
+	 }else{
+	   
+	   leave = peep[p]->getDiscardCardValue(f);
+	 }
+       }
+       if (f >= 5 && f <= 9){   //from hand pile
+	 if (f-5 > peep[p]->handSize()-1){
+	   leave = 100;
+	 }else{
+	   leave = peep[p]->getHandCardValue(f);
+	 }
+       }
+       
+       if (t == 100){   //to a build pile
+	 if (build[b]->size() == 12){
+	   target = 100;
+	   leave = -1;
+	 }
+	 if (build[b]->size()==0){
+	   target = 0;
+	 }else{
+	   target = build[b]->getCardNumber();
+	 }
+       }
+       
+       if (t >= 1 && t <=4){   //to a discard pile
+	 
+	 if (peep[p]->discardIsEmpty(t)){
+	   
+	   target = 0;
+	 }else{
+	   target = peep[p]->getDiscardCardValue(t);
+	 }
+       }
+       
+       if (leave == target + 1 || leave == 0 || (t >= 1 && t <=4 && leave != 100)){   //move
+	 
+	 move = true;
+	 if (f == 0){
+	   peep[p]->getStockPileCard(peep[p]->stockSize()-1);
+	   c = Card(leave);
+	   build[b]->addCard(c);
+	   build[b]->incrementCardNumber();
+	 }
+	 if (f >= 1 && f <= 4){
+	   c = Card(leave);
+	   build[b]->addCard(c);
+	   build[b]->incrementCardNumber();
+	   peep[p]->removeFromDiscard(f);
+	 }
+	 if (f >= 5 && f <= 9){
+	   c = peep[p]->getHandPileCard(f);
+	   if (t >= 1 && t <= 4){
+	     peep[p]->handToDiscard(c,t);
+	     return true;
+	   }
+	   build[b]->addCard(c);
+	   build[b]->incrementCardNumber();
+	 }
+       }else{
+	 move = false;
+	 illegalMove();
+       }
        
      }
-    
+     
      move = !move;
      
-   }
-   
-   return false;
+  }
+  
+  return false;
 }
 void SkipBoGame::save(std::string file){   //saves game
   
   std::ofstream saveFile(file);
-  saveFile << toString();
-
-
+  saveFile << toString();  
 }
