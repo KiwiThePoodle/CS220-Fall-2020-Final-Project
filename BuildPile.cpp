@@ -9,5 +9,5 @@ void BuildPile::addCards(DrawPile* d) {
     d->addCard(c);
   }
   cardNumber = 0;
-  //delete d;
+  //delete d;   this was causing us errors but after commenting it out, our code worked
 }
