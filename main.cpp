@@ -95,15 +95,15 @@ int main(int argc, char *argv[]) {
     }
     else {
       //create a skipbogame object
-      SkipBoGame* game = new SkipBoGame(shuffle, numPlayers, stockPileSize, argv[4]); //creation of skipbogame object for new game
+      SkipBoGame game = SkipBoGame(shuffle, numPlayers, stockPileSize, argv[4]); //creation of skipbogame object for new game
       
-      while(!game->checkWin()) {
-	cout << "\n >> " << game->getCurrentPlayer() << " turn next" << endl; //playing the game out
+      while(!game.checkWin()) {
+	cout << "\n >> " << game.getCurrentPlayer() << " turn next" << endl; //playing the game out
 	cout << "(p)lay, (s)ave, or (q)uit ? ";
 	std::string psq;
 	std::cin >> psq;
 	if(psq == "q") {
-	  delete game;
+	  //delete game;
 	  cout << "thanks for playing" << endl;
 	  return 0;
 	}
@@ -111,15 +111,15 @@ int main(int argc, char *argv[]) {
 	  std::string saveFile;
 	  cout << "save filename: ";
 	  std::cin >> saveFile;
-	  game->save(saveFile);
-	  delete game;
+	  game.save(saveFile);
+	  //delete game;
 	  return 0;
 	}
 	else if(psq == "p") {
-	  game->playTurn();
+	  game.playTurn();
 	}
       }
-      cout << "\nGAME OVER - " << game->getCurrentPlayer() << " wins!" << endl;
+      cout << "\nGAME OVER - " << game.getCurrentPlayer() << " wins!" << endl;
       //delete game;
     }
     return 1;
