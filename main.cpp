@@ -47,7 +47,6 @@ int main(int argc, char *argv[]) {
         std::string psq;
         std::cin >> psq;
         if(psq == "q") {
-          //delete game;
           cout << "thanks for playing" << endl;
           return 0;
         }
@@ -56,15 +55,13 @@ int main(int argc, char *argv[]) {
           cout << "save filename: ";
           std::cin >> saveFile;
           game.save(saveFile);
-          //delete game;
           return 0;
         }
         else if(psq == "p") {
           game.playTurn();
         }
       }
-      cout << "\nGAME OVER - " << game.getCurrentPlayer() << " wins!" << endl;
-      //delete game;
+      cout << "\nGAME OVER - " << game.getCurrentPlayer() << " wins!" << endl;   //GAME OVER (yay!)
     }
     return 0;
   }
@@ -103,7 +100,6 @@ int main(int argc, char *argv[]) {
 	std::string psq;
 	std::cin >> psq;
 	if(psq == "q") {
-	  //delete game;
 	  cout << "thanks for playing" << endl;
 	  return 0;
 	}
@@ -112,15 +108,13 @@ int main(int argc, char *argv[]) {
 	  cout << "save filename: ";
 	  std::cin >> saveFile;
 	  game.save(saveFile);
-	  //delete game;
 	  return 0;
 	}
 	else if(psq == "p") {
 	  game.playTurn();
 	}
       }
-      cout << "\nGAME OVER - " << game.getCurrentPlayer() << " wins!" << endl;
-      //delete game;
+      cout << "\nGAME OVER - " << game.getCurrentPlayer() << " wins!" << endl;   //GAME OVER (yay!)
     }
     return 1;
   }
