@@ -478,7 +478,7 @@ bool SkipBoGame::play(int p){
        std::cin >> to;
      }
 	
-     std::cout << std::endl;
+     //std::cout << std::endl;
 
      int f;
      int t;
