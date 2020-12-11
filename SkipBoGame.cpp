@@ -143,7 +143,6 @@ SkipBoGame::SkipBoGame(bool isS, std::string file){
 		std::cout << temp << std::endl;//////////////////////
 	}
 	*/
-  Card* c;
   for (int i = 0; i < nump; i ++){
     std::string playerName;
     save >> playerName;
@@ -160,8 +159,9 @@ SkipBoGame::SkipBoGame(bool isS, std::string file){
     for (int i2 = 0; i2 < stockSize; i2 ++){
       int cardNum;
       save >> cardNum;
-      c = new Card(cardNum);
+      Card* c = new Card(cardNum);
       sp->addCard(*c);
+      delete c; //////
     }
 
     save >> tempString; //gets rid of "Hand"
@@ -175,8 +175,9 @@ SkipBoGame::SkipBoGame(bool isS, std::string file){
     for (int i3 = 0; i3 < handSize; i3++){
       int cardNum;
       save >> cardNum;
-      c = new Card(cardNum);
+      Card* c = new Card(cardNum);
       h->addCard(*c);//not sure how hand works yet, just using this as filler
+      delete c;
     }
 
     FaceUpPile disPiles[4];
@@ -188,8 +189,9 @@ SkipBoGame::SkipBoGame(bool isS, std::string file){
       for (int i4 = 0; i4 < dSize; i4++){
 	int cardNum;
 	save >> cardNum;
-	c = new Card(cardNum);
+	Card* c = new Card(cardNum);
 	dp.addCard(*c);
+	delete c;
       }
       disPiles[i] = dp;
     }
@@ -204,8 +206,9 @@ SkipBoGame::SkipBoGame(bool isS, std::string file){
   for (int i5 = 0; i5 < deckSize; i5++){    //cards to draw pile
     int cardNum;
     save >> cardNum;
-    c = new Card(cardNum);
+    Card* c = new Card(cardNum);
     draw.addCard(*c);
+    delete c;
   }
   draw.setRand(isShuffle);
 
@@ -217,13 +220,13 @@ SkipBoGame::SkipBoGame(bool isS, std::string file){
     for (int i7 = 0; i7 < buildSize; i7 ++){
       int cardNum;
       save >> cardNum;
-      c = new Card(cardNum);
-      b.push_back(*c); 
+      Card* c = new Card(cardNum);
+      b.push_back(*c);
+      delete c;
     }
     BuildPile* bd = new BuildPile(b);
     build[i6] = bd;
   }
-  delete c;
   
 }
 
