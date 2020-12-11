@@ -20,7 +20,7 @@ class Pile {
   virtual ~Pile(){ 
     int temp = pile.size();
     for(int i = 0; i < temp; i ++) {
-     delete pile[0];
+     delete *pile[0];
     }
   }
  
