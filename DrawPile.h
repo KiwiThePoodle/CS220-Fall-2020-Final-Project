@@ -13,7 +13,7 @@ class DrawPile : public Pile {
  
   DrawPile(std::vector<Card> d) { pile = d; }
  
-  ~DrawPile() { }
+  ~DrawPile() { delete this;}
  
   std::string getRand() const {   //returns whether random is on or not
    if(rand == false) {
