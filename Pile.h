@@ -40,6 +40,7 @@ class Pile {
 
   Card removeCard(int cardIndex){  //removes and returns a card at a given index
      Card c = pile.at(cardIndex);
+     delete pile.at(cardIndex); ///////
      pile.erase(pile.begin() + cardIndex);  
    return c;
   }
