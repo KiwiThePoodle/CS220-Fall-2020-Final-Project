@@ -18,7 +18,7 @@ class Pile {
   Pile(std::vector<Card> p) { pile = p; }
  
   virtual ~Pile(){ 
-    int temp = pile.size()
+    int temp = pile.size();
     for(int i = 0; i < pile.size(); i ++) {
      delete pile[0];
     }
