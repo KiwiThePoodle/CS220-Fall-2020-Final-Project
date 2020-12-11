@@ -1,7 +1,7 @@
 #include <iostream>
 #include "BuildPile.h"
 
-void BuildPile::addCards(DrawPile* d) {
+void BuildPile::addCards(DrawPile* d) {   //adds cards to the drawpile from the buildpile
 
   int temp = pile.size();
   for(int i = 0; i < temp; i++) {
