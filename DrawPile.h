@@ -13,6 +13,8 @@ class DrawPile : public Pile {
  
   DrawPile(std::vector<Card> d) { pile = d; }
  
+  ~DrawPile() { }
+ 
   std::string getRand() const {   //returns whether random is on or not
    if(rand == false) {
     return "false";
@@ -25,7 +27,7 @@ class DrawPile : public Pile {
   }
 
   void display() const;
-
+ 
   //other functions inherited from pile.h
 };
 
