@@ -441,6 +441,14 @@ bool SkipBoGame::play(int p){
   return false;
 }
 void SkipBoGame::save(std::string file){   //saves game
+  for(int i = 0; i < 4; i ++){
+    if (build[i]->size() == 12){
+	    build[i]->addCards(&draw);
+    }
+  }
+	if (isShuffle){
+		draw.shuffle();
+	}
   
   std::ofstream saveFile(file);
   saveFile << toString();  
