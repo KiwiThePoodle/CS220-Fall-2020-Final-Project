@@ -13,4 +13,7 @@ Edit: we ended up using the BuildPile to allow for easier tracking of the status
 
 All members put in a lot of time and worked on the project together.
 
+Gradescope Sample Runs: In the saved game files, the stock piles appear backwards. This is due to lack of foresight when we initially wrote functions to remove cards. Although, we fixed the logic so that it is functionally the same. This is why the Gradescope sample run does not match our output exactly, but it seems to not be a major issue/difference.
+We also decided to output a line in the case that the build piles are used to replenish the draw pile, while this was not in the specifications.
+
 We don't know of any missing functionality in our program.
