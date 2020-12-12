@@ -116,6 +116,6 @@ int main(int argc, char *argv[]) {
       }
       cout << "\nGAME OVER - " << game.getCurrentPlayer() << " wins!" << endl;   //GAME OVER (yay!)
     }
-    return 1;
+    return 0;
   }
 }
